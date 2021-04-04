@@ -9,6 +9,7 @@ const LocationCont = styled.div`
   flex-direction: row;
   padding: 10px;
   min-width: 300px;
+  margin-bottom: 35px;
   &>* {
     color:#000;
   }
@@ -16,10 +17,11 @@ const LocationCont = styled.div`
 
 const TextCont = styled.div`
   display: flex;
-  min-width: 180px;
+  min-width: 150px;
+  max-width: 180px;
   flex-direction: column;
   flex: 1;
-  margin-right: 10px;
+  margin-right: 20px;
   justify-content: center;
 `;
 
@@ -59,11 +61,11 @@ const IconA = styled.a`
 const Icon = styled.div`
   width: 68px;
   height: 56px;
-  background-color: #CCE6F4;
   margin-bottom: 10px;
-  // background-image: url(${locationIcon});
-  // background-size: cover;
-  // background-repeat: no-repeat;
+ `
+
+ const LocationImg = styled.img`
+  display: block;  
  `
 
  const Click = styled.div`
@@ -74,18 +76,23 @@ const Icon = styled.div`
   text-align: center;
   `
 
-const Location = () => {
+const Location = ({
+  title = "Location 1:",
+  text = "Charitable Impact Vancouver, West End",
+}) => {
 
   return <LocationCont>
     
     <TextCont>
-      <LocationTitle>Location 1</LocationTitle>    
-      <LocationText>Charitable Impact<br></br>Vancouver, West End</LocationText>
+      <LocationTitle>{title}</LocationTitle>    
+      <LocationText>{text}</LocationText>
     </TextCont>
 
     <IconCont>
       <IconA onClick={()=>router.push(routeTo)}>
-        <Icon></Icon>
+        <Icon>
+          <LocationImg src="/icon_location.svg"/>
+        </Icon>
         <Click>Click for more information</Click>
       </IconA>
     </IconCont>
