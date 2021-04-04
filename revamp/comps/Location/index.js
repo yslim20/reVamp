@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router'
+//import locationIcon from '../../public/icon_location.svg';
 
 
 const LocationCont = styled.div`
   display: inline-flex;  
   flex-direction: row;
-  padding: 5px;
+  padding: 10px;
   max-width: 300px;
   &>* {
     color:#000;
@@ -17,6 +19,7 @@ const TextCont = styled.div`
   flex-direction: column;
   flex: 1;
   margin-right: 20px;
+  justify-content: center;
 `;
 
 const LocationTitle = styled.h6`
@@ -44,18 +47,31 @@ const IconCont = styled.div`
 
 const IconA = styled.a`
   display: block;  
-  href = "#"
+  href = "#";
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const Icon = styled.div`
   width: 68px;
   height: 56px;
-  background-image: url("../../public/icon_location.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #CCE6F4;
+  margin-bottom: 10px;
+  // background-image: url(${locationIcon});
+  // background-size: cover;
+  // background-repeat: no-repeat;
  `
 
-
+ const Click = styled.div`
+  width: 100px;
+  text-decoration: underline;
+  color: #14455A;
+  font-size: 12px;
+  text-align: center;
+  `
 
 const Location = () => {
 
@@ -67,9 +83,9 @@ const Location = () => {
     </TextCont>
 
     <IconCont>
-      <IconA>
+      <IconA onClick={()=>router.push(routeTo)}>
         <Icon></Icon>
-
+        <Click>Click for more information</Click>
       </IconA>
     </IconCont>
 
