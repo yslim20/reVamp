@@ -14,6 +14,7 @@ const LocPageCont = styled.div`
 
 const LocPageTitle = styled.h3`
   max-width: 305px;
+  flex: 1;
   font-family: 'Lexend Giga';
   font-size: 1.625em;
   font-weight: 400;
@@ -27,13 +28,14 @@ const LocPageTitle = styled.h3`
 const LocPageMap = styled.img`
   display: block;
   max-width: 305px;
+  flex: 1;
   height: 220px;
   margin-bottom: 25px;  
 `
 
 const LocPageTextCont = styled.div`
   display: flex;
-  max-width: 305px;
+  flex: 1;
   min-width: 305px;
   flex-direction: column;
   flex: 1;
