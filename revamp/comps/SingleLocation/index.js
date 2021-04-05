@@ -35,7 +35,7 @@ const LocPageMap = styled.img`
 
 const LocPageTextCont = styled.div`
   display: flex;
-  flex: 1;
+  max-width: 305px;
   min-width: 305px;
   flex-direction: column;
   flex: 1;
