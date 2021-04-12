@@ -9,7 +9,6 @@ const LocPageCont = styled.div`
   flex-direction: column;    
   justify-contents: center;
   align-items: center;  
-  margin-bottom: 50px;
 `;
 
 const LocPageTitle = styled.h3`

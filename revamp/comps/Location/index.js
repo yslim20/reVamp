@@ -7,9 +7,8 @@ import {useRouter} from 'next/router'
 const LocationCont = styled.div`
   display: inline-flex;  
   flex-direction: row;
-  padding: 10px;
   min-width: 300px;
-  margin-bottom: 35px;
+  margin-bottom: ${props => props.marginB}px;
   &>* {
     color:#000;
   }
@@ -79,9 +78,10 @@ const Icon = styled.div`
 const Location = ({
   title = "Location 1:",
   text = "Charitable Impact Vancouver, West End",
+  marginB = 35
 }) => {
 
-  return <LocationCont>
+  return <LocationCont marginB = {marginB}>
     
     <TextCont>
       <LocationTitle>{title}</LocationTitle>    
