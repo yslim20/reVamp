@@ -29,6 +29,18 @@ a {
   align-items: center;
 }
 
+.fixedT {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.fixedB {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .container{
   max-width: 375px;
   margin: 0 auto;  
@@ -40,14 +52,13 @@ a {
 }
 
 .header {
-  min-width: 100%;
+  max-width: 375px;
   min-height: 80px; 
-  margin-bottom: 45px;
   background-color: #CCE6F4;
 }
 
 .title_cont {
-  width: 100%;
+  max-width: 100%;
   margin-top: 45px;
   margin-bottom: 35px;
 }
@@ -57,9 +68,15 @@ a {
 }
 
 .menu_container {
-  width: 100%;
-  height: 75px;
+  max-width: 375px;
+  min-height: 75px;
   background-color: #fff;
+}
+
+.margin-125 {
+  margin-top: 125px;
+  margin-bottom: 120px;
+  /* margin-top: 80+45px/ margin-bottom: 75+45px */
 }
 
 

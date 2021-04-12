@@ -37,14 +37,15 @@ export default function Home() {
     <Head>
       <title className = "title">Donate</title>
     </Head>
+    
     <div className="container flex_col">
-      <div className = "header">
+      <div className = "header fixedT">
         {/* hamberger menu */}
       </div>
 
-      <div className="location">
+      <div className="location  margin-125">
         <div className = "inner_container flex_col">
-          <div className = "title_cont">
+          <div className = "title_cont fixedT">
             {/* h2 comes here */}
           </div>
 
@@ -56,7 +57,7 @@ export default function Home() {
         </div>        
       </div>
 
-      <div className = "menu_container">
+      <div className = "menu_container fixedB">
         {/* menu bar comes here */}
       </div>
     </div>

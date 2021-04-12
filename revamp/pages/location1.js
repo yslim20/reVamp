@@ -43,20 +43,15 @@ export default function Home() {
     </Head>
 
     <div className="container flex_col">
-      <div className = "header">
+      <div className = "header fixedT">
         {/* hamberger menu */}
       </div>
 
-      <div className="location">
-        <div className = "inner_container flex_col">
-          
-          <div className = "options_cont flex_col">
+      <div className="location margin-125">          
           <SingleLocation className="singleLo"></SingleLocation>
-          </div>
-        </div>        
       </div>
 
-      <div className = "menu_container">
+      <div className = "menu_container fixedB ">
         {/* menu bar comes here */}
       </div>
     </div>

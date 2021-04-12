@@ -69,7 +69,7 @@ const LocPageText = styled.p`
 
 const SingleLocation = ({
   title = "charitable impact",
-  src = "/image_map01.png",
+  src = "/image_map01.svg",
   address = "1500 W Georgia St #1250, Vancouver, BC V6G 2Z6",
   day = "Monday - Friday",
   hours = "9am - 5pm",

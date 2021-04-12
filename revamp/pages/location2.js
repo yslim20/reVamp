@@ -43,27 +43,22 @@ export default function Home() {
     </Head>
 
     <div className="container flex_col">
-      <div className = "header">
+      <div className = "header fixedT">
         {/* hamberger menu */}
       </div>
 
-      <div className="location">
-        <div className = "inner_container flex_col">
-          
-          <div className = "options_cont flex_col">
-            <SingleLocation  className="singleLo"
-              title = "wildlife thrift store"
-              src = "/image_map02.png"
-              address = "1295 Granville St, Vancouver, BC V6Z 1M5"
-              day = "Daily"
-              hours = "10am - 8pm"
-              phone = "(604) 682-0381"       
-            ></SingleLocation>
-          </div>
-        </div>        
+      <div className="location margin-125">          
+          <SingleLocation  className="singleLo"
+            title = "wildlife thrift store"
+            src = "/image_map02.svg"
+            address = "1295 Granville St, Vancouver, BC V6Z 1M5"
+            day = "Daily"
+            hours = "10am - 8pm"
+            phone = "(604) 682-0381"       
+          ></SingleLocation>   
       </div>
 
-      <div className = "menu_container">
+      <div className = "menu_container fixedB">
         {/* menu bar comes here */}
       </div>
     </div>

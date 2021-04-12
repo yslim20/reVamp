@@ -43,30 +43,26 @@ export default function Home() {
     </Head>
 
     <div className="container flex_col">
-      <div className = "header">
+      <div className = "header fixedT">
         {/* hamberger menu */}
       </div>
 
-      <div className="location">
-        <div className = "inner_container flex_col">
-          
-          <div className = "options_cont flex_col">
+      <div className="location margin-125">          
           <SingleLocation  className="singleLo"
             title = "the salvation army - belkin house"
-            src = "/image_map03.png"
+            src = "/image_map03.svg"
             address = "555 Homer St, Vancouver, BC V6B 1K8"
             day = "Daily"
             hours = "24 Hours"
-            phone = "(604) 681-3405" 
-          ></SingleLocation>
-          </div>
-        </div>        
+            phone = "(604) 681-3405"       
+          ></SingleLocation>   
       </div>
 
-      <div className = "menu_container">
+      <div className = "menu_container fixedB">
         {/* menu bar comes here */}
       </div>
     </div>
+
   </HomeCont>
   )
 }
