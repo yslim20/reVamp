@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/location": "pages/location.js",
+  "/comps_location": "pages/comps_location.js",
   "/donate": "pages/donate.js"
 }

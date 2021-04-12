@@ -24,15 +24,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/comps_location": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/comps_location.js"
+    ],
     "/donate": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/donate.js"
-    ],
-    "/location": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/location.js"
     ]
   },
   "ampFirstPages": []
