@@ -79,5 +79,26 @@ a {
   /* margin-top: 80+45px/ margin-bottom: 75+45px */
 }
 
+/* HOME PAGE */
+.home_cont {
+  width: 375px;
+  height: 812px;
+  background-image: url("../public/homeBackground.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+.logo_cont {
+  margin-bottom: 80px;
+}
 
+.logo {
+  width: 234px;
+  height: 214px;
+  display: block;
+}
+
+.buttonCont {
+  width: 154px;
+  height: 55px;
+}
