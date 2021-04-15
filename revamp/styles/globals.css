@@ -1,21 +1,134 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+=======
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+=======
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
+
+>>>>>>> main
+>>>>>>> main
 html,
 body {
   padding: 0;
+  margin: 0; */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+
+html, body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+<<<<<<< HEAD
+  font-family: 'Montserrat', sans-serif;
+=======
+  font-family: 'Lexend Giga', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F3F7FA;
+
+>>>>>>> main
+}
+h2 {
+  font-family: 'Lexend Giga', sans-serif;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+<<<<<<< HEAD
+=======
+.icon:hover svg{
+  fill: #FFE066;
 }
 
-* {
-  box-sizing: border-box;
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.fixedT {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.fixedB {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container{
+  max-width: 375px;
+  margin: 0 auto;  
+}
+
+.inner_container {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.header {
+  max-width: 375px;
+  min-height: 80px; 
+  background-color: #CCE6F4;
+}
+
+.title_cont {
+  max-width: 100%;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+
+.options_cont {
+  width: 100%;
+}
+
+.menu_container {
+  max-width: 375px;
+  min-height: 75px;
+  background-color: #fff;
+}
+
+.margin-125 {
+  margin-top: 125px;
+  margin-bottom: 120px;
+  /* margin-top: 80+45px/ margin-bottom: 75+45px */
+}
+
+/* HOME PAGE */
+.home_cont {
+  width: 375px;
+  height: 812px;
+  background-image: url("../public/homeBackground.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo_cont {
+  margin-bottom: 80px;
+}
+
+.logo {
+  width: 234px;
+  height: 214px;
+  display: block;
+}
+
+.buttonCont {
+  width: 154px;
+  height: 55px;
+}
+<<<<<<< HEAD
 
 .reButtons {
   font-family: 'Montserrat', sans-serif;
 }
+=======
+>>>>>>> main
+>>>>>>> main

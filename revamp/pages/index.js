@@ -1,65 +1,59 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import FinishedLook from '../comps/FinishedLook';
+import Background from '../comps/Background';
+import DIYs from '../comps/DIYs';
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+  return <div>
+    <FinishedLook picture="/Denim-Flower.svg"/>
+    <FinishedLook></FinishedLook>
+    <Background></Background>
+    <DIYs></DIYs>
+    <DIYs title="demin flowers" picture="/Denim-Flower.svg"/>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+  </div>
+// import Header from '../comps/Header/index';
+// import BottomNav from '../comps/BottomNav/index';
+// import TopNav from '../comps/TopNav/index';
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+// export default function Home() {
+//   return <div>
+//     <TopNav />
+//     <Header text="what would you like to repurpose?"/>
+//     <BottomNav />
+//   </div>
+// }
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+// import styles from '../styles/Home.module.css'
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+// import styled from 'styled-components';
+// import React, {useState} from 'react';
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+// import SingleLocation from '../comps/SingleLocation';
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+// const HomeCont = styled.div`
+  
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+
+// export default function Home() {
+//   return (<HomeCont>
+//     <Head>
+//       <title className = "title">reVamp</title>
+//     </Head>
+
+//     <div className="container home_cont flex_col">
+
+//       <div className="logo_cont flex_col">          
+//           <img className = "logo" src = "/homeLogo.svg" alt = "logo" />
+//       </div>
+
+//       <div className = "buttonCont flex_col">
+//         button
+//       </div>
+//     </div>
+
+//   </HomeCont>
+//   )
+// }
+
+};
