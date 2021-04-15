@@ -7,6 +7,6 @@ export default {
 }
 
 export const DefaultLocation  = () => <Location /> 
-export const SecondLocation  = () => <Location title="Location 2:" text = "Wildlife Thrift Store Downtown Vancouver" /> 
-export const ThirdLocation  = () => <Location title="Location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" /> 
+export const SecondLocation  = () => <Location doTitle="Location 2:" text = "Wildlife Thrift Store Downtown Vancouver" /> 
+export const ThirdLocation  = () => <Location doTitle="Location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" /> 
 

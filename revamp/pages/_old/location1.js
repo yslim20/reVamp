@@ -4,6 +4,7 @@ import Head from 'next/head'
 import SingleLocation from '../comps/SingleLocation';
 import styled from 'styled-components';
 import React, {useState} from 'react';
+import {locOptions} from '../data/texts';
 
 const HomeCont = styled.div`
   .header{
@@ -35,6 +36,7 @@ const HomeCont = styled.div`
     align-items: center;
   }  
 `;
+
 
 export default function Home() {
   return (<HomeCont>

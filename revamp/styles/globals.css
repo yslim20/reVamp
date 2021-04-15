@@ -42,7 +42,8 @@ a {
 }
 
 .container{
-  max-width: 375px;
+  min-width: 375px;
+  min-height: 812px;
   margin: 0 auto;  
 }
 
@@ -52,7 +53,7 @@ a {
 }
 
 .header {
-  max-width: 375px;
+  min-width: 375px;
   min-height: 80px; 
   background-color: #CCE6F4;
 }
@@ -68,7 +69,7 @@ a {
 }
 
 .menu_container {
-  max-width: 375px;
+  min-width: 375px;
   min-height: 75px;
   background-color: #fff;
 }
