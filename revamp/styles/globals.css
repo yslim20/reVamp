@@ -1,35 +1,10 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-=======
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-=======
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap');
-
->>>>>>> main
->>>>>>> main
-html,
-body {
-  padding: 0;
-  margin: 0; */
-
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 html, body {
   padding: 0;
   margin: 0;
-<<<<<<< HEAD
   font-family: 'Montserrat', sans-serif;
-=======
-  font-family: 'Lexend Giga', sans-serif;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #F3F7FA;
-
->>>>>>> main
 }
 h2 {
   font-family: 'Lexend Giga', sans-serif;
@@ -38,8 +13,6 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
-<<<<<<< HEAD
-=======
 .icon:hover svg{
   fill: #FFE066;
 }
@@ -124,11 +97,7 @@ p {
   width: 154px;
   height: 55px;
 }
-<<<<<<< HEAD
 
 .reButtons {
   font-family: 'Montserrat', sans-serif;
 }
-=======
->>>>>>> main
->>>>>>> main
