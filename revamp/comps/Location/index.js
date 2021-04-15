@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 //import React from 'react';
 import styled from 'styled-components';
 import React, {useState} from 'react';
 import {locOptions} from '../../data/texts'; 
+=======
+import React from 'react';
+import styled from 'styled-components';
+import {useRouter} from 'next/router'
+//import locationIcon from '../../public/icon_location.svg';
+
+>>>>>>> 4cc949233366f89d6d1c1297d75a96d3733e24b9
 
 const LocationCont = styled.div`
   display: inline-flex;  
@@ -75,6 +83,7 @@ const Icon = styled.div`
   `
 
 const Location = ({
+<<<<<<< HEAD
   doTitle = "Location 1:",
   text = "Charitable Impact Vancouver, West End",
   marginB = 35  
@@ -84,15 +93,34 @@ const Location = ({
     
     <TextCont>
       <LocationTitle>{doTitle}</LocationTitle>    
+=======
+  title = "Location 1:",
+  text = "Charitable Impact Vancouver, West End",
+  marginB = 35
+}) => {
+
+  return <LocationCont marginB = {marginB}>
+    
+    <TextCont>
+      <LocationTitle>{title}</LocationTitle>    
+>>>>>>> 4cc949233366f89d6d1c1297d75a96d3733e24b9
       <LocationText>{text}</LocationText>
     </TextCont>
 
     <IconCont>
+<<<<<<< HEAD
       <IconA>
         <Icon>
           <LocationImg src="/icon_location.svg"/>
         </Icon>
         <Click >Click for more information</Click>
+=======
+      <IconA onClick={()=>router.push(routeTo)}>
+        <Icon>
+          <LocationImg src="/icon_location.svg"/>
+        </Icon>
+        <Click>Click for more information</Click>
+>>>>>>> 4cc949233366f89d6d1c1297d75a96d3733e24b9
       </IconA>
     </IconCont>
 

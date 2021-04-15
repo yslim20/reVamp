@@ -4,7 +4,10 @@ import Head from 'next/head'
 import SingleLocation from '../comps/SingleLocation';
 import styled from 'styled-components';
 import React, {useState} from 'react';
+<<<<<<< HEAD
 import {locOptions} from '../data/texts';
+=======
+>>>>>>> 4cc949233366f89d6d1c1297d75a96d3733e24b9
 
 const HomeCont = styled.div`
   .header{
@@ -37,7 +40,10 @@ const HomeCont = styled.div`
   }  
 `;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4cc949233366f89d6d1c1297d75a96d3733e24b9
 export default function Home() {
   return (<HomeCont>
     <Head>
