@@ -53,7 +53,7 @@ export default function Places(){
 
   //var location = location1;
 
-  if(places === "Location 1:"){
+  if(places === Location[0]){
     locTitle = locOptions.location1.locTitle,
     title = locOptions.location1.title,
     src = locOptions.location1.src,
@@ -63,7 +63,7 @@ export default function Places(){
     phone = locOptions.location1.phone    
   }
 
-  if(places === "Location 2:"){
+  if(places === Location[1]){
     locTitle = locOptions.location2.locTitle,
     title = locOptions.location2.title,
     src = locOptions.location2.src,
@@ -73,7 +73,7 @@ export default function Places(){
     phone = locOptions.location2.phone 
   }
 
-  if(places === "Location 3:"){
+  if(places === Location[2]){
     locTitle = locOptions.location3.locTitle,
     title = locOptions.location3.title,
     src = locOptions.location3.src,
