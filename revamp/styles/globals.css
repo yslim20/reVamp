@@ -87,16 +87,41 @@ p, button {
 
 /* HOME PAGE */
 .home_cont {
-  min-width: 375px;
-  min-height: 812px;
-  background-image: url("../public/homeBackground.gif");
-  /* background-size: 375px 812px; */
-  background-repeat: no-repeat;
-  background-position: 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  -webkit-background: radial-gradient(circle, #fff 35%, #E8F4FB 100%);
+  background: radial-gradient(circle, #fff 25%, #E8F4FB 100%);
+}
+
+.backG {
+  position: absolute;
+}
+
+.topL {
+  top: 0; left: 0;
+  max-width: 314px; max-height: 233px;
+  z-index: 2;
+}
+
+.topR {
+  top: 0; right: 0;
+  max-width: 112px; max-height: 126px;
+}
+
+.bttmL {
+  bottom: 0; left: 0;
+  max-width: 202px; max-height: 273px;
+  z-index: 2;
+}
+
+.bttmR {
+  bottom: 0; right: 0;
+  max-width: 280px; max-height: 344px;
 }
 
 .logo_cont {
   margin-bottom: 80px;
+  margin-top: 10px;
 }
 
 .logo {
@@ -110,8 +135,12 @@ p, button {
   height: 55px;
 }
 
-.reButtons {
+.ReButtons {
   font-family: 'Montserrat', sans-serif;
+}
+
+.button-index {
+  z-index: 5;
 }
 
 .subText {

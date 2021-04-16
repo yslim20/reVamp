@@ -26,7 +26,7 @@ const DRButton = ({
     size = "1em",
     onClick =() => {}
 }) => {
-    return <ButtonCont>
+    return <ButtonCont className = "button-index">
         <ButtonInput onClick = {onClick} bg={bgcolor} bdr={border} shadow ={shadow} size = {size} className="ReButtons">
             {text}
         </ButtonInput>

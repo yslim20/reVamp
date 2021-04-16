@@ -16,8 +16,13 @@ export default function Home() {
     <Head>
       <title className = "title">reVamp</title>
     </Head>
+    
+    <div className="container home_cont flex_col"> 
 
-    <div className="container home_cont flex_col">
+      <img className = "backG topL" src = "/Index_01_TopL.svg" alt = "background image" />
+      <img className = "backG topR" src = "/Index_02_TopR.svg" alt = "background image" />
+      <img className = "backG bttmL" src = "/Index_03_BttmL.svg" alt = "background image" />
+      <img className = "backG bttmR" src = "/Index_04_BttmR.svg" alt = "background image" />     
 
       <div className="logo_cont flex_col">          
           <img className = "logo" src = "/homeLogo.svg" alt = "logo" />
