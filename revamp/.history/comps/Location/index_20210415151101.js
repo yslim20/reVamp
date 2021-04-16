@@ -77,8 +77,7 @@ const Icon = styled.div`
 const Location = ({
   doTitle = "Location 1:",
   text = "Charitable Impact Vancouver, West End",
-  marginB = 35,
-  onClick = () => {}
+  marginB = 35  
 }) => {
   
   return <LocationCont marginB = {marginB}>
@@ -93,7 +92,7 @@ const Location = ({
         <Icon>
           <LocationImg src="/icon_location.svg"/>
         </Icon>
-        <Click  onClick = {onClick}>Click for more information</Click>
+        <Click >Click for more information</Click>
       </IconA>
     </IconCont>
 

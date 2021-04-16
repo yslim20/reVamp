@@ -2,8 +2,12 @@ import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 
 import Location from '../comps/Location';
+//import Location from '../comps/Location';
+
 import styled from 'styled-components';
 import React, {useState} from 'react';
+import {useRouter} from 'next/router';
+//import Places from 'pages/location';
 
 const HomeCont = styled.div`
   .header{
@@ -32,7 +36,11 @@ const HomeCont = styled.div`
   }
 `;
 
-export default function Home() {
+export default function Home() {  
+
+  const router = useRouter();
+  const {places} = router.query;
+
   return (<HomeCont>
     <Head>
       <title className = "title">Donate</title>
@@ -50,9 +58,15 @@ export default function Home() {
           </div>
 
           <div className = "options_cont flex_col">
-            <Location></Location>
-            <Location title="Location 2:" text = "Wildlife Thrift Store Downtown Vancouver" ></Location>
-            <Location title="Location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" marginB = "0"></Location>
+            <Location 
+              onClick = {() => router.push("/location/places1")}
+            />
+            <Location doTitle="Location 2:" text = "Wildlife Thrift Store Downtown Vancouver" 
+              onClick = {() => router.push("/location/places2")}
+            />
+            <Location doTitle="Location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" marginB = "0"
+              onClick = {() => router.push("/location/places3")}
+            />
           </div>
         </div>        
       </div>
