@@ -33,11 +33,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/donate.js"
-    ],
-    "/location/[places]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/location/[places].js"
     ]
   },
   "ampFirstPages": []

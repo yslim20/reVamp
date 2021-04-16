@@ -49,8 +49,6 @@ export default function Places(){
   const router = useRouter();
   const {places} = router.query;
 
-  //var location = location1;
-
   if(places === "places1"){
     locTitle = locOptions.place1.locTitle,
     title = locOptions.place1.title,

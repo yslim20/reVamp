@@ -6,6 +6,11 @@ html, body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  background-color: #F3F7FA;
+}
+
 h2 {
   font-family: 'Lexend Giga', sans-serif;
 }
@@ -28,12 +33,16 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.25);
 }
 
 .fixedB {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 999;
+  box-shadow: 0px -2px 4px rgba(0,0,0,.25);
 }
 
 .container{
@@ -71,8 +80,8 @@ p {
 
 .margin-125 {
   margin-top: 125px;
-  margin-bottom: 120px;
-  /* margin-top: 80+45px/ margin-bottom: 75+45px */
+  margin-bottom: 95px;
+  /* margin-top: 80+45px/ margin-bottom: 75+20px */
 }
 
 /* HOME PAGE */
@@ -101,4 +110,10 @@ p {
 
 .reButtons {
   font-family: 'Montserrat', sans-serif;
+}
+
+.subText {
+  margin: 5px 0 30px;
+  font-size: 1em;
+  line-height: 1.5em;
 }
