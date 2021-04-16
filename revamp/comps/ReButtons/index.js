@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import {useRouter} from 'next/router';
+
 
 const ButtonCont = styled.div`
     margin: 15px 30px;
@@ -19,11 +21,13 @@ const ReButton = ({
     text="tops",
     src="/sweaters.svg",
     alt="top",
-    href="#"
+    href="#",
+    onClick=()=>{}
 }) => {
+    const router = useRouter();
     return <ButtonCont>
         <ButtonImg src={src} alt={alt}/>
-        <ButtonLink href={href}>
+        <ButtonLink href={href} onClick={onClick}>
             {text}
         </ButtonLink>
     </ButtonCont>

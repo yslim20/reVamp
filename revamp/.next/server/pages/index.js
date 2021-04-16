@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\Users\\irene\\Desktop\\MDIA2109 Dynamic Content\\Final\\revamp\\revamp\\comps\\SingleLocation\\index.js";
+var _jsxFileName = "C:\\Users\\monta\\Documents\\BCITFILES\\MDIA2109\\revampcomps\\revamp\\revamp\\comps\\SingleLocation\\index.js";
 
 
 
@@ -251,7 +251,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _comps_SingleLocation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../comps/SingleLocation */ "./comps/SingleLocation/index.js");
 
-var _jsxFileName = "C:\\Users\\irene\\Desktop\\MDIA2109 Dynamic Content\\Final\\revamp\\revamp\\pages\\index.js";
+var _jsxFileName = "C:\\Users\\monta\\Documents\\BCITFILES\\MDIA2109\\revampcomps\\revamp\\revamp\\pages\\index.js";
 
 
 
