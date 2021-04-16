@@ -34,11 +34,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/donate.js"
     ],
-    "/infographic": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/infographic.js"
-    ],
     "/recycle": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

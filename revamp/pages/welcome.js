@@ -44,10 +44,6 @@ const HomeCont = styled.div`
 
 export default function Home() {
 
-  const onHandleSkip = () => {
-
-  }
-
   const router = useRouter();
   const {places} = router.query;
 

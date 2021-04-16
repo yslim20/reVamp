@@ -120,7 +120,7 @@ p, button {
   line-height: 1.5em;
 }
 
-.welcome_sub {
+.welcome_sub, .recycle_sub {
   max-width: 270px;
   text-align: center;
   margin: 60px 0;
@@ -139,4 +139,9 @@ p, button {
   font-size: 1em;  
   font-weight: 300;
   color: #14455A;
+}
+
+.recycle_sub {
+  font-size: 2em;
+  font-weight: 300;
 }

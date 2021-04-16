@@ -4,9 +4,11 @@ import Background from '../comps/Background';
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
+import DRButton from '../comps/DRButtons';
 
 import styled from 'styled-components';
 import React, {useState} from 'react';
+import {useRouter} from 'next/router';
 
 const HomeCont = styled.div`
   .header{
@@ -41,6 +43,8 @@ const HomeCont = styled.div`
 
 export default function Home() {
 
+  const router = useRouter();
+  const {places} = router.query;
 
   return (<HomeCont>
     <Head>
@@ -55,7 +59,23 @@ export default function Home() {
       <div className="welcome margin-125">   
         <div className = "inner_container flex_col">
           <Background />
-          <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          
+
+          <Header text = "welcome!" h2Size = "2.5em"></Header>
+          <div className = "recycle_sub">
+            choose how <br/> you would like to recycle your clothing
+          </div>
+
+          <div className = "butCont">
+            <DRButton 
+              onClick = {() => router.push("donate")}
+              text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+            </DRButton>
+
+            <DRButton 
+              onClick = {() => router.push("repurpose")}
+              text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+            </DRButton>
+          </div>
 
         </div> 
       </div>
