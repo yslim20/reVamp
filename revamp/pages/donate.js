@@ -7,7 +7,6 @@ import Location from '../comps/Location';
 import styled from 'styled-components';
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
-import {locOptions} from '../data/texts'; 
 //import Places from 'pages/location';
 
 const HomeCont = styled.div`
@@ -60,13 +59,13 @@ export default function Home() {
 
           <div className = "options_cont flex_col">
             <Location 
-              onPlace1Click = {() => router.push("location/places1")}
+              onClick = {() => router.push("/location/places1")}
             />
             <Location doTitle="Location 2:" text = "Wildlife Thrift Store Downtown Vancouver" 
-              onPlace2Click = {() => router.push("/location/places2")}
+              onClick = {() => router.push("/location/places2")}
             />
             <Location doTitle="Location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" marginB = "0"
-              onPlace3Click = {() => router.push("/location/places3")}
+              onClick = {() => router.push("/location/places3")}
             />
           </div>
         </div>        

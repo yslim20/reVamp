@@ -12,7 +12,7 @@ export const locOptions = {
   place2: {
     locTitle: "Location 2",
     title: "wildlife thrift store",
-    src: "/image_map02.png",
+    src: "/image_map02.svg",
     address: "1295 Granville St, Vancouver, BC V6Z 1M5",
     day: "Daily",
     hours: "10am - 8pm",
@@ -22,7 +22,7 @@ export const locOptions = {
   place3: {
     locTitle: "Location 3",
     title: "the salvation army - belkin house",
-    src: "/image_map03.png",
+    src: "/image_map03.svg",
     address: "555 Homer St, Vancouver, BC V6B 1K8",
     day: "Daily",
     hours: "24 Hours",
