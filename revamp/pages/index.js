@@ -1,14 +1,11 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
-
 import styled from 'styled-components';
 import React, {useState} from 'react';
-
 import SingleLocation from '../comps/SingleLocation';
 
-const HomeCont = styled.div`
+const HomeCont = styled.div``;
   
-`;
+
 
 export default function Home() {
   return (<HomeCont>
@@ -29,4 +26,4 @@ export default function Home() {
 
   </HomeCont>
   )
-}
+};
