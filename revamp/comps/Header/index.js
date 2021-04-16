@@ -13,18 +13,21 @@ padding: 5px;
 const HeaderInput = styled.h2`
 font-family: 'Lexend Giga', sans-serif;
 color:#14455A;
-font-size: 2em;
-line-height: 1.5em;
+font-size: ${props => props.h2Size};
+line-height: ${props => props.h2LineH};
 text-align: center;
 margin: 0;
 `;
 
 const Header = ({
-text="hello world"
-
+    text="hello world",
+    h2Size = "2em",
+    h2LineH = "1.5em"
 }) =>{
     return <HeaderCont>
-        <HeaderInput>
+        <HeaderInput
+            h2Size = {h2Size} h2LineH = {h2LineH}
+        >
         {text}
         </HeaderInput>
         </HeaderCont>

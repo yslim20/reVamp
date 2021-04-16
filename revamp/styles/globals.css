@@ -14,8 +14,9 @@ body {
 h2 {
   font-family: 'Lexend Giga', sans-serif;
 }
-p {
+p, button {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
 }
 
 .icon:hover svg{
@@ -86,11 +87,12 @@ p {
 
 /* HOME PAGE */
 .home_cont {
-  width: 375px;
-  height: 812px;
+  min-width: 375px;
+  min-height: 812px;
   background-image: url("../public/homeBackground.gif");
-  background-size: cover;
+  /* background-size: 375px 812px; */
   background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .logo_cont {
@@ -116,4 +118,25 @@ p {
   margin: 5px 0 30px;
   font-size: 1em;
   line-height: 1.5em;
+}
+
+.welcome_sub {
+  max-width: 270px;
+  text-align: center;
+  margin: 60px 0;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+.skip {  
+  max-width: 170px;
+  margin: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.skipTxt {
+  font-size: 1em;  
+  font-weight: 300;
+  color: #14455A;
 }

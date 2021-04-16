@@ -3,5 +3,8 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/donate": "pages/donate.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/welcome": "pages/welcome.js",
+  "/infographic": "pages/infographic.js",
+  "/recycle": "pages/recycle.js"
 }

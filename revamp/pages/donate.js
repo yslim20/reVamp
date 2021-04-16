@@ -1,5 +1,4 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
 
 import Location from '../comps/Location';
 import Background from '../comps/Background';
