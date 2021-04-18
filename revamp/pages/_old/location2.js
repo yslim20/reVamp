@@ -1,7 +1,7 @@
 import Head from 'next/head'
 // import styles from '../styles/Home.module.css'
 
-import SingleLocation from '../../comps/SingleLocation';
+import SingleLocation from '../comps/SingleLocation';
 import styled from 'styled-components';
 import React, {useState} from 'react';
 
