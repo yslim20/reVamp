@@ -24,15 +24,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/donate": [
+    "/tops_beginner": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/donate.js"
+      "static/chunks/pages/tops_beginner.js"
     ],
-    "/location/[places]": [
+    "/tops_beginner/[tutorials]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/location/[places].js"
+      "static/chunks/pages/tops_beginner/[tutorials].js"
     ]
   },
   "ampFirstPages": []

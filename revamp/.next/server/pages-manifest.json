@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/donate": "pages/donate.js",
-  "/location/[places]": "pages/location/[places].js"
+  "/tops_beginner/[tutorials]": "pages/tops_beginner/[tutorials].js",
+  "/tops_beginner": "pages/tops_beginner.js"
 }
