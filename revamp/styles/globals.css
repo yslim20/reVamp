@@ -37,7 +37,8 @@ p {
 }
 
 .container{
-  max-width: 375px;
+  min-width: 375px;
+  min-height: 812px;
   margin: 0 auto;  
 }
 
@@ -47,7 +48,7 @@ p {
 }
 
 .header {
-  max-width: 375px;
+  min-width: 375px;
   min-height: 80px; 
   background-color: #CCE6F4;
 }
@@ -63,7 +64,7 @@ p {
 }
 
 .menu_container {
-  max-width: 375px;
+  min-width: 375px;
   min-height: 75px;
   background-color: #fff;
 }

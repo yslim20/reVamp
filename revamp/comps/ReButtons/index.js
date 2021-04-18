@@ -32,5 +32,3 @@ const ReButton = ({
         </ButtonLink>
     </ButtonCont>
 }
-
-export default ReButton;

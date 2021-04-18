@@ -1,8 +1,7 @@
-import React from 'react';
+//import React from 'react';
 import styled from 'styled-components';
-import {useRouter} from 'next/router'
-//import locationIcon from '../../public/icon_location.svg';
-
+import React, {useState} from 'react';
+import {locOptions} from '../../data/texts'; 
 
 const LocationCont = styled.div`
   display: inline-flex;  
@@ -76,24 +75,25 @@ const Icon = styled.div`
   `
 
 const Location = ({
-  title = "Location 1:",
+  doTitle = "Location 1:",
   text = "Charitable Impact Vancouver, West End",
-  marginB = 35
+  marginB = 35,
+  onClick = () => {}
 }) => {
-
+  
   return <LocationCont marginB = {marginB}>
     
     <TextCont>
-      <LocationTitle>{title}</LocationTitle>    
+      <LocationTitle>{doTitle}</LocationTitle>    
       <LocationText>{text}</LocationText>
     </TextCont>
 
     <IconCont>
-      <IconA onClick={()=>router.push(routeTo)}>
+      <IconA>
         <Icon>
           <LocationImg src="/icon_location.svg"/>
         </Icon>
-        <Click>Click for more information</Click>
+        <Click  onClick = {onClick}>Click for more information</Click>
       </IconA>
     </IconCont>
 
