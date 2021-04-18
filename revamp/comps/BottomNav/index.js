@@ -1,14 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
+
+const MainCont = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+    z-index: 999;
+    box-shadow: 0px -2px 4px rgba(0,0,0,.25);
+`;
 
 const BottomCont = styled.div`
 display: flex;
 justify-content: space-between;
+align-items: center; 
 color:#14455A;
 font-family: 'Lexend Giga', sans-serif;
 width: 375px;
 height: 75px;
-// box-shadow: 0px -2px 4px rgba(0,0,0,.25);
+background-color: white;
 margin: 0 auto;
 // margin-top: 200px;
 &>* {
@@ -26,6 +43,7 @@ width: 37px;
 height: 37px;
 margin-top: 10px;
 display: block;
+cursor: pointer;
 `
 
 const BackText = styled.p`
@@ -45,6 +63,7 @@ width: 37px;
 height: 37px;
 margin-top: 9px;
 display: block;
+cursor: pointer;
 `
 const HomeText = styled.p`
 font-family: 'Montserrat', sans-serif;
@@ -62,6 +81,7 @@ width: 37px;
 height: 37px;
 margin-top: 10px;
 display: block;
+cursor: pointer;
 `
 const UpText = styled.p`
 font-family: 'Montserrat', sans-serif;
@@ -71,22 +91,33 @@ margin-bottom: 10px;
 line-height: 5px;
 `
 
-const BottomNav = () => {
-    return <BottomCont>
-        
-        <BackCont>
-        <BackImg src="/back.svg" />
-        <BackText>back</BackText>
-        </BackCont>
-        <HomeCont>
-        <HomeImg src="/home.svg" />
-        <HomeText>home</HomeText>
-        </HomeCont>
-        <UpCont>
-        <UpImg src="/uparrow.svg" />
-        <UpText>top</UpText>
-        </UpCont>
+const BottomNav = ({
+    routeToHome="/recycle"
+}) => {
+    
+    const router = useRouter();
+    const scrollTop = () =>{
+        window.scrollTo({top: 0, behavior: 'smooth'});
+     };
+    return <MainCont>
+        <BottomCont>
+            <BackCont>
+                <BackImg src="/back.svg" onClick={()=>router.back()}/>
+                <BackText>back</BackText>
+            </BackCont>
+            <HomeCont>
+                <HomeImg src="/home.svg" onClick={()=>router.push(routeToHome)}/>
+                <HomeText>home</HomeText>
+            </HomeCont>
+            <UpCont>
+                <UpImg 
+                    src="/uparrow.svg" 
+                    className="scrollTop" 
+                    onClick={scrollTop} />
+                <UpText>top</UpText>
+                </UpCont>
         </BottomCont>
+    </MainCont>
 }
 
 export default BottomNav;

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
+import {useRouter} from 'next/router';
 
 const LinksCont = styled.div`
     // background-color: #bddbc5;
@@ -14,6 +15,8 @@ const Link = styled.a`
     text-decoration: none;
     color: #14455A;
     z-index: 3;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 `;
 const ColumnCont = styled.div`
     display: flex;
@@ -42,6 +45,8 @@ const SecLink = styled.a`
     color: #14455A;
     display: ${props=>props.display};
     margin-top: 12px;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 
     // background-color: #bdd7db;
 
@@ -69,6 +74,8 @@ const TrdLink = styled.a`
     text-decoration: none;
     color: #14455A;
     margin-top: 12px;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 `;
 const TrdArrowImg = styled.img`
     transform: ${props=>props.transform3};
@@ -96,7 +103,13 @@ const AdvMenuLink = ({
     src2="/down-arrow.svg",
     innertext1="tops diys",
     innertext2="bottoms diys",
+    // routing
+    routeToBTops="/beginnerTops",
+    routeToBBots="/beginnerBots",
+    routeToATops="/advancedTops",
+    routeToABots="/advancedBots",
 }) => {
+    const router = useRouter();
 
     const [menustate, setMenuState] = useState(false);
     const [disp, setDisplay] = useState(false);
@@ -186,11 +199,11 @@ const AdvMenuLink = ({
                     <SecMenuLinkCont
                             display3 = {display3}>
                         <ColumnCont>
-                            <SecLink>
-                                {/* tops diys */}
+                            <SecLink onClick={()=>router.push(routeToBTops)}>
+                                {/* beg. tops diys */}
                             {innertext1}</SecLink>
-                            <SecLink>
-                                {/* bots diys */}
+                            <SecLink onClick={()=>router.push(routeToBBots)}>
+                                {/* beg. bots diys */}
                             {innertext2}</SecLink>
                         </ColumnCont>
                     </SecMenuLinkCont>
@@ -221,10 +234,10 @@ const AdvMenuLink = ({
                     <TrdMenuLinkCont
                             display4 = {display4}>
                         <ColumnCont>
-                            <TrdLink>
+                            <TrdLink onClick={()=>router.push(routeToATops)}>
                                 {/* tops diys */}
                             {innertext1}</TrdLink>
-                            <TrdLink>
+                            <TrdLink onClick={()=>router.push(routeToABots)}>
                                 {/* bots diys */}
                             {innertext2}</TrdLink>
                         </ColumnCont>
