@@ -8,9 +8,9 @@ color:#14455A;
 font-family: 'Lexend Giga', sans-serif;
 width: 375px;
 height: 75px;
-box-shadow: 0px -2px 4px rgba(0,0,0,.25);
+// box-shadow: 0px -2px 4px rgba(0,0,0,.25);
 margin: 0 auto;
-margin-top: 200px;
+// margin-top: 200px;
 &>* {
     color: #50514F;
 }

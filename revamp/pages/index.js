@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import styled from 'styled-components';
 import React, {useState} from 'react';
 import SingleLocation from '../comps/SingleLocation';
@@ -27,3 +27,4 @@ export default function Home() {
   </HomeCont>
   )
 };
+

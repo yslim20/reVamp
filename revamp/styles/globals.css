@@ -6,11 +6,17 @@ html, body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+body {
+  background-color: #F3F7FA;
+}
+
 h2 {
   font-family: 'Lexend Giga', sans-serif;
 }
-p {
+p, button {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
 }
 
 .icon:hover svg{
@@ -28,12 +34,16 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.25);
 }
 
 .fixedB {
   position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 999;
+  box-shadow: 0px -2px 4px rgba(0,0,0,.25);
 }
 
 .container{
@@ -71,21 +81,47 @@ p {
 
 .margin-125 {
   margin-top: 125px;
-  margin-bottom: 120px;
-  /* margin-top: 80+45px/ margin-bottom: 75+45px */
+  margin-bottom: 95px;
+  /* margin-top: 80+45px/ margin-bottom: 75+20px */
 }
 
 /* HOME PAGE */
 .home_cont {
-  width: 375px;
-  height: 812px;
-  background-image: url("../public/homeBackground.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+  -webkit-background: radial-gradient(circle, #fff 35%, #E8F4FB 100%);
+  background: radial-gradient(circle, #fff 25%, #E8F4FB 100%);
+}
+
+.backG {
+  position: absolute;
+}
+
+.topL {
+  top: 0; left: 0;
+  max-width: 314px; max-height: 233px;
+  z-index: 2;
+}
+
+.topR {
+  top: 0; right: 0;
+  max-width: 112px; max-height: 126px;
+}
+
+.bttmL {
+  bottom: 0; left: 0;
+  max-width: 202px; max-height: 273px;
+  z-index: 2;
+}
+
+.bttmR {
+  bottom: 0; right: 0;
+  max-width: 280px; max-height: 344px;
 }
 
 .logo_cont {
   margin-bottom: 80px;
+  margin-top: 10px;
 }
 
 .logo {
@@ -99,6 +135,51 @@ p {
   height: 55px;
 }
 
-.reButtons {
+.ReButtons {
   font-family: 'Montserrat', sans-serif;
+}
+
+.button-index {
+  z-index: 5;
+}
+
+.subText {
+  margin: 5px 0 30px;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.welcome_sub, .recycle_sub {
+  max-width: 270px;
+  text-align: center;
+  margin: 60px 0;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+.skip {  
+  max-width: 170px;
+  margin: 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.skipTxt {
+  font-size: 1em;  
+  font-weight: 300;
+  color: #14455A;
+}
+
+.recycle_sub {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.sub_title_diy{
+  font-family: 'Lexend Giga', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #14455A;
+  margin-top:-10px;
+  margin-bottom: 20px;
 }
