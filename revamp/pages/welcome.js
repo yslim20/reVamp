@@ -1,9 +1,15 @@
 import Head from 'next/head'
-// import styles from '../styles/Home.module.css'
 
-import SingleLocation from '../comps/SingleLocation';
+import Background from '../comps/Background';
+import TopNav from '../comps/TopNav';
+import BottomNav from '../comps/BottomNav';
+import Header from '../comps/Header';
+import DRButton from '../comps/DRButtons';
+
 import styled from 'styled-components';
 import React, {useState} from 'react';
+import {useRouter} from 'next/router';
+import Link from 'next/link';
 
 const HomeCont = styled.div`
   .header{
@@ -37,6 +43,10 @@ const HomeCont = styled.div`
 `;
 
 export default function Home() {
+
+  const router = useRouter();
+  const {places} = router.query;
+
   return (<HomeCont>
     <Head>
       <title className = "title">Welcome</title>
@@ -44,16 +54,34 @@ export default function Home() {
 
     <div className="container flex_col">
       <div className = "header fixedT">
-        {/* hamberger menu */}
+        <TopNav></TopNav>
       </div>
 
-      <div className="welcome margin-125">       
-        <div></div> 
+      <div className="welcome flex_col">   
+        <div className = "inner_container flex_col">
+          <Background />
 
+          <Header text = "welcome!" h2Size = "2.5em"></Header>
+          <div className = "welcome_sub">
+            click the button below to learn about the impact of fast fashion on Sustainability.
+          </div>
+
+          <DRButton 
+            onClick = {() => router.push("infographic")}
+            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "sustainability Infographic" size = "1em">
+          </DRButton>
+
+
+          <div className = "skip">
+            <Link href ="/recycle">
+              <a className = "skipTxt">click here to skip to donate or repurpose</a>
+            </Link>            
+          </div>
+        </div> 
       </div>
 
       <div className = "menu_container fixedB">
-        {/* menu bar comes here */}
+        <BottomNav />
       </div>
     </div>
 
