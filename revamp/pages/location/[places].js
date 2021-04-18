@@ -1,4 +1,8 @@
 import Head from 'next/head'
+
+import Background from '../../comps/Background';
+import TopNav from '../../comps/TopNav';
+import BottomNav from '../../comps/BottomNav';
 import SingleLocation from '../../comps/SingleLocation';
 import styled from 'styled-components';
 import React, {useState} from 'react';
@@ -49,8 +53,6 @@ export default function Places(){
   const router = useRouter();
   const {places} = router.query;
 
-  //var location = location1;
-
   if(places === "places1"){
     locTitle = locOptions.place1.locTitle,
     title = locOptions.place1.title,
@@ -85,27 +87,31 @@ export default function Places(){
     <HomeCont>
       <Head>
         <title className = "title">{locTitle}</title>
-        {/* location title doesn't change */}
       </Head>
 
       <div className="container flex_col">
         <div className = "header fixedT">
-          {/* hamberger menu */}
+          <TopNav></TopNav>
         </div>
 
-        <div className="location margin-125">          
-            <SingleLocation className="singleLo"
-              title = {title}
-              src = {src}
-              address = {address}
-              day = {day}
-              hours = {hours}
-              phone = {phone}           
-            />
+        <div className="location flex_col"> 
+          <div className = "inner_container flex_col">
+
+            <Background />        
+              <SingleLocation className="singleLo"
+                title = {title}
+                src = {src}
+                address = {address}
+                day = {day}
+                hours = {hours}
+                phone = {phone}           
+              />
+
+          </div>
         </div>
 
         <div className = "menu_container fixedB ">
-          {/* menu bar comes here */}
+          <BottomNav />
         </div>
       </div>
     </HomeCont>

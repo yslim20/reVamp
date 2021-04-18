@@ -54,6 +54,7 @@ const IconA = styled.a`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `
 
 const Icon = styled.div`
@@ -93,7 +94,7 @@ const Location = ({
         <Icon>
           <LocationImg src="/icon_location.svg"/>
         </Icon>
-        <Click  onClick = {onClick}>Click for more information</Click>
+        <Click onClick = {onClick}>Click for more information</Click>
       </IconA>
     </IconCont>
 

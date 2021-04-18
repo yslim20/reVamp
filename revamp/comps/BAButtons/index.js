@@ -10,7 +10,8 @@ const ButtonCont = styled.div`
 `;
 const ButtonImg = styled.img`
     width: 105px;
-    margin: auto;
+    margin:${props => props.margin};
+    margin-bottom:${props => props.marginb};
 `;
 const ButtonInput = styled.button`
     background-color: ${props => props.bg};
@@ -20,7 +21,8 @@ const ButtonInput = styled.button`
     margin-top: 17px;
     padding: 10px 25px;
     border-radius: 20px;
-    border:${props => props.bdr}
+    border:${props => props.bdr};
+    cursor: pointer;
 `;
 
 const BAButton = ({
@@ -28,10 +30,12 @@ const BAButton = ({
     bgcolor="#CCE6F4",
     border="1px solid #247BA0",
     src="/beginner.svg",
-    alt="beginner"
+    alt="beginner",
+    margin="auto",
+    marginb="auto",
 }) => {
     return <ButtonCont>
-        <ButtonImg src={src} alt={alt} />
+        <ButtonImg src={src} alt={alt} margin={margin} marginb={marginb}/>
         <ButtonInput bg={bgcolor} bdr={border} className="ReButtons">
             {text}
         </ButtonInput>

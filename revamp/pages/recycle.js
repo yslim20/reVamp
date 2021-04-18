@@ -1,15 +1,14 @@
 import Head from 'next/head'
 
-import Location from '../comps/Location';
 import Background from '../comps/Background';
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
+import DRButton from '../comps/DRButtons';
 
 import styled from 'styled-components';
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
-
 
 const HomeCont = styled.div`
   .header{
@@ -25,60 +24,67 @@ const HomeCont = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
   }
-  
-  .location{
+
+  .locationCont{
     display: flex;      
     flex-direction: column;
     justify-contents: center;
     align-items: center;
-    padding: 10px;
-    flex: 1;
   }
+
+  .singleLo{
+    flex-direction: column;
+    justify-contents: center;
+    align-items: center;
+  }  
 `;
 
-export default function Home() {  
+export default function Home() {
 
   const router = useRouter();
   const {places} = router.query;
 
   return (<HomeCont>
     <Head>
-      <title className = "title">Donate</title>
+      <title className = "title">Recycle</title>
     </Head>
-    
+
     <div className="container flex_col">
       <div className = "header fixedT">
         <TopNav></TopNav>
       </div>
 
-      <div className="flex_col">
+      <div className="welcome flex_col">   
         <div className = "inner_container flex_col">
-
           <Background />
 
-            <Header text = "locations"></Header>
-            <p className = "subText">select a dropoff location</p>
+          <Header text = "welcome!" h2Size = "2.5em"></Header>
+          <div className = "recycle_sub">
+            choose how <br/> you would like to recycle your clothing
+          </div>
 
-            <div className = "flex_col">              
-              <Location 
-                onClick = {() => router.push("/location/places1")}
-              />
-              <Location doTitle="Location 2:" text = "Wildlife Thrift Store Downtown Vancouver" 
-                onClick = {() => router.push("/location/places2")}
-              />
-              <Location doTitle="Location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" marginB = "0"
-                onClick = {() => router.push("/location/places3")}
-              />
-            </div> 
-        </div>                
+          <div className = "butCont">
+            <DRButton 
+              onClick = {() => router.push("donate")}
+              text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+            </DRButton>
+
+            <DRButton 
+              onClick = {() => router.push("repurpose")}
+              text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+            </DRButton>
+          </div>
+
+        </div> 
       </div>
 
       <div className = "menu_container fixedB">
         <BottomNav />
       </div>
     </div>
+
   </HomeCont>
   )
 }

@@ -48,13 +48,11 @@ p, button {
 
 .container{
   min-width: 375px;
-  min-height: 812px;
-  margin: 0 auto;  
+  height: 100vh;
 }
 
 .inner_container {
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .header {
@@ -69,22 +67,21 @@ p, button {
   margin-bottom: 35px;
 }
 
-.options_cont {
-  width: 100%;
-}
-
 .menu_container {
   min-width: 375px;
   min-height: 75px;
   background-color: #fff;
 }
 
+<<<<<<< HEAD
 .margin-125 {
   margin-top: 125px;
   margin-bottom: 95px;
   /* margin-top: 80+45px/ margin-bottom: 75+20px */
 }
 
+=======
+>>>>>>> main
 /* HOME PAGE */
 .home_cont {
   min-width: 100vw;
@@ -173,6 +170,7 @@ p, button {
 .recycle_sub {
   font-size: 2em;
   font-weight: 300;
+<<<<<<< HEAD
 }
 
 .sub_title_diy{
@@ -182,4 +180,6 @@ p, button {
   color: #14455A;
   margin-top:-10px;
   margin-bottom: 20px;
+=======
+>>>>>>> main
 }
