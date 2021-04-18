@@ -78,9 +78,7 @@ export default function Home() {
         </div> 
       </div>
 
-      <div className = "menu_container fixedB">
         <BottomNav />
-      </div>
     </div>
 
   </HomeCont>

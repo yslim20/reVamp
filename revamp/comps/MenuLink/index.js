@@ -54,9 +54,9 @@ const MenuLink = ({
     alt="arrow",
     intext1="select a location",
     display="block",
-    onClick=()=>{}
+    routeToDonation="/donate",
 }) => {
-
+    const router = useRouter();
     const [menustate, setMenuState] = useState(false);
     const [disp, setDisplay] = useState(false);
     const [uparrow, setRotation] = useState(false);
@@ -91,7 +91,7 @@ const MenuLink = ({
 
                 <MenuLinkCont>
                     <SecLink display = {display}
-                        onClick={onClick}>
+                         onClick={()=>router.push(routeToDonation)}>
                         {intext1}
                     </SecLink>
                     

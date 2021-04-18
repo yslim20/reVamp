@@ -24,9 +24,7 @@ export default function Home() {
           <TopNav></TopNav>
             <Background />
   
-        <div className = "menu_container fixedB">
           <BottomNav />
-        </div>
       </div>
     </HomeCont>
     )

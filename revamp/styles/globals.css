@@ -73,11 +73,11 @@ p, button {
   width: 100%;
 }
 
-.menu_container {
+/* .menu_container {
   min-width: 375px;
   min-height: 75px;
   background-color: #fff;
-}
+} */
 
 .margin-125 {
   margin-top: 125px;
@@ -174,3 +174,14 @@ p, button {
   font-size: 2em;
   font-weight: 300;
 }
+
+/* 
+.scrollTop {
+  z-index: 1000;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+.scrollTop:hover{
+  opacity: 1;
+} */

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
+import {useRouter} from 'next/router';
 
 const LinksCont = styled.div`
     // background-color: #bddbc5;
@@ -102,8 +103,13 @@ const AdvMenuLink = ({
     src2="/down-arrow.svg",
     innertext1="tops diys",
     innertext2="bottoms diys",
-    onClick =() => {}
+    // routing
+    routeToBTops="/beginnerTops",
+    routeToBBots="/beginnerBots",
+    routeToATops="/advancedTops",
+    routeToABots="/advancedBots",
 }) => {
+    const router = useRouter();
 
     const [menustate, setMenuState] = useState(false);
     const [disp, setDisplay] = useState(false);
@@ -159,7 +165,7 @@ const AdvMenuLink = ({
       var transform3 = "";
       if(uparrow3) {transform3 = 'rotate(-180deg)';}
 
-      return <LinksCont onClick={onClick}>
+      return <LinksCont>
         <MenuLinkCont>
             {/* repurpose */}
             <Link onClick={HandleClick}>{text}
@@ -193,11 +199,11 @@ const AdvMenuLink = ({
                     <SecMenuLinkCont
                             display3 = {display3}>
                         <ColumnCont>
-                            <SecLink onClick={onClick}>
-                                {/* tops diys */}
+                            <SecLink onClick={()=>router.push(routeToBTops)}>
+                                {/* beg. tops diys */}
                             {innertext1}</SecLink>
-                            <SecLink onClick={onClick}>
-                                {/* bots diys */}
+                            <SecLink onClick={()=>router.push(routeToBBots)}>
+                                {/* beg. bots diys */}
                             {innertext2}</SecLink>
                         </ColumnCont>
                     </SecMenuLinkCont>
@@ -228,10 +234,10 @@ const AdvMenuLink = ({
                     <TrdMenuLinkCont
                             display4 = {display4}>
                         <ColumnCont>
-                            <TrdLink onClick={onClick}>
+                            <TrdLink onClick={()=>router.push(routeToATops)}>
                                 {/* tops diys */}
                             {innertext1}</TrdLink>
-                            <TrdLink onClick={onClick}>
+                            <TrdLink onClick={()=>router.push(routeToABots)}>
                                 {/* bots diys */}
                             {innertext2}</TrdLink>
                         </ColumnCont>

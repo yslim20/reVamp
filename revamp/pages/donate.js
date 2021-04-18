@@ -49,9 +49,7 @@ export default function Home() {
     </Head>
     
     <div className="container flex_col">
-      {/* <div className="header"> */}
         <TopNav></TopNav>
-      {/* </div> */}
         
 
       <div className="location  margin-125">
@@ -75,10 +73,7 @@ export default function Home() {
             </div> 
         </div>                
       </div>
-
-      <div className = "menu_container fixedB">
         <BottomNav />
-      </div>
     </div>
   </HomeCont>
   )

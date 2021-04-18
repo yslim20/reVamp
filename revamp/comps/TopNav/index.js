@@ -78,7 +78,6 @@ const SideMenuCont = styled.div`
 
 
 const TopNav = ({
-    // onClick =() => {}
 }) => {
     // onClick = {() => router.push("/location/places3")}
 

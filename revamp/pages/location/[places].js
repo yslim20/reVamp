@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
 import {locOptions} from '../../data/texts';
+import BottomNav from '../../comps/BottomNav';
 
 const HomeCont = styled.div`
   .header{
@@ -102,9 +103,7 @@ export default function Places(){
             />
         </div>
 
-        <div className = "menu_container fixedB ">
-          {/* menu bar comes here */}
-        </div>
+        <BottomNav/>
       </div>
     </HomeCont>
   </div>

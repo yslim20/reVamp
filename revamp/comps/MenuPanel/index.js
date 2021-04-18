@@ -8,7 +8,8 @@ const MainCont = styled.div`
     min-width: 375px;
     height: 100vh;
     display: flex;
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     flex-direction: row;
     
 `;
@@ -23,7 +24,8 @@ const PanelCont = styled.div`
 const ShadowCont = styled.div`
     // height: 730px;
     height: 100vh;
-    min-width: 75px;
+    // min-width: 75px;
+    // width: 100%;
     background-color: rgba(163,163,163,0.6);
 `;
 const ImgDecoCont = styled.div`
@@ -69,22 +71,20 @@ const ColumnCont = styled.div`
 
 
 const MenuPanel = ({
-    onLocationClick=()=>{},
-    onInfoClick=()=>{},
-    onAboutClick=()=>{},
+    routeToInfo="/infographic",
+    routeToAbout="/about",
 }) => {
+
+    const router = useRouter();
 
     return <MainCont> 
         <PanelCont>
             <MenuCont>
-                <MenuLink onClick={onLocationClick}/>
+                <MenuLink/>
                 <AdvMenuLink />
                 <ColumnCont>
-                    <Link onClick={onInfoClick}>info on <br/>sustainability</Link>
-                    <Link 
-                    // onClick={onAboutClick}
-                    routeTo="/infographic"
-                    >about us</Link>
+                    <Link onClick={()=>router.push(routeToInfo)}>info on <br/>sustainability</Link>
+                    <Link onClick={()=>router.push(routeToAbout)}>about us</Link>
                 </ColumnCont>
             </MenuCont>
             <ImgDecoCont>
