@@ -21,7 +21,8 @@ const ButtonInput = styled.button`
     margin-top: 17px;
     padding: 10px 25px;
     border-radius: 20px;
-    border:${props => props.bdr}
+    border:${props => props.bdr};
+    cursor: pointer;
 `;
 
 const BAButton = ({

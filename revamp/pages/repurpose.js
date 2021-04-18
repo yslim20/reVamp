@@ -4,6 +4,7 @@ import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import ReButton from '../comps/ReButtons';
 import Header from '../comps/Header';
+import {useRouter} from 'next/router';
 
 const ButtonCont = styled.div`
 display: flex;
@@ -13,14 +14,7 @@ margin-top: 100px;
 
 export default function Repurpose() {
 
-    const HandleTop = () =>{
-        
-    };
-
-    const HandlePants = () =>{
-        
-    };
-
+  const router = useRouter();
     return <div>
         <TopNav></TopNav>
         <Header text="what would you like to repurpose?"></Header>
@@ -29,13 +23,13 @@ export default function Repurpose() {
     text="tops"
     src="/sweaters.svg"
     alt="top"
-    onTopClick={HandleTop}
+    onClick={()=>router.push("/tops")}
     />
     <ReButton 
     text="pants"
     src="/pants.svg"
     alt="pant"
-    onPantsClick={HandlePants}
+    onClick={()=>router.push("/bottoms")}
     />
     </ButtonCont>
     <BottomNav></BottomNav>

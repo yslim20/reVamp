@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import TopNav from '../../comps/TopNav';
-import BottomNav from '../../comps/BottomNav';
+import TopNav from '../comps/TopNav';
+import BottomNav from '../comps/BottomNav';
 import ReButton from '../comps/ReButtons';
-import Header from '../../comps/Header';
-import BAButton from '../../comps/BAButtons';
+import Header from '../comps/Header';
+import BAButton from '../comps/BAButtons';
 import {useRouter} from 'next/router';
 
 const ButtonCont = styled.div`
