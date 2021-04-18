@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const BackgroundDiv = styled.div`
     min-width: 342px;
     min-height:600px;
+    height:100%;
     background-color: #fff;
     border-style: solid;
     border-color: #CCCCCC;
@@ -14,6 +15,7 @@ const BackgroundDiv = styled.div`
     z-index: -99;  
     padding: 20px; 
     box-sizing: border-box;
+    
 `;
 
 const Background = () =>{
