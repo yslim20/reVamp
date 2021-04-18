@@ -48,13 +48,11 @@ p, button {
 
 .container{
   min-width: 375px;
-  min-height: 812px;
-  margin: 0 auto;  
+  height: 100vh;
 }
 
 .inner_container {
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .header {
@@ -69,20 +67,10 @@ p, button {
   margin-bottom: 35px;
 }
 
-.options_cont {
-  width: 100%;
-}
-
 .menu_container {
   min-width: 375px;
   min-height: 75px;
   background-color: #fff;
-}
-
-.margin-125 {
-  margin-top: 125px;
-  margin-bottom: 95px;
-  /* margin-top: 80+45px/ margin-bottom: 75+20px */
 }
 
 /* HOME PAGE */

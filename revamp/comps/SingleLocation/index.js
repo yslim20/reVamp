@@ -22,6 +22,7 @@ const LocPageTitle = styled.h3`
   text-align: center;
   margin: 0;
   margin-bottom: 20px;  
+  margin-top: 25px; 
 `;
 
 const LocPageMap = styled.img`

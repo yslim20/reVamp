@@ -53,7 +53,7 @@ export default function Home() {
         <TopNav></TopNav>
       </div>
 
-      <div className="location  margin-125">
+      <div className="flex_col">
         <div className = "inner_container flex_col">
 
           <Background />
@@ -61,7 +61,7 @@ export default function Home() {
             <Header text = "locations"></Header>
             <p className = "subText">select a dropoff location</p>
 
-            <div className = "options_cont flex_col">              
+            <div className = "flex_col">              
               <Location 
                 onClick = {() => router.push("/location/places1")}
               />
