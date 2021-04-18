@@ -1,16 +1,30 @@
-import React from 'react'
+// import React from 'react'
 import styled from 'styled-components';
+import React, {useState} from 'react';
 
+
+const DIYMainCont = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+`;
 
 const DIYCont = styled.div `
     display: flex;
     flex-direction: column;
+    width: 295px;
+    
+    
 `;
 const DIYTitle = styled.h2`
     color: black;
     font-size: 22px;
     margin-bottom: 5px;
     font-weight: 400;
+    
+
 `;
 const DIYBigDiv = styled.div`
     display:flex;
@@ -20,6 +34,7 @@ const DIYBigDiv = styled.div`
     border-width: 1px;
     border-radius: 11px;
     width: 295px;
+  
 `;
 
 const DIYPic = styled.img`
@@ -48,21 +63,24 @@ const DIYStars = styled.img`
 
 //props
 const DIYs = ({
-    title="sweater beanie",
+    titleDIY="sweater beanie",
     picture="/sweater-beanie.svg",
-    stars="/4-star-level.svg"
+    stars="/4-star-level.svg",
+    onClick = () => {}
 }) =>{
 
-    return <DIYCont>
-        <DIYTitle>{title}</DIYTitle>
+    return <DIYMainCont>
+    <DIYCont>
+        <DIYTitle>{titleDIY}</DIYTitle>
         <DIYBigDiv>
-            <DIYPic src={picture}></DIYPic>
+            <DIYPic onClick = {onClick} src={picture}></DIYPic>
             <DIYSmallDiv>
                 <DIYTextLevel>Difficulty Level</DIYTextLevel>
                 <DIYStars src={stars}></DIYStars>
             </DIYSmallDiv>
         </DIYBigDiv>
     </DIYCont>
+    </DIYMainCont>
 
 }
 

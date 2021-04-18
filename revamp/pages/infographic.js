@@ -50,7 +50,7 @@ export default function Home() {
     <div className="container flex_col">
         <TopNav></TopNav>
 
-      <div className="welcome margin-125">   
+      <div className="welcome flex_col margin-125">   
         <div className = "inner_container flex_col">
           <Background />
           <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          

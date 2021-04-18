@@ -48,13 +48,11 @@ p, button {
 
 .container{
   min-width: 375px;
-  min-height: 812px;
-  margin: 0 auto;  
+  height: 100vh;
 }
 
 .inner_container {
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .header {
@@ -185,3 +183,12 @@ p, button {
 .scrollTop:hover{
   opacity: 1;
 } */
+
+.sub_title_diy{
+  font-family: 'Lexend Giga', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #14455A;
+  margin-top:-10px;
+  margin-bottom: 20px;
+}

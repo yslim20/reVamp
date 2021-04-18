@@ -54,7 +54,7 @@ export default function Home() {
     <div className="container flex_col">
         <TopNav></TopNav>
 
-      <div className="welcome margin-125">   
+      <div className="welcome flex_col">   
         <div className = "inner_container flex_col">
           <Background />
 

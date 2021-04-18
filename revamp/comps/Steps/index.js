@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const StepCont = styled.div`
 max-width: 290px;
-margin-left: 20px;
 padding-top:10px;
 `;
 

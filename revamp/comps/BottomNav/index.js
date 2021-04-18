@@ -27,6 +27,7 @@ width: 375px;
 height: 75px;
 background-color: white;
 margin: 0 auto;
+// margin-top: 200px;
 &>* {
     color: #50514F;
 }
