@@ -49,9 +49,8 @@ export default function Home() {
     </Head>
     
     <div className="container flex_col">
-      <div className = "header fixedT">
         <TopNav></TopNav>
-      </div>
+        
 
       <div className="flex_col">
         <div className = "inner_container flex_col">
@@ -74,10 +73,7 @@ export default function Home() {
             </div> 
         </div>                
       </div>
-
-      <div className = "menu_container fixedB">
         <BottomNav />
-      </div>
     </div>
   </HomeCont>
   )
