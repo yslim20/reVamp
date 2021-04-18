@@ -54,6 +54,7 @@ const IconA = styled.a`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `
 
 const Icon = styled.div`
