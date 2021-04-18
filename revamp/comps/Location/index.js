@@ -1,7 +1,6 @@
 //import React from 'react';
 import styled from 'styled-components';
 import React, {useState} from 'react';
-import {locOptions} from '../../data/texts'; 
 
 const LocationCont = styled.div`
   display: inline-flex;  
@@ -79,7 +78,7 @@ const Location = ({
   doTitle = "Location 1:",
   text = "Charitable Impact Vancouver, West End",
   marginB = 35,
-  onClick = () => {}
+  onClick = () => {}  
 }) => {
   
   return <LocationCont marginB = {marginB}>

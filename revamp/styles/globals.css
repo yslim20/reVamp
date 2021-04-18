@@ -67,10 +67,20 @@ p, button {
   margin-bottom: 35px;
 }
 
-.menu_container {
+.options_cont {
+  width: 100%;
+}
+
+/* .menu_container {
   min-width: 375px;
   min-height: 75px;
   background-color: #fff;
+} */
+
+.margin-125 {
+  margin-top: 125px;
+  margin-bottom: 95px;
+  /* margin-top: 80+45px/ margin-bottom: 75+20px */
 }
 
 /* HOME PAGE */
@@ -161,4 +171,24 @@ p, button {
 .recycle_sub {
   font-size: 2em;
   font-weight: 300;
+}
+
+/* 
+.scrollTop {
+  z-index: 1000;
+  cursor: pointer;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+.scrollTop:hover{
+  opacity: 1;
+} */
+
+.sub_title_diy{
+  font-family: 'Lexend Giga', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #14455A;
+  margin-top:-10px;
+  margin-bottom: 20px;
 }
