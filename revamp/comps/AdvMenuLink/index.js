@@ -14,6 +14,8 @@ const Link = styled.a`
     text-decoration: none;
     color: #14455A;
     z-index: 3;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 `;
 const ColumnCont = styled.div`
     display: flex;
@@ -42,6 +44,8 @@ const SecLink = styled.a`
     color: #14455A;
     display: ${props=>props.display};
     margin-top: 12px;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 
     // background-color: #bdd7db;
 
@@ -69,6 +73,8 @@ const TrdLink = styled.a`
     text-decoration: none;
     color: #14455A;
     margin-top: 12px;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 `;
 const TrdArrowImg = styled.img`
     transform: ${props=>props.transform3};
@@ -96,6 +102,7 @@ const AdvMenuLink = ({
     src2="/down-arrow.svg",
     innertext1="tops diys",
     innertext2="bottoms diys",
+    onClick =() => {}
 }) => {
 
     const [menustate, setMenuState] = useState(false);
@@ -152,7 +159,7 @@ const AdvMenuLink = ({
       var transform3 = "";
       if(uparrow3) {transform3 = 'rotate(-180deg)';}
 
-      return <LinksCont>
+      return <LinksCont onClick={onClick}>
         <MenuLinkCont>
             {/* repurpose */}
             <Link onClick={HandleClick}>{text}
@@ -186,10 +193,10 @@ const AdvMenuLink = ({
                     <SecMenuLinkCont
                             display3 = {display3}>
                         <ColumnCont>
-                            <SecLink>
+                            <SecLink onClick={onClick}>
                                 {/* tops diys */}
                             {innertext1}</SecLink>
-                            <SecLink>
+                            <SecLink onClick={onClick}>
                                 {/* bots diys */}
                             {innertext2}</SecLink>
                         </ColumnCont>
@@ -221,10 +228,10 @@ const AdvMenuLink = ({
                     <TrdMenuLinkCont
                             display4 = {display4}>
                         <ColumnCont>
-                            <TrdLink>
+                            <TrdLink onClick={onClick}>
                                 {/* tops diys */}
                             {innertext1}</TrdLink>
-                            <TrdLink>
+                            <TrdLink onClick={onClick}>
                                 {/* bots diys */}
                             {innertext2}</TrdLink>
                         </ColumnCont>

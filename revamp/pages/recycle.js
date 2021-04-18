@@ -52,9 +52,7 @@ export default function Home() {
     </Head>
 
     <div className="container flex_col">
-      <div className = "header fixedT">
         <TopNav></TopNav>
-      </div>
 
       <div className="welcome margin-125">   
         <div className = "inner_container flex_col">

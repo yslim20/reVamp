@@ -1,3 +1,4 @@
+import {useRouter} from 'next/router';
 import React, {useState} from 'react';
 import styled from "styled-components";
 
@@ -14,6 +15,8 @@ const Link = styled.a`
     text-decoration: none;
     color: #14455A;
     z-index: 3;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 `;
 const ArrowImg = styled.img`
     transform: ${props=>props.transform};
@@ -38,6 +41,8 @@ const SecLink = styled.a`
     color: #14455A;
     display: ${props=>props.display};
     margin-top: 12px;
+    font-size: 16px;
+    font-family: 'Lexend Giga';
 
     // background-color: #bdd7db;
 
@@ -49,7 +54,7 @@ const MenuLink = ({
     alt="arrow",
     intext1="select a location",
     display="block",
-    indexed="1"
+    onClick=()=>{}
 }) => {
 
     const [menustate, setMenuState] = useState(false);
@@ -86,8 +91,7 @@ const MenuLink = ({
 
                 <MenuLinkCont>
                     <SecLink display = {display}
-                        z-index = {indexed}
-                        >
+                        onClick={onClick}>
                         {intext1}
                     </SecLink>
                     

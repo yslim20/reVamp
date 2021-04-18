@@ -49,9 +49,10 @@ export default function Home() {
     </Head>
     
     <div className="container flex_col">
-      <div className = "header fixedT">
+      {/* <div className="header"> */}
         <TopNav></TopNav>
-      </div>
+      {/* </div> */}
+        
 
       <div className="location  margin-125">
         <div className = "inner_container flex_col">

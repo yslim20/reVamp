@@ -14,6 +14,9 @@ const BackgroundDiv = styled.div`
     z-index: -99;  
     padding: 20px; 
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
 
 const Background = () =>{
