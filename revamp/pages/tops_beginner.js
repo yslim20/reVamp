@@ -42,9 +42,20 @@ const beginnerTops =
         </Head>
     
         <div className="container flex_col">
-          <TopNav />
-          <Background contents={beginnerTops}></Background>
-        <BottomNav/>
+            <TopNav />
+            <Background>
+                <div className = "flex_col paddingB-40">
+                    <MainCont>
+                        <Header text="beginner"/>
+                        <div className="sub_title_diy">- tops DIYS -</div>
+                        <DIYs titleDIY="cat tent" picture="/Cat-Tent.svg" stars="/2-star-level.svg"/>
+                        <DIYs titleDIY="cropped sweater" picture="/Cropped-Sweater.svg" stars="/1-star-level.svg"
+                            onClick = {() => router.push("/tops_beginner/tutorials2")}/>
+                        <DIYs titleDIY="sweater pillow case" picture="/Sweater-Pillow.svg" stars="/2-star-level.svg"/>
+                    </MainCont>
+                </div>
+            </Background>
+            <BottomNav/>
         </div>
     </HomeCont>
 }

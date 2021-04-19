@@ -6,6 +6,7 @@ import BottomNav from '../comps/BottomNav';
 import ReButton from '../comps/ReButtons';
 import Header from '../comps/Header';
 import BAButton from '../comps/BAButtons';
+import Background from '../comps/Background';
 import {useRouter} from 'next/router';
 import Background from '../comps/Background';
 
@@ -45,12 +46,28 @@ export default function Repurpose() {
 
     <div className="container flex_col">
       <TopNav />
-      <Background contents = {topsContent}
-        padding = "60px 20px 100px 20px">
-
+      
+      <Background>
+        <div className = "flex_col">
+          <Header text="what is your skill level of crafting?"></Header>
+          <ButtonCont>
+          <BAButton 
+          text="beginner"
+          src="/beginner.svg"
+          margin="auto"
+          marginb="10px"
+          onClick={()=>router.push("/tops_beginner")}
+          />
+          <BAButton 
+          text="advanced"
+          src="/advanced.svg"
+          marginb="10px"
+          onClick={()=>router.push("/tops_advanced")}
+          />
+          </ButtonCont>
+        </div>
       </Background>
-    </div>
-        <BottomNav />
+      <BottomNav />
   </div>
   }
 
