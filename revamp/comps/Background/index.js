@@ -2,9 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 const BackgroundDiv = styled.div`
-    min-width: 342px;
+    min-width:342px;
     min-height:600px;
-    height:100%;
     background-color: #fff;
     border-style: solid;
     border-color: #CCCCCC;
@@ -18,11 +17,17 @@ const BackgroundDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; 
 `;
 
-const Background = () =>{
+const Background = ({
+    contents = "contents"
+}
+) =>{
 
-    return <BackgroundDiv />
+    return <BackgroundDiv>
+        {contents}
+    </BackgroundDiv>
 
 }
 

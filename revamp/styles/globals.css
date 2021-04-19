@@ -48,12 +48,12 @@ p, button {
 
 .container{
   min-width: 375px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
-.inner_container {
+/* .inner_container {
   width: 100%;
-}
+} */
 
 .header {
   min-width: 375px;
