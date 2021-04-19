@@ -28,8 +28,10 @@ const HomeCont = styled.div`
 
 export default function Home() {
 
-  const infographicPageContent = 
+  // the contents comes here
+  const /*contentsName comes here; same as background contentsName*/ anyName = 
   <div className = "flex_col">
+    {/* only this part changes: contents comes here */}
     <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          
   </div>
 
@@ -40,7 +42,7 @@ export default function Home() {
 
     <div className="container flex_col">
         <TopNav />
-        <Background contents = {infographicPageContent}>          
+        <Background contents = {/*anyName - contentsName comes here*/}>          
         </Background>
         <BottomNav />
     </div>
