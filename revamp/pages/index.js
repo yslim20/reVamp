@@ -12,7 +12,7 @@ export default function Home() {
   const router = useRouter();
   const {places} = router.query;
 
-  return (<HomeCont>
+  return <HomeCont>
     <Head>
       <title className = "title">reVamp</title>
     </Head>
@@ -34,8 +34,6 @@ export default function Home() {
       </DRButton>
 
     </div>
-
   </HomeCont>
-  )
 };
 

@@ -11,10 +11,12 @@ import BottomNav from '../comps/BottomNav';
 import styled from 'styled-components';
 
 const MainCont = styled.div`
+    // height: 80%;
     display:flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
+    padding: 5px;
 `;
 
 export default function Home() {
@@ -23,24 +25,23 @@ export default function Home() {
     const {tutorials} = router.query;
     
         return (
-        <div>
         
-            <div className = "header fixedT">
-                    <TopNav/>
-            </div>
-            <div className="margin-125">
+        <div className="container flex_col">
+            <TopNav></TopNav>
+
+            <div className="flex_col">
                 <MainCont>
                     <Header text="advanced"/>
-                    <div className="sub_title_diy">- pants DIYS -</div>
-            <DIYs title="one shoulder shirt" picture="/One-Shoulder-Shirt.svg" stars="/3-star-level.svg"/>
-            <DIYs />
-            <DIYs title="sweater slippers" picture="/Sweater-Slippers.svg" stars="5-star-level.svg"/>
-            <Background></Background>
-            </MainCont>
+                    <div className="sub_title_diy">-  DIYS -</div>
+                    <DIYs title="one shoulder shirt" picture="/One-Shoulder-Shirt.svg" stars="/3-star-level.svg"/>
+                    <DIYs />
+                    <DIYs title="sweater slippers" picture="/Sweater-Slippers.svg" stars="5-star-level.svg"/>
+                    <Background></Background>
+                </MainCont>
+            </div>
+            <div className = "menu_container fixedB">
+                <BottomNav/>
+            </div>
         </div>
-        <div className = "menu_container fixedB">
-            <BottomNav/>
-        </div>
-    </div>
     )
 }
