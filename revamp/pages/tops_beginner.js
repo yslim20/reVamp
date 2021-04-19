@@ -24,6 +24,17 @@ export default function Home() {
 
 const router = useRouter();
 const {tutorials} = router.query;
+const beginnerTops = 
+    <div className = "flex_col">
+        <MainCont>
+            <Header text="beginner"/>
+            <div className="sub_title_diy">- tops DIYS -</div>
+            <DIYs titleDIY="cat tent" picture="/Cat-Tent.svg" stars="/2-star-level.svg"/>
+            <DIYs titleDIY="cropped sweater" picture="/Cropped-Sweater.svg" stars="/1-star-level.svg"
+                onClick = {() => router.push("/tops_beginner/tutorials2")}/>
+            <DIYs titleDIY="sweater pillow case" picture="/Sweater-Pillow.svg" stars="/2-star-level.svg"/>
+        </MainCont>
+    </div>
 
     return <HomeCont>
         <Head>
@@ -32,19 +43,7 @@ const {tutorials} = router.query;
     
         <div className="container flex_col">
           <TopNav />
-          <div className="backgroundDiv">
-    
-            <div className = "flex_col">
-                <MainCont>
-                    <Header text="beginner"/>
-                    <div className="sub_title_diy">- tops DIYS -</div>
-                    <DIYs titleDIY="cat tent" picture="/Cat-Tent.svg" stars="/2-star-level.svg"/>
-                    <DIYs titleDIY="cropped sweater" picture="/Cropped-Sweater.svg" stars="/1-star-level.svg"
-                        onClick = {() => router.push("/tops_beginner/tutorials2")}/>
-                    <DIYs titleDIY="sweater pillow case" picture="/Sweater-Pillow.svg" stars="/2-star-level.svg"/>
-                </MainCont>
-            </div>
-        </div>
+          <Background contents={beginnerTops}></Background>
         <BottomNav/>
         </div>
     </HomeCont>

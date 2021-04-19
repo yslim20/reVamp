@@ -50,10 +50,32 @@ export default function Tutorials(){
     titleDIY = tutorialOptions.DIYs2.titleDIY;
     picture = tutorialOptions.DIYs2.picture;
     stars = tutorialOptions.DIYs2.stars;
-
-
-    
     }
+
+    const tutorialPageContents =
+        <div className = "flex_col">
+            <MainCont>
+            <DIYs
+                titleDIY={titleDIY}
+                picture={picture}
+                stars={stars}
+            />
+            <Steps
+                text={text}
+                boldtext={boldtext}
+                images={images}
+            />
+            {/* <Steps
+                text2={text2}
+                boldtext={boldtext}
+                images={images}
+            /> */}
+            <FinishedLook
+                title={title} 
+                picture={picture}  
+            />
+            </MainCont>
+        </div>
  
     return (
     <div> 
@@ -62,35 +84,13 @@ export default function Tutorials(){
         </Head>
 
         <div className="container flex_col">
-        <TopNav />
-        <div className="backgroundDiv">
-
-            <div className = "flex_col">
-                <MainCont>
-                <DIYs
-                    titleDIY={titleDIY}
-                    picture={picture}
-                    stars={stars}
-                />
-                <Steps
-                    text={text}
-                    boldtext={boldtext}
-                    images={images}
-                />
-                {/* <Steps
-                    text2={text2}
-                    boldtext={boldtext}
-                    images={images}
-                /> */}
-                <FinishedLook
-                    title={title} 
-                    picture={picture}  
-                />
-                </MainCont>
-                </div>
-                </div>
-                <BottomNav/>
-            </div>
+            <TopNav />
+            <Background 
+                contents={tutorialPageContents}
+                padding="30px 20px">
+            </Background>
+            <BottomNav/>
+        </div>
     </div>
 
     )

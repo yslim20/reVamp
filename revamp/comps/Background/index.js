@@ -12,20 +12,22 @@ const BackgroundDiv = styled.div`
     position: relative;    
     top: 110px;
     bottom: 110px;
-    padding: 40px 20px; 
+    padding: ${props=>props.padding};
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin-bottom: 210px;
 `;
 
 const Background = ({
-    contents = "contents"
+    contents = "contents",
+    padding = "40px 20px"
 }
 ) =>{
 
-    return <BackgroundDiv>
+    return <BackgroundDiv padding={padding}>
         {contents}
     </BackgroundDiv>
 

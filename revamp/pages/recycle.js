@@ -71,7 +71,9 @@ export default function Home() {
 
     <div className="container flex_col">
         <TopNav />
-        <Background contents = {recyclePageContent}>          
+        <Background 
+          contents = {recyclePageContent}
+          padding="60px 20px 100px 20px">          
         </Background>
         <BottomNav />
     </div>
