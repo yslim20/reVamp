@@ -27,18 +27,16 @@ const HomeCont = styled.div`
     align-items: center; 
   }
 
-  .locationCont{
+  .butCont {
     display: flex;      
-    flex-direction: column;
-    justify-contents: center;
+    flex-direction: row;
+    justify-contents: space-between;
     align-items: center;
   }
 
-  .singleLo{
-    flex-direction: column;
-    justify-contents: center;
-    align-items: center;
-  }  
+  .firstBtn {
+    margin-right: 10px;
+  }
 `;
 
 export default function Home() {
@@ -54,9 +52,9 @@ export default function Home() {
     </div>
 
     <div className = "butCont">
-      <DRButton 
+      <DRButton
         onClick = {() => router.push("donate")}
-        text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+        text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em" marginR = "15px">
       </DRButton>
 
       <DRButton 

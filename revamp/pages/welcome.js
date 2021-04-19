@@ -59,7 +59,6 @@ export default function Home() {
       shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "sustainability Infographic" size = "1em">
     </DRButton>
 
-
     <div className = "skip">
       <Link href ="/recycle">
         <a className = "skipTxt">click here to skip to donate or repurpose</a>

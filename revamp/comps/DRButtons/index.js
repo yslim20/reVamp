@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 
 const ButtonCont = styled.span`
-    margin: 15px;
+
 `;
 
 const ButtonInput = styled.button`
@@ -16,27 +16,30 @@ const ButtonInput = styled.button`
     border-radius: 20px;
     border:${props => props.bdr};
     box-shadow:${props => props.shadow};
-    font-size: ${props => props.size}
+    font-size: ${props => props.size};
+    margin-right: ${props => props.marginR}
 `;
 
 const DRButton = ({
+
     text="repurpose",
     bgcolor="#CCE6F4",
     border="1px solid #247BA0",
     shadow="",
     size = "1em",
+    marginR = "",
     onClick =() => {}
+
 }) => {
-    return <ButtonCont className = "button-index">
-        <ButtonInput 
+    return <ButtonInput 
             onClick = {onClick} 
             bg={bgcolor} bdr={border} 
             shadow ={shadow} 
             size = {size} 
-            className="ReButtons">
+            className="ReButtons"
+            marginR = {marginR}>
             {text}
         </ButtonInput>
-    </ButtonCont>
 }
 
 export default DRButton;
