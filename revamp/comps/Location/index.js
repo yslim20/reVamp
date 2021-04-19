@@ -10,6 +10,8 @@ const LocationCont = styled.div`
   &>* {
     color:#000;
   }
+  justify-content: center;
+  align-items: center;
 `;
 
 const TextCont = styled.div`

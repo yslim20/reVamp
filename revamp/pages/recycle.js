@@ -26,17 +26,6 @@ const HomeCont = styled.div`
     justify-content: center;
     align-items: center; 
   }
-
-  .butCont {
-    display: flex;      
-    flex-direction: row;
-    justify-contents: space-between;
-    align-items: center;
-  }
-
-  .firstBtn {
-    margin-right: 10px;
-  }
 `;
 
 export default function Home() {
@@ -51,7 +40,7 @@ export default function Home() {
       choose how <br/> you would like to recycle your clothing
     </div>
 
-    <div className = "butCont">
+    <div>
       <DRButton
         onClick = {() => router.push("donate")}
         text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em" marginR = "15px">

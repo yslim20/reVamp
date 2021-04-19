@@ -26,16 +26,7 @@ const HomeCont = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .location{
-    display: flex;      
-    flex-direction: column;
-    justify-contents: center;
-    align-items: center;
-    padding: 10px;
-    flex: 1;
-  }
+  } 
 `;
 
 export default function Home() {  

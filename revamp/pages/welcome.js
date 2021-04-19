@@ -27,19 +27,6 @@ const HomeCont = styled.div`
     justify-content: center;
     align-items: center; 
   }
-
-  .locationCont{
-    display: flex;      
-    flex-direction: column;
-    justify-contents: center;
-    align-items: center;
-  }
-
-  .singleLo{
-    flex-direction: column;
-    justify-contents: center;
-    align-items: center;
-  }  
 `;
 
 export default function Home() {
@@ -67,7 +54,7 @@ export default function Home() {
   </div>
   
 
-  return (<HomeCont>
+  return <HomeCont>
     <Head>
       <title className = "title">Welcome</title>
     </Head>
@@ -79,5 +66,4 @@ export default function Home() {
         <BottomNav />
     </div>
   </HomeCont>
-  )
 }
