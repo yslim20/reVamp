@@ -80,7 +80,7 @@ const SingleLocation = ({
   return <LocPageCont> 
     <LocPageTitle>{title}</LocPageTitle>
 
-    <LocPageMap src={src}/>
+    <LocPageMap src={src} alt = "location map"/>
 
     <LocPageTextCont>
       <LocPageTextTit>
