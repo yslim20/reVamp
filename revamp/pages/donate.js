@@ -1,4 +1,4 @@
-
+import Head from 'next/head'
 
 import Location from '../comps/Location';
 import Background from '../comps/Background';

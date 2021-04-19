@@ -7,7 +7,6 @@ import ReButton from '../comps/ReButtons';
 import Background from '../comps/Background';
 import Header from '../comps/Header';
 import {useRouter} from 'next/router';
-import Background from '../comps/Background';
 
 const ButtonCont = styled.div`
 display: flex;
@@ -64,8 +63,7 @@ export default function Repurpose() {
         </div>
       </Background>        
       <BottomNav></BottomNav>
-    </Background>
-
     </div>
+  </div>
   }
 

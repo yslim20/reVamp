@@ -8,7 +8,6 @@ import Header from '../comps/Header';
 import BAButton from '../comps/BAButtons';
 import Background from '../comps/Background';
 import {useRouter} from 'next/router';
-import Background from '../comps/Background';
 
 const ButtonCont = styled.div`
 display: flex;

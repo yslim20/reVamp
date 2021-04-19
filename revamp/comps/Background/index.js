@@ -28,6 +28,7 @@ const Background = ({
 
     return <BackgroundDiv>
         {children}    
+    </BackgroundDiv>
 }
 
 export default Background;
