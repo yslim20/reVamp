@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import ReButton from '../comps/ReButtons';
+import Background from '../comps/Background';
 import Header from '../comps/Header';
 import {useRouter} from 'next/router';
 
@@ -22,26 +23,25 @@ export default function Repurpose() {
     </Head>
     <div className="container flex_col">
       <TopNav />
-      <div className="backgroundDiv">
-
-        <div className = "flex_col">
-        <Header text="what would you like to repurpose?"></Header>
-        <ButtonCont>
-        <ReButton
-        text="tops"
-        src="/sweaters.svg"
-        alt="top"
-        onClick={()=>router.push("/tops")}
-        />
-        <ReButton 
-        text="pants"
-        src="/pants.svg"
-        alt="pant"
-        onClick={()=>router.push("/bottoms")}
-        />
-        </ButtonCont>
+      <Background>
+        <div className = "flex_col paddingB-40">
+          <Header text="what would you like to repurpose?"></Header>
+          <ButtonCont>
+          <ReButton
+          text="tops"
+          src="/sweaters.svg"
+          alt="top"
+          onClick={()=>router.push("/tops")}
+          />
+          <ReButton 
+          text="pants"
+          src="/pants.svg"
+          alt="pant"
+          onClick={()=>router.push("/bottoms")}
+          />
+          </ButtonCont>
         </div>
-        </div>
+      </Background>        
     <BottomNav></BottomNav>
     </div>
     </div>

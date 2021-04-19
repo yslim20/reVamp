@@ -6,6 +6,7 @@ import BottomNav from '../comps/BottomNav';
 import ReButton from '../comps/ReButtons';
 import Header from '../comps/Header';
 import BAButton from '../comps/BAButtons';
+import Background from '../comps/Background';
 import {useRouter} from 'next/router';
 
 const ButtonCont = styled.div`
@@ -23,29 +24,30 @@ export default function Repurpose() {
 
     <div className="container flex_col">
       <TopNav />
-      <div className="backgroundDiv">
-
+      
+      <Background>
         <div className = "flex_col">
-            <Header text="what is your skill level of crafting?"></Header>
-            <ButtonCont>
-            <BAButton 
-            text="beginner"
-            src="/beginner.svg"
-            margin="auto"
-            marginb="10px"
-            onClick={()=>router.push("/tops_beginner")}
-            />
-            <BAButton 
-            text="advanced"
-            src="/advanced.svg"
-            marginb="10px"
-            onClick={()=>router.push("/tops_advanced")}
-            />
-            </ButtonCont>
+          <Header text="what is your skill level of crafting?"></Header>
+          <ButtonCont>
+          <BAButton 
+          text="beginner"
+          src="/beginner.svg"
+          margin="auto"
+          marginb="10px"
+          onClick={()=>router.push("/tops_beginner")}
+          />
+          <BAButton 
+          text="advanced"
+          src="/advanced.svg"
+          marginb="10px"
+          onClick={()=>router.push("/tops_advanced")}
+          />
+          </ButtonCont>
         </div>
-        </div>
-        <BottomNav />
-        </div>
+      </Background>
+
+      <BottomNav />
+      </div>
     </div>
   }
 

@@ -32,18 +32,18 @@ export default function Home() {
 
             <div className="container flex_col">
                 <TopNav />
-                <div className="backgroundDiv">
+                <Background>
 
-                <div className = "flex_col">
-                    <MainCont>
-                        <Header text="advanced"/>
-                        <div className="sub_title_diy">-  DIYS -</div>
-                        <DIYs title="one shoulder shirt" picture="/One-Shoulder-Shirt.svg" stars="/3-star-level.svg"/>
-                        <DIYs />
-                        <DIYs title="sweater slippers" picture="/Sweater-Slippers.svg" stars="5-star-level.svg"/>
-                    </MainCont>
-                </div>
-                </div>
+                    <div className = "flex_col paddingB-40">
+                        <MainCont>
+                            <Header text="advanced"/>
+                            <div className="sub_title_diy">-  DIYS -</div>
+                            <DIYs title="one shoulder shirt" picture="/One-Shoulder-Shirt.svg" stars="/3-star-level.svg"/>
+                            <DIYs />
+                            <DIYs title="sweater slippers" picture="/Sweater-Slippers.svg" stars="5-star-level.svg"/>
+                        </MainCont>
+                    </div>
+                </Background>
                 <BottomNav/>
             </div>
         </div>

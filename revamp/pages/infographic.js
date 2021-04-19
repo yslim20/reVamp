@@ -28,11 +28,6 @@ const HomeCont = styled.div`
 
 export default function Home() {
 
-  const infographicPageContent = 
-  <div className = "flex_col">
-    <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          
-  </div>
-
   return <HomeCont>
     <Head>
       <title className = "title">Welcome</title>
@@ -40,7 +35,10 @@ export default function Home() {
 
     <div className="container flex_col">
         <TopNav />
-        <Background contents = {infographicPageContent}>          
+        <Background>      
+          <div className = "flex_col">
+            <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          
+          </div>    
         </Background>
         <BottomNav />
     </div>

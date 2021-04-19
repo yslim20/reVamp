@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import styled from 'styled-components';
 
 const BackgroundDiv = styled.div`
@@ -21,12 +21,12 @@ const BackgroundDiv = styled.div`
 `;
 
 const Background = ({
-    contents = "contents"
+    children = null
 }
 ) =>{
 
     return <BackgroundDiv>
-        {contents}
+        {children}
     </BackgroundDiv>
 
 }

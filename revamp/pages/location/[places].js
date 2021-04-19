@@ -25,19 +25,6 @@ const HomeCont = styled.div`
     justify-content: center;
     align-items: center; 
   }
-
-  .locationCont{
-    display: flex;      
-    flex-direction: column;
-    justify-contents: center;
-    align-items: center;
-  }
-
-  .singleLo{
-    flex-direction: column;
-    justify-contents: center;
-    align-items: center;
-  }  
 `;
 
 export default function Places(){
@@ -83,18 +70,6 @@ export default function Places(){
     phone = locOptions.place3.phone 
   }
 
-  const locationPageContent = 
-    <div className = "flex_col">
-      <SingleLocation className="singleLo"
-        title = {title}
-        src = {src}
-        address = {address}
-        day = {day}
-        hours = {hours}
-        phone = {phone}           
-      />
-    </div>
-
   return <HomeCont>
   <Head>
   <title className = "title">{locTitle}</title>
@@ -102,7 +77,17 @@ export default function Places(){
 
   <div className="container flex_col">
       <TopNav />
-      <Background contents = {locationPageContent}>          
+      <Background>          
+        <div className = "flex_col">
+          <SingleLocation className="flex_col"
+            title = {title}
+            src = {src}
+            address = {address}
+            day = {day}
+            hours = {hours}
+            phone = {phone}           
+          />
+        </div>
       </Background>
       <BottomNav />
   </div>
