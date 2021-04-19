@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/tops_advanced": "pages/tops_advanced.js",
+  "/location/[places]": "pages/location/[places].js",
   "/welcome": "pages/welcome.js"
 }

@@ -8,7 +8,6 @@ import styled from 'styled-components';
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
 import {locOptions} from '../../data/texts';
-import BottomNav from '../../comps/BottomNav';
 
 const HomeCont = styled.div`
   .header{
@@ -52,7 +51,7 @@ export default function Places(){
   var phone=""; 
   
   const router = useRouter();
-  const {places} = router.query;
+  const {places} = router.query;  
 
   if(places === "places1"){
     locTitle = locOptions.place1.locTitle,
@@ -84,36 +83,29 @@ export default function Places(){
     phone = locOptions.place3.phone 
   }
 
-  return <div>
-    <HomeCont>
-      <Head>
-        <title className = "title">{locTitle}</title>
-      </Head>
+  const locationPageContent = 
+    <div className = "flex_col">
+      <SingleLocation className="singleLo"
+        title = {title}
+        src = {src}
+        address = {address}
+        day = {day}
+        hours = {hours}
+        phone = {phone}           
+      />
+    </div>
 
-      <div className="container flex_col">
-        <div className = "header fixedT">
-          <TopNav></TopNav>
-        </div>
+  return <HomeCont>
+  <Head>
+  <title className = "title">{locTitle}</title>
+  </Head>
 
-        <div className="location flex_col"> 
-          <div className = "inner_container flex_col">
-
-            <Background />        
-              <SingleLocation className="singleLo"
-                title = {title}
-                src = {src}
-                address = {address}
-                day = {day}
-                hours = {hours}
-                phone = {phone}           
-              />
-
-          </div>
-        </div>
-
-        <BottomNav/>
-      </div>
-    </HomeCont>
+  <div className="container flex_col">
+      <TopNav />
+      <Background contents = {locationPageContent}>          
+      </Background>
+      <BottomNav />
   </div>
+</HomeCont>
 }
 

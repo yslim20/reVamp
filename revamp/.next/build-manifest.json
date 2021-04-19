@@ -24,10 +24,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/tops_advanced": [
+    "/location/[places]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/tops_advanced.js"
+      "static/chunks/pages/location/[places].js"
     ],
     "/welcome": [
       "static/chunks/webpack.js",
