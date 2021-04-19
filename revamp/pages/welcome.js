@@ -48,7 +48,7 @@ export default function Home() {
   const {places} = router.query;
 
   const welcomePageContent = 
-  <div className = "flex_col">
+  <div className = "flex_col paddingB-40">
     <Header text = "welcome!" h2Size = "2.5em"></Header>
     <div className = "welcome_sub">
       click the button below to learn about the impact of fast fashion on Sustainability.

@@ -44,7 +44,7 @@ export default function Home() {
   const {places} = router.query;
   
   const donatePageContent = 
-  <div className = "flex_col">
+  <div className = "flex_col paddingB-40">
     <Header text = "locations"></Header>
     <p className = "subText">select a dropoff location</p>
 

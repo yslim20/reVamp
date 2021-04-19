@@ -58,6 +58,10 @@ p, button {
   padding-bottom: 100px;
 }
 
+.paddingB-40 {
+  padding-bottom: 40px;
+}
+
 /* .inner_container {
   width: 100%;
 } */

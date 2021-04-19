@@ -45,7 +45,7 @@ export default function Home() {
   const {places} = router.query;
 
   const recyclePageContent = 
-  <div className = "flex_col">
+  <div className = "flex_col paddingB-40">
     <Header text = "welcome!" h2Size = "2.5em"></Header>
     <div className = "recycle_sub">
       choose how <br/> you would like to recycle your clothing
