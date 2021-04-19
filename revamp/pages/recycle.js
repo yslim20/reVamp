@@ -44,36 +44,38 @@ const HomeCont = styled.div`
 export default function Home() {
 
   const router = useRouter();
+  const {places} = router.query;
 
-  return (<HomeCont>
+  const recyclePageContent = 
+  <div className = "flex_col">
+    <Header text = "welcome!" h2Size = "2.5em"></Header>
+    <div className = "recycle_sub">
+      choose how <br/> you would like to recycle your clothing
+    </div>
+
+    <div className = "butCont">
+      <DRButton 
+        onClick = {() => router.push("donate")}
+        text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+      </DRButton>
+
+      <DRButton 
+        onClick = {() => router.push("repurpose")}
+        text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+      </DRButton>
+    </div>
+  </div>
+
+  return <HomeCont>
     <Head>
       <title className = "title">Recycle</title>
     </Head>
 
     <div className="container flex_col">
         <TopNav />
-        <div className="backgroundDiv paddingBottom">
-          <div className = "flex_col">
-            <Header text = "welcome!" h2Size = "2.5em"></Header>
-            <div className = "recycle_sub">
-              choose how <br/> you would like to recycle your clothing
-            </div>
-
-            <div className = "butCont">
-              <DRButton 
-                onClick = {() => router.push("donate")}
-                text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
-              </DRButton>
-
-              <DRButton 
-                onClick = {() => router.push("repurpose")}
-                text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
-              </DRButton>
-            </div>
-          </div>
-        </div>
+        <Background contents = {recyclePageContent}>          
+        </Background>
         <BottomNav />
     </div>
   </HomeCont>
-  )
 }

@@ -46,7 +46,7 @@ export default function Home() {
     <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          
   </div>
 
-  return (<HomeCont>
+  return <HomeCont>
     <Head>
       <title className = "title">Welcome</title>
     </Head>
@@ -57,6 +57,5 @@ export default function Home() {
         </Background>
         <BottomNav />
     </div>
-  </HomeCont>
-  )
+  </HomeCont>  
 }

@@ -45,6 +45,27 @@ const HomeCont = styled.div`
 export default function Home() {
 
   const router = useRouter();
+  const {places} = router.query;
+
+  const welcomePageContent = 
+  <div className = "flex_col">
+    <Header text = "welcome!" h2Size = "2.5em"></Header>
+    <div className = "welcome_sub">
+      click the button below to learn about the impact of fast fashion on Sustainability.
+    </div>
+
+    <DRButton 
+      onClick = {() => router.push("infographic")}
+      shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "sustainability Infographic" size = "1em">
+    </DRButton>
+
+
+    <div className = "skip">
+      <Link href ="/recycle">
+        <a className = "skipTxt">click here to skip to donate or repurpose</a>
+      </Link>            
+    </div>
+  </div>
   
 
   return (<HomeCont>
@@ -52,30 +73,11 @@ export default function Home() {
       <title className = "title">Welcome</title>
     </Head>
 
-    <TopNav />
     <div className="container flex_col">
-      <div className="backgroundDiv paddingBottom">
-        <div className = "flex_col">
-          <Header text = "welcome!" h2Size = "2.5em"></Header>
-          <div className = "welcome_sub">
-            click the button below to learn about the impact of fast fashion on Sustainability.
-          </div>
-
-          <DRButton 
-            onClick = {() => router.push("/infographic")}
-            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "sustainability Infographic" size = "1em">
-          </DRButton>
-
-
-          <div className = "skip">
-            <Link href ="/recycle">
-              <a className = "skipTxt">click here to skip to donate or repurpose</a>
-            </Link>            
-          </div>
-        </div>
-      </div>
-
-      <BottomNav />
+        <TopNav />
+        <Background contents = {welcomePageContent}>          
+        </Background>
+        <BottomNav />
     </div>
   </HomeCont>
   )
