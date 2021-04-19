@@ -30,15 +30,15 @@ export default function Repurpose() {
         <TopNav></TopNav>
         <Header text="what would you like to repurpose?"></Header>
         <ButtonCont>
-    <ReButton
-    onTopClick={()=>router.push("/skills/tops")}
-    />
-    <ReButton
-    src="/pants.svg"
-    text="bottoms"
-    onTopClick={()=>router.push("/skills/bottoms")}
+        <ReButton
+        onTopClick={()=>router.push("/skills/tops")}
+        />
+        <ReButton
+        src="/pants.svg"
+        text="bottoms"
+        onTopClick={()=>router.push("/skills/bottoms")}
 
-    />
+        />
     </ButtonCont>
     <BottomNav></BottomNav>
     </div>
