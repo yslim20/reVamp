@@ -18,6 +18,7 @@ const BackgroundDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin-bottom: 210px;
 `;
 
 const Background = ({
@@ -26,9 +27,7 @@ const Background = ({
 ) =>{
 
     return <BackgroundDiv>
-        {children}
-    </BackgroundDiv>
-
+        {children}    
 }
 
 export default Background;

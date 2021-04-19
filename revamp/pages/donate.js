@@ -34,7 +34,6 @@ export default function Home() {
   const router = useRouter();
   const {places} = router.query;
   
-
   return <HomeCont>
     <Head>
       <title className = "title">Welcome</title>
@@ -42,6 +41,7 @@ export default function Home() {
 
     <div className="container flex_col">
       <TopNav />
+
       <Background>    
         <div className = "flex_col paddingB-40">
           <Header text = "locations"></Header>
@@ -58,7 +58,7 @@ export default function Home() {
               onClick = {() => router.push("/location/places3")}
             />
           </div> 
-        </div>      
+        </div> 
       </Background>
       <BottomNav />
     </div>
