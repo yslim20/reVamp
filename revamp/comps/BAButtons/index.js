@@ -33,10 +33,11 @@ const BAButton = ({
     alt="beginner",
     margin="auto",
     marginb="auto",
+    onClick=()=>{}
 }) => {
     return <ButtonCont>
         <ButtonImg src={src} alt={alt} margin={margin} marginb={marginb}/>
-        <ButtonInput bg={bgcolor} bdr={border} className="ReButtons">
+        <ButtonInput bg={bgcolor} bdr={border} className="ReButtons" onClick={onClick}>
             {text}
         </ButtonInput>
     </ButtonCont>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import MenuPanel from '../MenuPanel';
+import {useRouter} from 'next/router';
 
 const MainCont = styled.div`
     display: flex;
@@ -41,16 +42,18 @@ const HamMenu = styled.img`
     height: 32px;
     margin-left: 20px;
     margin: 25px;
+    cursor: pointer;
 `
 
 const LogoCont = styled.div`
-    margin-top:21px;
+    margin-top:15px;
     margin-left: 25px;
 `
 
 const Logo = styled.img`
     width: 44px;
     height: 35px;
+    cursor: pointer;
 `
 
 const Revamp = styled.p`
@@ -60,7 +63,7 @@ const Revamp = styled.p`
     text-align: center;
     margin-left: 10px;
     margin-right: 80px;
-
+    cursor: pointer;
 `
 const SideMenuCont = styled.div`
     position: relative;
@@ -78,8 +81,11 @@ const SideMenuCont = styled.div`
 
 
 const TopNav = ({
+    routeToHome="/recycle"
 }) => {
     // onClick = {() => router.push("/location/places3")}
+
+    const router = useRouter();
 
     const [menustate, setMenuState] = useState(false);
     const [opaque, setOpacity] = useState(false);
@@ -101,9 +107,9 @@ const TopNav = ({
         <TopCont>
             <HamMenu src="/hammenu.svg" onClick={HandleClick}/>
                 <LogoCont>
-                <Logo src="/fashionrecycle.svg"></Logo>
+                    <Logo src="/fashionrecycle.svg" onClick={()=>router.push(routeToHome)}></Logo>
                 </LogoCont>
-                <Revamp>reVamp</Revamp>
+                <Revamp onClick={()=>router.push(routeToHome)}>reVamp</Revamp>
         </TopCont>
     </TopNavCont>
     <SideMenuCont

@@ -63,6 +63,7 @@ const Link = styled.a`
     margin-top: 18px;
     font-size: 16px;
     font-family: 'Lexend Giga';
+    cursor: pointer;
 `;
 const ColumnCont = styled.div`
     display: flex;

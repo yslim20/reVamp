@@ -12,6 +12,7 @@ const ButtonInput = styled.button`
     max-width: 220px;
     min-height: 48px;
     padding: 14px 25px;
+    cursor: pointer;
     border-radius: 20px;
     border:${props => props.bdr};
     box-shadow:${props => props.shadow};
@@ -27,7 +28,12 @@ const DRButton = ({
     onClick =() => {}
 }) => {
     return <ButtonCont className = "button-index">
-        <ButtonInput onClick = {onClick} bg={bgcolor} bdr={border} shadow ={shadow} size = {size} className="ReButtons">
+        <ButtonInput 
+            onClick = {onClick} 
+            bg={bgcolor} bdr={border} 
+            shadow ={shadow} 
+            size = {size} 
+            className="ReButtons">
             {text}
         </ButtonInput>
     </ButtonCont>

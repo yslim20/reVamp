@@ -34,6 +34,7 @@ const DIYBigDiv = styled.div`
     border-width: 1px;
     border-radius: 11px;
     width: 295px;
+    cursor: pointer;
   
 `;
 

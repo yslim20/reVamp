@@ -17,6 +17,7 @@ const Link = styled.a`
     z-index: 3;
     font-size: 16px;
     font-family: 'Lexend Giga';
+    cursor: pointer;
 `;
 const ColumnCont = styled.div`
     display: flex;
@@ -47,6 +48,7 @@ const SecLink = styled.a`
     margin-top: 12px;
     font-size: 16px;
     font-family: 'Lexend Giga';
+    cursor: pointer;
 
     // background-color: #bdd7db;
 
@@ -76,6 +78,7 @@ const TrdLink = styled.a`
     margin-top: 12px;
     font-size: 16px;
     font-family: 'Lexend Giga';
+    cursor: pointer;
 `;
 const TrdArrowImg = styled.img`
     transform: ${props=>props.transform3};
@@ -104,10 +107,10 @@ const AdvMenuLink = ({
     innertext1="tops diys",
     innertext2="bottoms diys",
     // routing
-    routeToBTops="/beginnerTops",
-    routeToBBots="/beginnerBots",
-    routeToATops="/advancedTops",
-    routeToABots="/advancedBots",
+    routeToBTops="/tops_beginner",
+    routeToBBots="/bots_beginner",
+    routeToATops="/tops_advanced",
+    routeToABots="/bots_advanced"
 }) => {
     const router = useRouter();
 

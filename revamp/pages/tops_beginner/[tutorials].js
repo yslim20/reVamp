@@ -56,11 +56,16 @@ export default function Tutorials(){
     }
  
     return (
-    <div>
-        <div className = "header fixedT">
-                <TopNav/>
-        </div>
-        <div className="margin-125">
+    <div> 
+        <Head>
+        <title className = "title">Welcome</title>
+        </Head>
+
+        <div className="container flex_col">
+        <TopNav />
+        <div className="backgroundDiv">
+
+            <div className = "flex_col">
                 <MainCont>
                 <DIYs
                     titleDIY={titleDIY}
@@ -81,12 +86,11 @@ export default function Tutorials(){
                     title={title} 
                     picture={picture}  
                 />
-                <Background></Background>
                 </MainCont>
-            <div className = "menu_container fixedB">
+                </div>
+                </div>
                 <BottomNav/>
             </div>
-        </div>
     </div>
 
     )

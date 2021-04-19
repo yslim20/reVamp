@@ -17,6 +17,7 @@ const Link = styled.a`
     z-index: 3;
     font-size: 16px;
     font-family: 'Lexend Giga';
+    cursor: pointer;
 `;
 const ArrowImg = styled.img`
     transform: ${props=>props.transform};
@@ -43,6 +44,7 @@ const SecLink = styled.a`
     margin-top: 12px;
     font-size: 16px;
     font-family: 'Lexend Giga';
+    cursor: pointer;
 
     // background-color: #bdd7db;
 

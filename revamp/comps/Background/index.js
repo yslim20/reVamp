@@ -7,17 +7,17 @@ const BackgroundDiv = styled.div`
     background-color: #fff;
     border-style: solid;
     border-color: #CCCCCC;
-    border-width: 1px;
-    position: absolute;    
+    border-width: 1px;   
+    position: relative;
     top: 110px;
-    bottom: 110px;
     z-index: -99;  
-    padding: 20px; 
+    padding: 50px 20px 100px 20px; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
+    margin-bottom: 250px;
 `;
 
 const Background = ({
