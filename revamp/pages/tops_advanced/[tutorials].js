@@ -52,31 +52,6 @@ export default function Tutorials(){
     stars = tutorialOptions.DIYs2.stars;
     }
 
-    const tutorialPageContents =
-        <div className = "flex_col">
-            <MainCont>
-            <DIYs
-                titleDIY={titleDIY}
-                picture={picture}
-                stars={stars}
-            />
-            <Steps
-                text={text}
-                boldtext={boldtext}
-                images={images}
-            />
-            {/* <Steps
-                text2={text2}
-                boldtext={boldtext}
-                images={images}
-            /> */}
-            <FinishedLook
-                title={title} 
-                picture={picture}  
-            />
-            </MainCont>
-        </div>
- 
     return (
     <div> 
         <Head>
@@ -85,9 +60,30 @@ export default function Tutorials(){
 
         <div className="container flex_col">
             <TopNav />
-            <Background 
-                contents={tutorialPageContents}
-                padding="30px 20px">
+            <Background padding="40px 20px">
+                <div className = "flex_col">
+                    <MainCont>
+                    <DIYs
+                        titleDIY={titleDIY}
+                        picture={picture}
+                        stars={stars}
+                    />
+                    <Steps
+                        text={text}
+                        boldtext={boldtext}
+                        images={images}
+                    />
+                    {/* <Steps
+                        text2={text2}
+                        boldtext={boldtext}
+                        images={images}
+                    /> */}
+                    <FinishedLook
+                        title={title} 
+                        picture={picture}  
+                    />
+                    </MainCont>
+                </div>
             </Background>
             <BottomNav/>
         </div>

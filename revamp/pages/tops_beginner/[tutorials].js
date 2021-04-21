@@ -61,7 +61,7 @@ export default function Tutorials(){
 
         <div className="container flex_col">
             <TopNav />
-            <Background>
+            <Background padding="40px 20px">
 
                 <div className = "flex_col">
                     <MainCont>
