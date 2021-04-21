@@ -28,9 +28,9 @@ export default function Home() {
             <MainCont>
                 <Header text="advanced"/>
                 <div className="sub_title_diy">-  DIYS -</div>
-                <DIYs title="one shoulder shirt" picture="/One-Shoulder-Shirt.svg" stars="/3-star-level.svg"/>
-                <DIYs />
-                <DIYs title="sweater slippers" picture="/Sweater-Slippers.svg" stars="5-star-level.svg"/>
+                <DIYs titleDIY="one shoulder shirt" picture="/One-Shoulder-Shirt.svg" stars="/3-star-level.svg"/>
+                <DIYs onClick = {() => router.push("/tops_advanced/tutorials2")} />
+                <DIYs titleDIY="sweater slippers" picture="/Sweater-Slippers.svg" stars="5-star-level.svg"/>
             </MainCont>
         </div>
     
