@@ -93,7 +93,7 @@ const Location = ({
     <IconCont>
       <IconA>
         <Icon>
-          <LocationImg src="/icon_location.svg"/>
+          <LocationImg alt = "location icon" src="/icon_location.svg"/>
         </Icon>
         <Click onClick = {onClick}>Click for more information</Click>
       </IconA>
