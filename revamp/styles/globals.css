@@ -19,10 +19,6 @@ p, button {
   font-size: 1em;
 }
 
-.icon:hover svg{
-  fill: #FFE066;
-}
-
 .flex_col {
   display: flex;
   flex-direction: column;
@@ -217,4 +213,20 @@ p {
 }
 .margin-20{
   margin: 20px 0;
+}
+
+/* ICON HOVER */
+.icon {
+  background-image: url("/icon_location.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 68px 112px;
+}
+
+.icon:hover {
+  background-position: bottom center;
+}
+
+.icon:active {
+  background-position: bottom center;
 }
