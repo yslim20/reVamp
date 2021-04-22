@@ -1,44 +1,8 @@
 import Steps from '../comps/Steps';
 
 export const tutorialOptions = {
-    FinishedLook1: {
-        titleDIY:"cropped sweater",
-        stars: "/2-star-level.svg",  
-        picture:"/cropped-sweater.svg",
-        children: <ul>
-            <li>Fabric Glue</li>
-            <li>Fabric Scissors</li>
-            <li>Hoodi</li>
-            <li>Ruler</li>
-            <li>Pencil</li>
-        </ul>,
-        steps: <div>
-            <Steps
-                boldtext="Step 1: "
-                text= "Measure the bottom part of the hoodie to whatever length you want to crop to be then cut it with scissors."                      
-                images= "/step1_cropped_sweater.svg"
-            />
-            <Steps
-                boldtext="Step 2: "
-                text= "Measure the bottom part of the hoodie to whatever length you want to crop to be then cut it with scissors."                      
-                images= "/step2_cropped_sweater.svg"
-            />
-
-            <Steps
-                boldtext="Step 3: "
-                text= "Fold the edges of the sleave and iron the fold to keep it in place."                      
-                images= "/step3_cropped_sweater.svg"
-            />
-
-            <Steps
-                boldtext="Step 4: "
-                text= "Take your fabric glue and dab it along the inside edges of every fold, making sure that they securely stick down so you don't have to worry about the shorts or sleeves unfolding. Leave it to dry for a few hours and you're all set!"                      
-                images= "/step4_cropped_sweater.svg"
-            />         
-        </div>
-    },
     
-    FinishedLook2: {
+    FinishedLook1: {
         titleDIY:"cat tent",
         stars: "/2-star-level.svg",  
         picture:"/cat_tent.svg",
@@ -100,7 +64,43 @@ export const tutorialOptions = {
         />       
         </div>     
     },
+    
+    FinishedLook2: {
+        titleDIY:"cropped sweater",
+        stars: "/2-star-level.svg",  
+        picture:"/cropped-sweater.svg",
+        children: <ul>
+            <li>Fabric Glue</li>
+            <li>Fabric Scissors</li>
+            <li>Hoodi</li>
+            <li>Ruler</li>
+            <li>Pencil</li>
+        </ul>,
+        steps: <div>
+            <Steps
+                boldtext="Step 1: "
+                text= "Measure the bottom part of the hoodie to whatever length you want to crop to be then cut it with scissors."                      
+                images= "/step1_cropped_sweater.svg"
+            />
+            <Steps
+                boldtext="Step 2: "
+                text= "Measure the bottom part of the hoodie to whatever length you want to crop to be then cut it with scissors."                      
+                images= "/step2_cropped_sweater.svg"
+            />
 
+            <Steps
+                boldtext="Step 3: "
+                text= "Fold the edges of the sleave and iron the fold to keep it in place."                      
+                images= "/step3_cropped_sweater.svg"
+            />
+
+            <Steps
+                boldtext="Step 4: "
+                text= "Take your fabric glue and dab it along the inside edges of every fold, making sure that they securely stick down so you don't have to worry about the shorts or sleeves unfolding. Leave it to dry for a few hours and you're all set!"                      
+                images= "/step4_cropped_sweater.svg"
+            />         
+        </div>
+    },   
     
     FinishedLook3: {
         titleDIY:"sweater pillow case",
