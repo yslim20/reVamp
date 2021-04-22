@@ -15,16 +15,13 @@ const DIYCont = styled.div `
     display: flex;
     flex-direction: column;
     width: 295px;
-    
-    
 `;
 const DIYTitle = styled.h2`
-    color: black;
     font-size: 22px;
     margin-bottom: 5px;
     font-weight: 400;
-    
-
+    color: #50514F;
+    letter-spacing: ${props=>props.spacing}px;
 `;
 const DIYBigDiv = styled.div`
     display:flex;
@@ -35,7 +32,6 @@ const DIYBigDiv = styled.div`
     border-radius: 11px;
     width: 295px;
     cursor: pointer;
-  
 `;
 
 const DIYPic = styled.img`
@@ -60,19 +56,18 @@ const DIYStars = styled.img`
     height:20px;
 `;
 
-
-
 //props
 const DIYs = ({
     titleDIY="sweater beanie",
     picture="/sweater-beanie.svg",
     stars="/4-star-level.svg",
+    spacing="",
     onClick = () => {}
 }) =>{
 
     return <DIYMainCont>
     <DIYCont>
-        <DIYTitle>{titleDIY}</DIYTitle>
+        <DIYTitle spacing = {spacing}>{titleDIY}</DIYTitle>
         <DIYBigDiv>
             <DIYPic onClick = {onClick} src={picture}></DIYPic>
             <DIYSmallDiv>

@@ -17,7 +17,8 @@ const ButtonInput = styled.button`
     border:${props => props.bdr};
     box-shadow:${props => props.shadow};
     font-size: ${props => props.size};
-    margin-right: ${props => props.marginR}
+    margin-right: ${props => props.marginR};
+    z-index: ${props => props.zIndex};
 `;
 
 const DRButton = ({
@@ -28,6 +29,7 @@ const DRButton = ({
     shadow="",
     size = "1em",
     marginR = "",
+    zIndex = "",
     onClick =() => {}
 
 }) => {
@@ -36,6 +38,7 @@ const DRButton = ({
             bg={bgcolor} bdr={border} 
             shadow ={shadow} 
             size = {size} 
+            zIndex = {zIndex}
             className="ReButtons"
             marginR = {marginR}>
             {text}
