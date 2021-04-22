@@ -100,8 +100,7 @@ export const tutorialOptions = {
                 images= "/step4_cropped_sweater.svg"
             />         
         </div>
-    },  
-
+    },   
     
     FinishedLook3: {
         titleDIY:"sweater pillow case",
