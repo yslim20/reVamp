@@ -11,12 +11,52 @@ body {
   background-color: #F3F7FA;
 }
 
-h2 {
+h1, h2, h3, h4, h6, h6 {
   font-family: 'Lexend Giga', sans-serif;
 }
+
+h1 {
+  font-size: 48px;
+  color: #14455A;
+}
+
+h2 {
+  font-size: 32px;
+  color: #14455A;
+}
+
+h3 {
+  font-size: 26px;
+  color: #14455A;
+}
+
+h4 {
+  font-size: 22px;
+  color: #50514F;
+}
+
+h5 {
+  font-size: 20px;
+  color: #50514F;
+}
+
+h6 {
+  font-size: 18px;
+  color: #50514F;
+}
+
 p, button {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+li:before { 
+  content: "- " ;  
 }
 
 .flex_col {

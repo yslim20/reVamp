@@ -5,10 +5,10 @@ import {useRouter} from 'next/router';
 //importing comps
 import FinishedLook from '../../comps/FinishedLook';
 import DIYs from '../../comps/DIYs';
-import Steps from '../../comps/Steps';
 import TopNav from '../../comps/TopNav';
 import Background from '../../comps/Background';
 import BottomNav from '../../comps/BottomNav';
+import Materials from '../../comps/Materials';
 import {tutorialOptions} from '../../data/topsB_text';
 
 const MainCont = styled.div`
@@ -22,6 +22,7 @@ export default function Tutorials(){
 
     var title="";
     var picture="";
+    var children="";
 
     var text="";
     var boldtext="";
@@ -30,33 +31,66 @@ export default function Tutorials(){
     var titleDIY="";
     var picture="";
     var stars="";
+    var steps=""
 
 
     const router = useRouter();
     const {tutorials} = router.query;
  
+
+    if(tutorials === "tutorials1"){
+        title = tutorialOptions.FinishedLook1.title;
+        picture = tutorialOptions.FinishedLook1.picture;   
+
+        children = tutorialOptions.FinishedLook1.children;
+        steps = tutorialOptions.FinishedLook1.steps;
+
+        text = tutorialOptions.FinishedLook1.text;
+        boldtext = tutorialOptions.FinishedLook1.boldtext;
+        images = tutorialOptions.FinishedLook1.images;
+
+        titleDIY = tutorialOptions.FinishedLook1.titleDIY;
+        picture = tutorialOptions.FinishedLook1.picture;
+        stars = tutorialOptions.FinishedLook1.stars;
+    }
+
     if(tutorials === "tutorials2"){
-    title = tutorialOptions.FinishedLook2.title;
-    picture = tutorialOptions.FinishedLook2.picture;
+        title = tutorialOptions.FinishedLook2.title;
+        picture = tutorialOptions.FinishedLook2.picture;   
 
-    text = tutorialOptions.Steps2.text;
-    boldtext = tutorialOptions.Steps2.boldtext;
-    images = tutorialOptions.Steps2.images;
+        children = tutorialOptions.FinishedLook2.children;
+        steps = tutorialOptions.FinishedLook2.steps;
+
+        text = tutorialOptions.FinishedLook2.text;
+        boldtext = tutorialOptions.FinishedLook2.boldtext;
+        images = tutorialOptions.FinishedLook2.images;
+
+        titleDIY = tutorialOptions.FinishedLook2.titleDIY;
+        picture = tutorialOptions.FinishedLook2.picture;
+        stars = tutorialOptions.FinishedLook2.stars;
+    }
+
+    if(tutorials === "tutorials3"){
+        title = tutorialOptions.FinishedLook3.title;
+        picture = tutorialOptions.FinishedLook3.picture;   
     
-    // text2 = tutorialOptions.Steps2.text2;
-    // boldtext = tutorialOptions.Steps2.boldtext;
-    // images = tutorialOptions.Steps2.images;
-
-    titleDIY = tutorialOptions.DIYs2.titleDIY;
-    picture = tutorialOptions.DIYs2.picture;
-    stars = tutorialOptions.DIYs2.stars;
+        children = tutorialOptions.FinishedLook3.children;
+        steps = tutorialOptions.FinishedLook3.steps;
+    
+        text = tutorialOptions.FinishedLook3.text;
+        boldtext = tutorialOptions.FinishedLook3.boldtext;
+        images = tutorialOptions.FinishedLook3.images;
+    
+        titleDIY = tutorialOptions.FinishedLook3.titleDIY;
+        picture = tutorialOptions.FinishedLook3.picture;
+        stars = tutorialOptions.FinishedLook3.stars;
     }
 
  
     return (
     <div> 
         <Head>
-        <title className = "title">Welcome</title>
+        <title className = "title">Top Beginner - Tutorial</title>
         </Head>
 
         <div className="container flex_col">
@@ -70,16 +104,13 @@ export default function Tutorials(){
                         picture={picture}
                         stars={stars}
                     />
-                    <Steps
-                        text={text}
-                        boldtext={boldtext}
-                        images={images}
-                    />
-                    {/* <Steps
-                        text2={text2}
-                        boldtext={boldtext}
-                        images={images}
-                    /> */}
+
+                    <Materials>
+                        {children}
+                    </Materials>
+
+                    {steps}
+
                     <FinishedLook
                         title={title} 
                         picture={picture}  
