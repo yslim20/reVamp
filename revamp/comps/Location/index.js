@@ -60,14 +60,10 @@ const IconA = styled.a`
 
 const Icon = styled.div`
   width: 68px;
-  height: 56px;
-  margin-bottom: 10px;
+  height: 56px;  
+  margin-bottom: 10px;  
  `
-
- const LocationImg = styled.img`
-  display: block;  
- `
-
+ 
  const Click = styled.div`
   width: 100px;
   text-decoration: underline;
@@ -80,6 +76,7 @@ const Location = ({
   doTitle = "Location 1:",
   text = "Charitable Impact Vancouver, West End",
   marginB = 35,
+  className = "icon",  
   onClick = () => {}  
 }) => {
   
@@ -91,11 +88,10 @@ const Location = ({
     </TextCont>
 
     <IconCont>
-      <IconA>
-        <Icon>
-          <LocationImg alt = "location icon" src="/icon_location.svg"/>
+      <IconA onClick = {onClick}>
+        <Icon className = {className}>
         </Icon>
-        <Click onClick = {onClick}>Click for more information</Click>
+        <Click>Click for more information</Click>
       </IconA>
     </IconCont>
 

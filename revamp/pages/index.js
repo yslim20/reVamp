@@ -28,9 +28,9 @@ export default function Home() {
           <img className = "logo" src = "/homeLogo.svg" alt = "logo" />
       </div>
 
-      <DRButton 
+      <DRButton
         onClick = {() => router.push("welcome")}
-        shadow = "0px 2px 4px rgba(0,0,0,.25)" border = "none" text = "start" size = "1.25em">
+        shadow = "0px 2px 4px rgba(0,0,0,.25)" border = "none" text = "start" size = "1.25em" zIndex = "10">
       </DRButton>
 
     </div>
