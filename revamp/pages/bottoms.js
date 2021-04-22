@@ -28,7 +28,7 @@ export default function Repurpose() {
     <div className="container flex_col">
       <TopNav />
       
-      <Background padding="40px 20px 0px 20px">
+      <Background padding="40px 20px 40px 20px">
         <div className = "flex_col">
           <Header text="what is your skill level of crafting?"></Header>
           <ButtonCont>
@@ -37,13 +37,13 @@ export default function Repurpose() {
             src="/beginner.svg"
             margin="auto"
             marginb="10px"
-            onClick={()=>router.push("/tutorials_page/pants_beginner")}
+            onClick={()=>router.push("/tutorials_page/bottoms_beginner")}
           />
           <BAButton 
             text="advanced"
             src="/advanced.svg"
             marginb="10px"
-            onClick={()=>router.push("/tutorials_page/pants_advanced")}
+            onClick={()=>router.push("/tutorials_page/bottoms_advanced")}
           />
           </ButtonCont>
         </div>

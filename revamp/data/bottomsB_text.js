@@ -105,40 +105,57 @@ export const tutorialOptions = {
 
     
     FinishedLook3: {
-        titleDIY:"sweater pillow case",
+        titleDIY:"fabric basket",
         stars: "/2-star-level.svg",  
-        picture:"/sweater_pillow.svg",
+        picture:"/Fabric-Basket.svg",
         children: <ul>
-            <li>Sweater</li>
-            <li>Throw Pillow</li>
-            <li>Sewing Machine</li>
-            <li>Thread</li>
-            <li>Safety pins</li>
-            <li>Scissors</li>
-            <li>Pins</li>
-            <li>Needles</li>
-            <li>Chalk</li>
-            <li>Ruler</li>
+            <li>Jeans</li>
+            <li>Compass Drawing Tool</li>
+            <li>Hot Glue</li>
         </ul>,
 
         steps: <div>
         <Steps
             boldtext="Step 1: "
-            text= "Start by smoothing out and pinning together the two sides of the bottom hem. With a colored pencil or chalk, use a ruler or measuring tape to mark out a square. For the button pillow, we only needed to cut two sides of the sweater to create the right size square: the bottom hem forms the opening, and the right seam we left intact."                      
-            images= "/step1_sweater_pillow.svg"
+            text= "Cut 9 inches off the bottom of the jeans."                      
+            images= "/basket/basket_1.svg"
         />
         <Steps
             boldtext="Step 2: "
-            text= "Sew the seam you just marked on the two sides of the square and sew the seam you just marked on the two sides of the square. Finish the newly cut seam edges with a zig-zag or overlock stitch, to keep the sweater seam from unraveling."                      
-            images= "/step2_sweater_pillow.svg"
+            text= "Measure around the cuff to see how long it is (ex: in the image is 37cm)."                      
+            images= "/basket/basket_2.svg"
         />
 
         <Steps
             boldtext="Step 3: "
-            text= "Turn the pillow right-side out and remove the pins along the hem. Measure out and mark a spot for 4 equally spaced buttons along the inside edge hem of the sweater. Use a needle and thread to hand sew the buttons on. Mark the holes on the other side as well and cut them."                      
-            images= "/step3_sweater_pillow.svg"
-        />               
-        </div>     
+            text= "Take the length and divide it by 3.14 to find the radius of the circle."                      
+            images= "/basket/basket_3.svg"
+        />    
+
+        <Steps
+            boldtext="Step 4: "
+            text= "Use the compass tool to draw a circle with the radius you have (center to edge)."                      
+            images= "/basket/basket_4.svg"
+        /> 
+
+        <Steps
+            boldtext="Step 5: "
+            text= "Cut your circle out."                      
+            images= "/basket/basket_5.svg"
+        /> 
+
+        <Steps
+            boldtext="Step 6: "
+            text= "Turn the pants sleeve inside out, and grab the cutted side to fold 1 inch up to start gluing the pieces together."                      
+            images= "/basket/basket_6.svg"
+        /> 
+
+        <Steps
+            boldtext="Step 7: "
+            text= "Once you finish gluing, flip the piece to make the proper side flipped outwards. Roll the top part down 2 folds."                      
+            images= "/basket/basket_7.svg"
+        />            
+        </div>
     }    
 }
 
