@@ -15,6 +15,36 @@ const MainCont = styled.div`
     bottom: 0;
     z-index: 999;
     box-shadow: 0px -2px 4px rgba(0,0,0,.25);
+    
+    .icon1 {
+        background-image: url("/bot_nav/back_arrow.svg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 37px 74px;
+    }
+    .icon1:hover {
+        background-position: bottom center;
+    }
+
+    .icon2 {
+        background-image: url("/bot_nav/home_button.svg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 48px 74px;
+    }
+    .icon2:hover {
+        background-position: bottom center;
+    }
+
+    .icon3 {
+        background-image: url("/bot_nav/top_button.svg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 37px 74px;
+    }
+    .icon3:hover {
+        background-position: bottom center;
+    }
 `;
 
 const BottomCont = styled.div`
@@ -38,7 +68,7 @@ text-align: center;
 margin-left: 27px;
 `
 
-const BackImg = styled.img`
+const BackImg = styled.div`
 width: 37px;
 height: 37px;
 margin-top: 10px;
@@ -58,8 +88,8 @@ const HomeCont = styled.div`
 text-align: center;
 `
 
-const HomeImg = styled.img`
-width: 37px;
+const HomeImg = styled.div`
+width: 48px;
 height: 37px;
 margin-top: 9px;
 display: block;
@@ -76,7 +106,7 @@ const UpCont = styled.div`
 text-align: center;
 margin-right: 27px;
 `
-const UpImg = styled.img`
+const UpImg = styled.div`
 width: 37px;
 height: 37px;
 margin-top: 10px;
@@ -102,17 +132,23 @@ const BottomNav = ({
     return <MainCont>
         <BottomCont>
             <BackCont>
-                <BackImg src="/back.svg" onClick={()=>router.back()}/>
+                <BackImg 
+                    // src="/bot_nav/back_arrow.svg" 
+                    className="icon1"
+                    onClick={()=>router.back()}/>
                 <BackText>back</BackText>
             </BackCont>
             <HomeCont>
-                <HomeImg src="/home.svg" onClick={()=>router.push(routeToHome)}/>
+                <HomeImg 
+                    // src="/bot_nav/home_button.svg" 
+                    className="icon2"
+                    onClick={()=>router.push(routeToHome)}/>
                 <HomeText>home</HomeText>
             </HomeCont>
             <UpCont>
                 <UpImg 
-                    src="/uparrow.svg" 
-                    className="scrollTop" 
+                    // src="/bot_nav/top_button.svg" 
+                    className="scrollTop icon3" 
                     onClick={scrollTop} />
                 <UpText>top</UpText>
                 </UpCont>

@@ -108,9 +108,9 @@ const AdvMenuLink = ({
     innertext2="bottoms diys",
     // routing
     routeToBTops="/tops_beginner",
-    routeToBBots="/bots_beginner",
+    routeToBBots="/tutorials_page/pants_beginner",
     routeToATops="/tops_advanced",
-    routeToABots="/bots_advanced"
+    routeToABots="/tutorials_page/pants_advanced"
 }) => {
     const router = useRouter();
 
