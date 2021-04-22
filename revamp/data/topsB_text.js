@@ -67,7 +67,7 @@ export const tutorialOptions = {
     
     FinishedLook2: {
         titleDIY:"cropped sweater",
-        stars: "/2-star-level.svg",  
+        stars: "/1-star-level.svg",  
         picture:"/cropped-sweater.svg",
         children: <ul>
             <li>Fabric Glue</li>
