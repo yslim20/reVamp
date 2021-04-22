@@ -6,13 +6,6 @@ const StepCont = styled.div`
     padding-top:10px;
 `;
 
-const StepBold = styled.span`
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    display:inline;
-`;
-
 const StepReg = styled.p`
     width: 100%;    
     font-family: 'Montserrat', sans-serif;
@@ -22,29 +15,24 @@ const StepReg = styled.p`
     margin: 0;
     margin-bottom: ${props=>props.marginB}px;
 `;
-const StepImg = styled.div`
+const StepImg = styled.img`
     display: block;
     margin: 0 auto;
     margin-bottom: ${props=>props.marginB}px;
 `;
 
-
-const Steps = ({
+const ExtraStep = ({
     text="Introduce your cat to its new upcycled cat tent!",
-    boldtext="Step 10:",
+    images={images},
     marginB = 20,
-    images="/cattent.svg",
 }) => {
 
     return <StepCont>
         <StepReg marginB={marginB}>
-            <StepBold>{boldtext}</StepBold> 
             {text}
         </StepReg>
-        <StepImg>
-        {images !== null && <img src={images}/>}
-        </StepImg>
+        <StepImg src={images} marginB={marginB}/>
     </StepCont>
 }
 
-export default Steps;
+export default ExtraStep;
