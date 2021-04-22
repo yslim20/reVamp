@@ -31,7 +31,8 @@ export default function Tutorials(){
     var titleDIY="";
     var picture="";
     var stars="";
-    var steps=""
+    var steps="";
+    var spacing=""
 
 
     const router = useRouter();
@@ -40,6 +41,7 @@ export default function Tutorials(){
 
     if(tutorials === "tutorials1"){
         title = tutorialOptions.FinishedLook1.title;
+        spacing= tutorialOptions.FinishedLook1.spacing;
         picture = tutorialOptions.FinishedLook1.picture;   
 
         children = tutorialOptions.FinishedLook1.children;
@@ -56,6 +58,7 @@ export default function Tutorials(){
 
     if(tutorials === "tutorials2"){
         title = tutorialOptions.FinishedLook2.title;
+        spacing= tutorialOptions.FinishedLook2.spacing;
         picture = tutorialOptions.FinishedLook2.picture;   
 
         children = tutorialOptions.FinishedLook2.children;
@@ -72,6 +75,7 @@ export default function Tutorials(){
 
     if(tutorials === "tutorials3"){
         title = tutorialOptions.FinishedLook3.title;
+        spacing= tutorialOptions.FinishedLook3.spacing;
         picture = tutorialOptions.FinishedLook3.picture;   
     
         children = tutorialOptions.FinishedLook3.children;
@@ -103,6 +107,7 @@ export default function Tutorials(){
                         titleDIY={titleDIY}
                         picture={picture}
                         stars={stars}
+                        spacing={spacing}
                     />
 
                     <Materials>
