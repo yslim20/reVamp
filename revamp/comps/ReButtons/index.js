@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components";
 import {useRouter} from 'next/router';
 
-
 const ButtonCont = styled.div`
     margin: 15px 30px;
     display: flex;
@@ -15,6 +14,7 @@ const ButtonLink = styled.a`
 `;
 const ButtonImg = styled.img`
     height: 100px;
+    cursor: pointer;
 `;
 
 const ReButton = ({
@@ -22,12 +22,13 @@ const ReButton = ({
     src="/sweaters.svg",
     alt="top",
     href="#",
+    className="textHov",
     onClick=()=>{}
 }) => {
     const router = useRouter();
     return <ButtonCont>
-        <ButtonImg src={src} alt={alt}/>
-        <ButtonLink href={href} onClick={onClick}>
+        <ButtonImg src={src} alt={alt} onClick={onClick}/>
+        <ButtonLink href={href} onClick={onClick} className={className}>
             {text}
         </ButtonLink>
     </ButtonCont>
