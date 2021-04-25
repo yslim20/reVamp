@@ -2,7 +2,7 @@ import Steps from '../comps/Steps';
 
 export const tutorialOptions = {
     FinishedLook1: {
-        titleDIY:"distressed jeans (look 1)",
+        titleDIY:"ripped jeans",
         spacing: -3,
         stars: "/2-star-level.svg",  
         picture:"/distressed_jeans.svg",
@@ -41,64 +41,39 @@ export const tutorialOptions = {
     },
     
     FinishedLook2: {
-        titleDIY:"cat tent",
+        titleDIY:"patch-worked jeans",
         stars: "/2-star-level.svg",  
-        picture:"/cat_tent.svg",
+        picture:"/patched1.svg",
         children: <ul>
-            <li>A t-shirt</li>
-            <li>15″ x 15″ piece of cardboard</li>
-            <li>2 wire hangers</li>
-            <li>Masking tape</li>
-            <li>Safety pins</li>
-            <li>Pliers</li>
+            <li>1 Pair of ripped jeans</li>
+            <li>Extra denim scraps</li>
+            <li>Grosgrain fabric in a stripe or other fabric you want to add</li>
+            <li>Needle and contrast color thread</li>
+            <li>Pins</li>
         </ul>,
 
         steps: <div>
         <Steps
             boldtext="Step 1: "
-            text= "Cut the tops off of your hangers using pliers."                      
-            images= "/step1_cat_tent.svg"
+            text= "Lay your jeans out flat and measure your extra denim and fabric to make your patches. You will need patches for the inside of your jeans where the holes are and more decorative patches for the outside."                     
+            images= {null}
         />
         <Steps
             boldtext="Step 2: "
-            text= "Bend your cut wire hangers and shape them into curves. Reinforce your cardboard box by taping the edges with masking tape. If your cardboard has creases in it you can also tape over them to provide additional support."                      
-            images= "/step2_cat_tent.svg"
+            text= "Pin your patches on the inside of your jeans and using your needle and thread sew them on."
+            images= {null}                      
         />
 
         <Steps
             boldtext="Step 3: "
-            text= "Using your the edge of your hanger, poke holes in each corner of the cardboard. These holes should be around a half an inch in from the sides of the cardboard."                      
-            images= "/step3_cat_tent.svg"
+            text= "Lay your jeans flat and place all your patches on your jeans, overlapping them and mixing up the denim and other fabrics. Once you have all your patches where you want them, pin them to your jeans. I folded all the edges over before pinning mine, you can leave raw edges if you prefer, it just depends on how you want your jeans to look."                      
+            images= "/patched2.svg"
         />
 
         <Steps
             boldtext="Step 4: "
-            text= "Push the wires ends through the holes you’ve created in the corners. Using your pliers, bend the edges of the wire hangers down. Bend around an inch of the wire so that it sits flush against the bottom of the cardboard. Then tape this down to secure. This will protect your cat from sharp edges and allow the t-shirt to fit well without snagging."                      
-            images= "/step4_cat_tent.svg"
-        />  
-
-        <Steps
-            boldtext="Step 5: "
-            text= "Check to make sure everything is even. If necessary tweak the wire hangers with your pliers."                      
-            images= "/step5_cat_tent.svg"
-        /> 
-
-        <Steps
-            boldtext="Step 6: "
-            text= "Pull the t-shirt over the tent frame and position it so the hole is in the middle."                      
-            images= "/step6_cat_tent.svg"
-        /> 
-
-        <Steps
-            boldtext="Step 7: "
-            text= "Flip the tent over and fold the excess fabric over the bottom of the cardboard. Make sure the neck hole and sleeves are pulled taut. Then safety pin everything into place. Alternatively you could cut the t-shirt, but leaving it whole will make it easy to remove and wash it when need be."                      
-            images= "/step7_cat_tent.svg"
-        /> 
-
-        <Steps
-            boldtext="Step 8: "
-            text= "Introduce your cat to its new upcycled cat tent!"                      
-            images= "/step8_cat_tent.svg"
+            text= "Again using your needle and thread sew your patches to your jeans."                      
+            images= "/patched3.svg"
         />       
         </div>     
     },

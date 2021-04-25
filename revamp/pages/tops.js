@@ -36,12 +36,14 @@ export default function Repurpose() {
           margin="auto"
           marginb="10px"
           onClick={()=>router.push("/tops_beginner")}
+          className="buttonhov"
           />
           <BAButton 
           text="advanced"
           src="/advanced.svg"
           marginb="10px"
           onClick={()=>router.push("/tops_advanced")}
+          className="buttonhov"
           />
           </ButtonCont>
         </div>

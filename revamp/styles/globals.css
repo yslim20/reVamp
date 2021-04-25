@@ -270,3 +270,21 @@ p {
 .icon:active {
   background-position: bottom center;
 }
+
+/* BUTTON & TEXT HOVER */
+.ReButtons {
+  background-color: #CCE6F4;
+}
+
+.ReButtons:hover {
+background-color: #FFE066;
+border-color: #D2AB0E;
+}
+
+.skipTxt:hover {
+color: #247BA0;
+}
+
+.textHov:hover {
+  color: #247BA0;
+}

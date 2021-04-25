@@ -12,6 +12,7 @@ const ButtonImg = styled.img`
     width: 105px;
     margin:${props => props.margin};
     margin-bottom:${props => props.marginb};
+    max-height: 106px;
 `;
 const ButtonInput = styled.button`
     background-color: ${props => props.bg};
