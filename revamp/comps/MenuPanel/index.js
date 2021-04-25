@@ -6,9 +6,8 @@ import {useRouter} from 'next/router';
 
 const MainCont = styled.div`
     min-width: 375px;
-    height: 100vh;
+    height: 97vh;
     display: flex;
-    // position: absolute;
     position: fixed;
     flex-direction: row;
     
