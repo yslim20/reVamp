@@ -26,16 +26,16 @@ export const choiceOptions = {
         diyTitle1: "denim flowers",
         src1: "/Denim-Flower.svg",
         stars1: "/3-star-level.svg",
-        diyRoute1: "",
+        diyRoute1: "/bottom_advanced/tutorials1",
 
         diyTitle2: "resized jeans",
         src2: "/Resize-Your-Jeans.svg",
         stars2: "/4-star-level.svg",
-        diyRoute2: "",
+        diyRoute2: "/bottom_advanced/tutorials2",
         
         diyTitle3: "knee-length skirt",
         src3: "/Knee-Length-Skirt.svg",
         stars3: "/5-star-level.svg",
-        diyRoute3: "",
+        diyRoute3: "/bottom_advanced/tutorials3",
     }
 }

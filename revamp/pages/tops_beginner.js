@@ -37,10 +37,12 @@ const {tutorials} = router.query;
                     <MainCont>
                         <Header text="beginner"/>
                         <div className="sub_title_diy">- tops DIYS -</div>
-                        <DIYs titleDIY="cat tent" picture="/Cat-Tent.svg" stars="/2-star-level.svg"/>
+                        <DIYs titleDIY="cat tent" picture="/Cat-Tent.svg" stars="/2-star-level.svg"
+                            onClick = {() => router.push("/tops_beginner/tutorials1")}/>
                         <DIYs titleDIY="cropped sweater" picture="/Cropped-Sweater.svg" stars="/1-star-level.svg"
                             onClick = {() => router.push("/tops_beginner/tutorials2")}/>
-                        <DIYs titleDIY="sweater pillow case" picture="/Sweater-Pillow.svg" stars="/2-star-level.svg"/>
+                        <DIYs titleDIY="sweater pillow case" picture="/Sweater-Pillow.svg" stars="/2-star-level.svg"
+                            onClick = {() => router.push("/tops_beginner/tutorials3")}/>
                     </MainCont>
                 </div>
             </Background>
