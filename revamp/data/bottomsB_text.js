@@ -67,13 +67,13 @@ export const tutorialOptions = {
         <Steps
             boldtext="Step 3: "
             text= "Lay your jeans flat and place all your patches on your jeans, overlapping them and mixing up the denim and other fabrics. Once you have all your patches where you want them, pin them to your jeans. I folded all the edges over before pinning mine, you can leave raw edges if you prefer, it just depends on how you want your jeans to look."                      
-            images= "/patched2.svg"
+            images= "/patched3.svg"
         />
 
         <Steps
             boldtext="Step 4: "
             text= "Again using your needle and thread sew your patches to your jeans."                      
-            images= "/patched3.svg"
+            images= "/patched4.svg"
         />       
         </div>     
     },
