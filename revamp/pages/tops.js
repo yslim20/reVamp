@@ -17,26 +17,6 @@ margin-top: 100px;
 
 export default function Repurpose() {
     const router = useRouter();
-    const topsContent = 
-    
-    <div className = "flex_col">
-      <Header text="what is your skill level of crafting?"></Header>
-      <ButtonCont>
-      <BAButton 
-      text="beginner"
-      src="/beginner.svg"
-      margin="auto"
-      marginb="10px"
-      onClick={()=>router.push("/tops_beginner")}
-      />
-      <BAButton 
-      text="advanced"
-      src="/advanced.svg"
-      marginb="10px"
-      onClick={()=>router.push("/tops_advanced")}
-      />
-      </ButtonCont>
-    </div>
 
     return <div>
     <Head>
@@ -46,7 +26,7 @@ export default function Repurpose() {
     <div className="container flex_col">
       <TopNav />
       
-      <Background>
+      <Background padding="40px 20px">
         <div className = "flex_col">
           <Header text="what is your skill level of crafting?"></Header>
           <ButtonCont>

@@ -25,7 +25,7 @@ export default function Repurpose() {
     <div className="container flex_col">
       <TopNav />
 
-      <Background>
+      <Background padding="40px 20px">
         <div className = "flex_col paddingB-40">
           <Header text="what would you like to repurpose?"></Header>
           <ButtonCont>
@@ -36,7 +36,7 @@ export default function Repurpose() {
           onClick={()=>router.push("/tops")}
           />
           <ReButton 
-          text="pants"
+          text="bottoms"
           src="/pants.svg"
           alt="pant"
           onClick={()=>router.push("/bottoms")}

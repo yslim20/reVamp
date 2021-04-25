@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
-import ReButton from '../comps/ReButtons';
 import Header from '../comps/Header';
 import BAButton from '../comps/BAButtons';
 import Background from '../comps/Background';
@@ -17,22 +16,8 @@ margin-top: 100px;
 
 export default function Repurpose() {
 
-    const bottomsContent = 
-        <div className="flex_col">
-            <Header text="what is your skill level of crafting?"></Header>
-            <ButtonCont>
-            <BAButton 
-            text="beginner"
-            src="/beginner.svg"
-            margin="auto"
-            marginb="10px"
-            />
-            <BAButton 
-            text="advanced"
-            src="/advanced.svg"
-            marginb="10px"/>
-            </ButtonCont>
-        </div>
+  const router = useRouter();
+  const {choices} = router.query;
 
     return <div>
 
@@ -43,22 +28,22 @@ export default function Repurpose() {
     <div className="container flex_col">
       <TopNav />
       
-      <Background>
+      <Background padding="40px 20px 40px 20px">
         <div className = "flex_col">
           <Header text="what is your skill level of crafting?"></Header>
           <ButtonCont>
           <BAButton 
-          text="beginner"
-          src="/beginner.svg"
-          margin="auto"
-          marginb="10px"
-        //   onClick={()=>router.push("/bottoms_beginner")}
+            text="beginner"
+            src="/beginner.svg"
+            margin="auto"
+            marginb="10px"
+            onClick={()=>router.push("/tutorials_page/bottoms_beginner")}
           />
           <BAButton 
-          text="advanced"
-          src="/advanced.svg"
-          marginb="10px"
-        //   onClick={()=>router.push("/bottoms_advanced")}
+            text="advanced"
+            src="/advanced.svg"
+            marginb="10px"
+            onClick={()=>router.push("/tutorials_page/bottoms_advanced")}
           />
           </ButtonCont>
         </div>
