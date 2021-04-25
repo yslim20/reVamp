@@ -26,6 +26,7 @@ const StepImg = styled.div`
     display: block;
     margin: 0 auto;
     margin-bottom: ${props=>props.marginB}px;
+    text-align: center;
 `;
 
 
