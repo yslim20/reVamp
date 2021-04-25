@@ -7,6 +7,8 @@ import ReButton from '../comps/ReButtons';
 import Background from '../comps/Background';
 import Header from '../comps/Header';
 import {useRouter} from 'next/router';
+import BAButton from '../comps/BAButtons';
+
 
 const ButtonCont = styled.div`
 display: flex;
@@ -29,18 +31,21 @@ export default function Repurpose() {
         <div className = "flex_col paddingB-40">
           <Header text="what would you like to repurpose?"></Header>
           <ButtonCont>
-          <ReButton
-          text="tops"
-          src="/sweaters.svg"
-          alt="top"
-          onClick={()=>router.push("/tops")}
-          />
-          <ReButton 
-          text="pants"
-          src="/pants.svg"
-          alt="pant"
-          onClick={()=>router.push("/bottoms")}
-          />
+            <BAButton
+            text="tops"
+            src="/sweaters.svg"
+            alt="top"
+            onClick={()=>router.push("/tops")}
+            >
+            </BAButton>
+         
+            <BAButton
+            text="bottoms"
+            src="/pants.svg"
+            alt="pants"
+            onClick={()=>router.push("/bottoms")}
+            >
+            </BAButton>
           </ButtonCont>
         </div>
       </Background>        
