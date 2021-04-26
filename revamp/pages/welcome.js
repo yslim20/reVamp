@@ -53,7 +53,7 @@ export default function Home() {
 
             <DRButton 
               onClick = {() => router.push("infographic")}
-              shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "Get Started" size = "1em">
+              shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "Get Started" size = "1em" marginB = "20px">
             </DRButton>
 
             <div className = "skip">
