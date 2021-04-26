@@ -38,7 +38,7 @@ export default function Home() {
       <title className = "title">Recycle</title>
     </Head>
 
-    <div className="container flex_col">
+    <div className="container">
         <TopNav />
         <Background>    
           <div className = "flex_col paddingB-40">
@@ -46,18 +46,25 @@ export default function Home() {
             <div className = "recycle_sub">
               choose how <br/> you would like to recycle your clothing
             </div>
+            
+            <div className = "flex_row bttn_cont">
+              <div className = "flex_col marginR">
+                <img className = "donate_icon bttn_icon" src = "/icon_donate.svg" alt = "donate icon" />
+                <DRButton
+                  onClick = {() => router.push("donate")}
+                  text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+                </DRButton>
+              </div>
 
-            <div>
-              <DRButton
-                onClick = {() => router.push("donate")}
-                text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em" marginR = "15px">
-              </DRButton>
-
-              <DRButton 
-                onClick = {() => router.push("repurpose")}
-                text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
-              </DRButton>
+              <div className = "flex_col">
+                <img className = "repurpose_icon bttn_icon" src = "/icon_repurpose.svg" alt = "repurpose icon" />
+                <DRButton 
+                  onClick = {() => router.push("repurpose")}
+                  text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
+                </DRButton>
+              </div>
             </div>
+              
           </div> 
         </Background>
         <BottomNav />

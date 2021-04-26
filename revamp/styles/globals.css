@@ -70,6 +70,13 @@ img {
   align-items: center;
 }
 
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .fixedT {
   position: fixed;
   top: 0;
@@ -266,6 +273,16 @@ img {
   animation: rotating 2s linear infinite;
 }
 
+.bttn_icon{
+  margin: 0 auto;
+  width: 110px;
+  height: 115px;
+  margin-bottom: 20px;
+}
+
+.marginR {
+  margin-right: 25px;
+}
 
 
 /* 

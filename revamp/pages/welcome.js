@@ -52,13 +52,13 @@ export default function Home() {
             </div>
 
             <DRButton 
-              onClick = {() => router.push("infographic")}
+              onClick = {() => router.push("recycle")}
               shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "Get Started" size = "1em" marginB = "20px">
             </DRButton>
 
             <div className = "skip">
               <img className = "recycle_icon" src ="/icon_recycle.svg" alt = "recycle icon" />
-              <Link href ="/recycle">
+              <Link href ="/infographic">
                 <a className = "skipTxt">click here to learn more about sustainability</a>
               </Link>            
             </div>
