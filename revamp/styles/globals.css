@@ -59,6 +59,10 @@ li:before {
   content: "- " ;  
 }
 
+img {
+  display: block;
+}
+
 .flex_col {
   display: flex;
   flex-direction: column;
@@ -198,13 +202,21 @@ li:before {
 .welcome_sub, .recycle_sub {
   max-width: 270px;
   text-align: center;
-  margin: 60px 0;
-  font-size: 22px;
+  margin: 60px 0 30px;  
+}
+
+.welcome_sub p {
   line-height: 1.5em;
 }
 
+.welcome_sub img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 .skip {  
-  max-width: 170px;
+  max-width: 230px;
   margin: 0;
   margin-top: 50px;
   text-align: center;
@@ -220,6 +232,37 @@ li:before {
   font-size: 2em;
   font-weight: 300;
 }
+
+.skip img {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.skip:hover .recycle_icon{
+  animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.welcome_sub{
+  position: relative;
+  top: 0; left: 0;
+}
+
+.globe_icon {
+  position: absolute;
+  top: 25px; left: 33%;
+  animation: rotating 2s linear infinite;
+}
+
+
 
 /* 
 .scrollTop {
