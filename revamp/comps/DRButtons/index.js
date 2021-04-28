@@ -12,6 +12,7 @@ const ButtonInput = styled.button`
     max-width: 220px;
     min-height: 48px;
     padding: 14px 25px;
+    outline: none;
     cursor: pointer;
     border-radius: 20px;
     border:${props => props.bdr};
