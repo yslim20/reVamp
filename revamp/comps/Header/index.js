@@ -18,6 +18,7 @@ const HeaderInput = styled.h2`
     line-height: ${props => props.h2LineH};
     text-align: center;
     margin: 0;
+    transition: all 0.35s;
     animation: moveLeft 1.5s;
     -webkit-animation: moveLeft 1.5s;
 `;

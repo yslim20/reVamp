@@ -11,6 +11,7 @@ import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
 import DRButton from '../comps/DRButtons';
+import Para from '../comps/Paragraph';
 
 const HomeCont = styled.div`
   .header{
@@ -30,11 +31,11 @@ const HomeCont = styled.div`
   }
 `;
 
-const Para = styled.p`
-  margin: 0;
-  animation: opacity 1.5s;
-  -webkit-animation: opacity 1.5s;
-`;
+// const Para = styled.p`
+//   margin: 0;
+//   animation: opacity 1.5s;
+//   -webkit-animation: opacity 1.5s;
+// `;
 
 export default function Home() {
 
