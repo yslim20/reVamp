@@ -1,14 +1,17 @@
 import Head from 'next/head';
 import React, {useState} from 'react';
 import styled from 'styled-components';
+import {useRouter} from 'next/router';
+
+
+//importing comps
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import ReButton from '../comps/ReButtons';
 import Background from '../comps/Background';
+import BackImage from '../comps/BackImage';
 import Header from '../comps/Header';
-import {useRouter} from 'next/router';
 import BAButton from '../comps/BAButtons';
-
 
 const ButtonCont = styled.div`
 display: flex;
@@ -25,6 +28,7 @@ export default function Repurpose() {
       <title className = "title">Repurpose</title>
     </Head>
     <div className="container flex_col">
+      <BackImage />
       <TopNav />
 
       <Background padding="40px 20px">

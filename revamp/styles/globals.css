@@ -98,7 +98,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-width: 375px; */
   box-sizing: border-box;
 }
 

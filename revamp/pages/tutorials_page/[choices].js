@@ -7,6 +7,7 @@ import Header from '../../comps/Header';
 import DIYs from '../../comps/DIYs';
 import TopNav from '../../comps/TopNav';
 import Background from '../../comps/Background';
+import BackImage from '../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import styled from 'styled-components';
 import {choiceOptions} from '../../data/choices_text';
@@ -25,8 +26,8 @@ export default function Home() {
 	const router = useRouter();
 	const {choices} = router.query;
 
-    var pageTitle = "";
-    var skillTitle = ""; 
+	var pageTitle = "";
+	var skillTitle = ""; 
 	var diyTitle1 = "";
 	var src1 = "";
 	var stars1 = "";
@@ -87,28 +88,30 @@ export default function Home() {
         </Head>
     
         <div className="container flex_col">
-            <TopNav />
-            <Background padding="40px 20px 40px 20px">
-                <div className = "flex_col">
-                    <MainCont>
-                        <Header text={skillTitle}/>
-                        <div className="sub_title_diy">- pants DIYS -</div>
-                        <DIYs titleDIY={diyTitle1} 
-							picture={src1} 
-							stars={stars1}
-							onClick={()=>router.push(diyRoute1)}/>
-                        <DIYs titleDIY={diyTitle2} 
-							picture={src2} 
-							stars={stars2}
-							onClick={()=>router.push(diyRoute2)}/>
-                        <DIYs titleDIY={diyTitle3} 
-							picture={src3} 
-							stars={stars3}
-							onClick={()=>router.push(diyRoute3)}/>
-                    </MainCont>
-                </div>
-            </Background>
-            <BottomNav/>
+					<BackImage />
+
+					<TopNav />
+					<Background padding="40px 20px 40px 20px">
+							<div className = "flex_col">
+									<MainCont>
+											<Header text={skillTitle}/>
+											<div className="sub_title_diy">- pants DIYS -</div>
+											<DIYs titleDIY={diyTitle1} 
+						picture={src1} 
+						stars={stars1}
+						onClick={()=>router.push(diyRoute1)}/>
+											<DIYs titleDIY={diyTitle2} 
+						picture={src2} 
+						stars={stars2}
+						onClick={()=>router.push(diyRoute2)}/>
+											<DIYs titleDIY={diyTitle3} 
+						picture={src3} 
+						stars={stars3}
+						onClick={()=>router.push(diyRoute3)}/>
+									</MainCont>
+							</div>
+					</Background>
+					<BottomNav/>
         </div>
     </HomeCont>
 }
