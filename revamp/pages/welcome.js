@@ -31,12 +31,6 @@ const HomeCont = styled.div`
   }
 `;
 
-// const Para = styled.p`
-//   margin: 0;
-//   animation: opacity 1.5s;
-//   -webkit-animation: opacity 1.5s;
-// `;
-
 export default function Home() {
 
   const router = useRouter();
