@@ -24,6 +24,8 @@ const ButtonInput = styled.button`
     border-radius: 20px;
     border:${props => props.bdr};
     cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.25);
+    font-size: 1em;
 `;
 
 const BAButton = ({
@@ -36,8 +38,8 @@ const BAButton = ({
     marginb="auto",
     onClick=()=>{}
 }) => {
-    return <ButtonCont>
-        <ButtonImg src={src} alt={alt} margin={margin} marginb={marginb}/>
+    return <ButtonCont className = "icon_tilt">
+        <ButtonImg className="bttn_icon" src={src} alt={alt} margin={margin} marginb={marginb}/>
         <ButtonInput bg={bgcolor} bdr={border} className="ReButtons" onClick={onClick}>
             {text}
         </ButtonInput>

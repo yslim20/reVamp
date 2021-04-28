@@ -37,17 +37,17 @@ const DRButton = ({
 
 }) => {
     return <ButtonInput 
-            onClick = {onClick} 
-            bg={bgcolor} bdr={border} 
-            minW = {minW}
-            shadow ={shadow} 
-            size = {size} 
-            zIndex = {zIndex}
-            className="ReButtons"
-            marginR = {marginR}
-            marginB = {marginB}>
-            {text}
-        </ButtonInput>
+        onClick = {onClick} 
+        bg={bgcolor} bdr={border} 
+        minW = {minW}
+        shadow ={shadow} 
+        size = {size} 
+        zIndex = {zIndex}
+        className="ReButtons"
+        marginR = {marginR}
+        marginB = {marginB}>
+        {text}
+    </ButtonInput>
 }
 
 export default DRButton;

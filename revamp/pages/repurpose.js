@@ -14,9 +14,9 @@ import Header from '../comps/Header';
 import BAButton from '../comps/BAButtons';
 
 const ButtonCont = styled.div`
-display: flex;
-justify-content: center;
-margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 `;
 
 export default function Repurpose() {

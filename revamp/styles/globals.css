@@ -274,7 +274,6 @@ img {
   margin-right: 25px;
 }
 
-
 /* 
 .scrollTop {
   z-index: 1000;
@@ -323,6 +322,11 @@ p {
 
 .icon:active {
   background-position: bottom center;
+}
+
+/* ICON TILTING ANIMATION - icon container: .icon_tilt / icon itself: .bttn_icon */
+.icon_tilt:hover .bttn_icon{
+  animation: tilting 0.5s linear infinite;
 }
 
 /* BUTTON & TEXT HOVER */
@@ -405,5 +409,35 @@ color: #247BA0;
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes tilting {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  24%{
+    -webkit-transform: rotate(8deg);
+  }
+  75%{
+      -webkit-transform: rotate(-8deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes tilting {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  24%{
+    -webkit-transform: rotate(8deg);
+  }
+  75%{
+      -webkit-transform: rotate(-8deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
   }
 }

@@ -10,6 +10,7 @@ import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
 import DRButton from '../comps/DRButtons';
+import BAButton from '../comps/BAButtons';
 
 const HomeCont = styled.div`
   .header{
@@ -27,6 +28,12 @@ const HomeCont = styled.div`
     justify-content: center;
     align-items: center; 
   }
+`;
+
+const ButtonCont = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 `;
 
 export default function Home() {
@@ -49,25 +56,25 @@ export default function Home() {
           <div className = "recycle_sub">
             choose how <br/> you would like to recycle your clothing
           </div>
-          
-          <div className = "flex_row bttn_cont">
-            <div className = "flex_col marginR">
-              <img className = "donate_icon bttn_icon" src = "/icon_donate.svg" alt = "donate icon" />
-              <DRButton
-                onClick = {() => router.push("donate")}
-                text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
-              </DRButton>
-            </div>
 
-            <div className = "flex_col">
-              <img className = "repurpose_icon bttn_icon" src = "/icon_repurpose.svg" alt = "repurpose icon" />
-              <DRButton 
-                onClick = {() => router.push("repurpose")}
-                text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
-              </DRButton>
-            </div>
-          </div>
-            
+          <ButtonCont>
+            <BAButton
+              text="donate"
+              src="/icon_donate.svg"
+              alt="donate icon"
+              onClick={()=>router.push("/donate")}
+            >
+            </BAButton>
+         
+            <BAButton
+              text="repurpose"
+              src="/icon_repurpose.svg"
+              alt="repurpose icon"
+              onClick={()=>router.push("/repurpose")}
+            >
+            </BAButton>
+          </ButtonCont>
+
         </div> 
       </Background>
       <BottomNav />
