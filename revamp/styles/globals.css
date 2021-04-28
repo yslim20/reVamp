@@ -252,15 +252,6 @@ img {
   animation: rotating 2s linear infinite;
 }
 
-@-webkit-keyframes rotating {
-  from{
-      -webkit-transform: rotate(0deg);
-  }
-  to{
-      -webkit-transform: rotate(360deg);
-  }
-}
-
 .welcome_sub{
   position: relative;
   top: 0; left: 0;
@@ -350,4 +341,69 @@ color: #247BA0;
 
 .textHov:hover {
   color: #247BA0;
+}
+
+
+/* KEY FRAMES */
+
+@keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+            
+@-webkit-keyframes moveLeft {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes moveTop {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+            
+@-webkit-keyframes moveLeft {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
 }
