@@ -7,7 +7,7 @@ import Header from '../../comps/Header';
 import DIYs from '../../comps/DIYs';
 import TopNav from '../../comps/TopNav';
 import Background from '../../comps/Background';
-import BackImage from '../comps/BackImage';
+import BackImage from '../../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import styled from 'styled-components';
 import {choiceOptions} from '../../data/choices_text';
