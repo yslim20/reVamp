@@ -30,6 +30,12 @@ const HomeCont = styled.div`
   }
 `;
 
+const Para = styled.p`
+  margin: 0;
+  animation: opacity 1.5s;
+  -webkit-animation: opacity 1.5s;
+`;
+
 export default function Home() {
 
   const router = useRouter();
@@ -50,7 +56,9 @@ export default function Home() {
           <div className = "welcome_sub">
             <img className = "welcome_icon" src = "/icon_recycle_hand.svg" alt = "recycle icon" />
             <img className = "welcome_icon globe_icon" src = "/icon_globe.svg" alt = "globe icon" />
-            <p>on this app, you will be able to make sustainability your top priority by being able to learn how to repurpose your clothes, donate your old garments, or by simply learning about the impact of fast fashion on our planet.</p>
+            <Para>
+              on this app, you will be able to make sustainability your top priority by being able to learn how to repurpose your clothes, donate your old garments, or by simply learning about the impact of fast fashion on our planet.
+            </Para>
           </div>
 
           <DRButton 

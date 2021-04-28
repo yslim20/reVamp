@@ -30,10 +30,12 @@ const HomeCont = styled.div`
 `;
 
 const Info = styled.p`
-font-family: 'Montserrat', sans-serif;
-text-align: center;
-color: #333333;
-max-width: 250px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #333333;
+  max-width: 250px;
+  animation: opacity 1.5s;
+  -webkit-animation: opacity 1.5s;
 `
 
 const BgImg = styled.img`

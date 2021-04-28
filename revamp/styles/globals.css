@@ -388,22 +388,22 @@ color: #247BA0;
   }
 }
 
-@keyframes moveTop {
+@keyframes opacity {
   from {
-    margin-top: 100%;
+    opacity: 0;
   }
 
   to {
-    margin-top: 0%;
+    opacity: 1;
   }
 }
             
-@-webkit-keyframes moveLeft {
+@-webkit-keyframes opacity {
   from {
-    margin-top: 100%;
+    opacity: 0;
   }
 
   to {
-    margin-top: 0%;
+    opacity: 1;
   }
 }

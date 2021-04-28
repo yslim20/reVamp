@@ -13,6 +13,11 @@ import BackImage from '../comps/BackImage';
 
 
 const HomeCont = styled.div``;
+const Para = styled.p`
+  margin: 0;
+  animation: opacity 1.5s;
+  -webkit-animation: opacity 1.5s;
+`;
 
 export default function Home() {
 
@@ -31,14 +36,15 @@ export default function Home() {
         <Header text="about us"></Header>
         <p>Meet our team!</p>
         <img src="/team.svg" alt="Youn Soo, Maria, Irene, Montana" className="margin-20"></img>
-        <p className="alignCenter">Our group came up with reVamp because we all 
-        care about sustainability, and how things are recycled.
-        reVamp is meant to help people who are unsure about what
-            to do with their old clothes, whether its how to recycle
-            or where to donate. We are here to help you! With donation 
-            locations as well as ways to upcycle your old clothes, 
-            we have you covered. We hope you enjoy reVamp as much 
-            as we do.</p>
+        <Para className="alignCenter">Our group came up with reVamp because we all 
+          care about sustainability, and how things are recycled.
+          reVamp is meant to help people who are unsure about what
+          to do with their old clothes, whether its how to recycle
+          or where to donate. We are here to help you! With donation 
+          locations as well as ways to upcycle your old clothes, 
+          we have you covered. We hope you enjoy reVamp as much 
+          as we do.
+        </Para>
         </div>
       </Background>
       <BottomNav />
