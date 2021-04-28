@@ -417,10 +417,10 @@ color: #247BA0;
       -webkit-transform: rotate(0deg);
   }
   24%{
-    -webkit-transform: rotate(8deg);
+    -webkit-transform: rotate(5deg);
   }
   75%{
-      -webkit-transform: rotate(-8deg);
+      -webkit-transform: rotate(-5deg);
   }
   100%{
     -webkit-transform: rotate(0deg);
@@ -432,10 +432,10 @@ color: #247BA0;
     -webkit-transform: rotate(0deg);
   }
   24%{
-    -webkit-transform: rotate(8deg);
+    -webkit-transform: rotate(5deg);
   }
   75%{
-      -webkit-transform: rotate(-8deg);
+      -webkit-transform: rotate(-5deg);
   }
   100%{
     -webkit-transform: rotate(0deg);
