@@ -7,6 +7,9 @@ const MaterialCont = styled.div`
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
+    transition: all 0.35s;
+    animation: opacity 1.5s;
+    -webkit-animation: opacity 1.5s;
 `;
 const MaterialTit = styled.h6`
     color: #50514F;
