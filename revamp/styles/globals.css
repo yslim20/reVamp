@@ -288,3 +288,21 @@ color: #247BA0;
 .textHov:hover {
   color: #247BA0;
 }
+
+/* INFOGRAPHIC GLOBE ANIMATIONS */
+
+@keyframes rotation {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.globe_info {
+  position: absolute;
+  margin-bottom: 85px;
+  animation: rotation 6s linear infinite;
+}
