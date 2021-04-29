@@ -36,6 +36,7 @@ const HomeCont = styled.div`
 const BgImg = styled.img`
 width: 341px;
 position: relative;
+`
 
 const Info = styled.p`
 font-family: 'Montserrat', sans-serif;
@@ -119,20 +120,6 @@ export default function Home() {
 
       <BackImage />
       <TopNav />
-      <Background>      
-        <div className = "flex_col">
-          <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          
-        </div> 
-        <Para pMarTop = "1em">
-          Producing fast fashion items is to get as many products as they can into the market quickly. It means that caring about the environment, and the effects they have on it don’t play a part.
-        </Para>  
-        <ImgCont>
-        <BgImg src="/pileofclothes.svg" alt="background image" />
-        </ImgCont>
-      </Background>
-      <BottomNav />
-
-        <TopNav />
         <Background bgcol="#FFFFFF">      
           <div className = "flex_col">
             <Header text = "clothing waste" h2Size = "1.65em"></Header>
