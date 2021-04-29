@@ -83,7 +83,7 @@ const SideMenuCont = styled.div`
 
 
 const TopNav = ({
-    routeToHome="/recycle"
+    routeToHome="/welcome"
 }) => {
     // onClick = {() => router.push("/location/places3")}
 
