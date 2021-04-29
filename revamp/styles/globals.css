@@ -68,6 +68,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .flex_row {

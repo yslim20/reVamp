@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderCont = styled.div`
+    position: absolute;
+    top: ${props => props.h2PadTop}; 
     justify-content: center;
     text-align: center;
     color:#14455A;
     max-width: 260px;
-    margin-top: 20px;
+    // margin-top: 20px;
     padding: 5px;
 `;
 
@@ -26,11 +28,12 @@ const HeaderInput = styled.h2`
 const Header = ({
     text="hello world",
     h2Size = "2em",
-    h2LineH = "1.5em"
+    h2LineH = "1.25em",
+    h2PadTop = "20px"
 }) =>{
-    return <HeaderCont>
+    return <HeaderCont h2PadTop = {h2PadTop}>
         <HeaderInput
-            h2Size = {h2Size} h2LineH = {h2LineH}
+            h2Size = {h2Size} h2LineH = {h2LineH}            
         >
         {text}
         </HeaderInput>
