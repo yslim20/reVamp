@@ -348,6 +348,7 @@ color: #247BA0;
 }
 
 
+
 /* KEY FRAMES */
 
 @keyframes rotating {
@@ -445,3 +446,22 @@ color: #247BA0;
     -webkit-transform: rotate(0deg);
   }
 }
+=======
+/* INFOGRAPHIC GLOBE ANIMATIONS */
+
+@keyframes rotation {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.globe_info {
+  position: absolute;
+  margin-bottom: 85px;
+  animation: rotation 6s linear infinite;
+}
+
