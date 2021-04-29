@@ -26,7 +26,7 @@ const BackgroundDiv = styled.div`
 const Background = ({
     children = null,
     padding="40px 20px",
-    bgcol="#000000"
+    bgcol="#FFFFFF"
 }
 ) =>{
 

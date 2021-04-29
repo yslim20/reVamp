@@ -20,6 +20,7 @@ const Link = styled.a`
     cursor: pointer;
 `;
 const ArrowImg = styled.img`
+    display: inline;
     transform: ${props=>props.transform};
     transition: transform 0.3s;
     margin-left: 7px;

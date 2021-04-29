@@ -51,6 +51,8 @@ const LogoCont = styled.div`
 `
 
 const Logo = styled.img`
+
+    display: inline;
     width: 44px;
     height: 35px;
     cursor: pointer;
