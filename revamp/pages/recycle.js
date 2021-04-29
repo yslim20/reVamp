@@ -1,14 +1,16 @@
 import Head from 'next/head'
+import styled from 'styled-components';
+import React, {useState} from 'react';
+import {useRouter} from 'next/router';
 
+//importing comps
 import Background from '../comps/Background';
+import BackImage from '../comps/BackImage';
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
 import DRButton from '../comps/DRButtons';
-
-import styled from 'styled-components';
-import React, {useState} from 'react';
-import {useRouter} from 'next/router';
+import BAButton from '../comps/BAButtons';
 
 const HomeCont = styled.div`
   .header{
@@ -28,6 +30,12 @@ const HomeCont = styled.div`
   }
 `;
 
+const ButtonCont = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+`;
+
 export default function Home() {
 
   const router = useRouter();
@@ -37,30 +45,39 @@ export default function Home() {
     <Head>
       <title className = "title">Recycle</title>
     </Head>
+    
+    
+    <div className="container">
+      <BackImage />
+      <TopNav />        
+      <Background>    
+        <div className = "flex_col paddingB-40">
+          <Header text = "welcome!" h2Size = "2.5em"></Header>
+          <div className = "recycle_sub">
+            choose how <br/> you would like to recycle your clothing
+          </div>
 
-    <div className="container flex_col">
-        <TopNav />
-        <Background>    
-          <div className = "flex_col paddingB-40">
-            <Header text = "welcome!" h2Size = "2.5em"></Header>
-            <div className = "recycle_sub">
-              choose how <br/> you would like to recycle your clothing
-            </div>
+          <ButtonCont>
+            <BAButton
+              text="donate"
+              src="/icon_donate.svg"
+              alt="donate icon"
+              onClick={()=>router.push("/donate")}
+            >
+            </BAButton>
+         
+            <BAButton
+              text="repurpose"
+              src="/icon_repurpose.svg"
+              alt="repurpose icon"
+              onClick={()=>router.push("/repurpose")}
+            >
+            </BAButton>
+          </ButtonCont>
 
-            <div>
-              <DRButton
-                onClick = {() => router.push("donate")}
-                text = "donate" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em" marginR = "15px">
-              </DRButton>
-
-              <DRButton 
-                onClick = {() => router.push("repurpose")}
-                text = "repurpose" shadow = "0px 2px 4px rgba(0,0,0,.25)" size = "1em">
-              </DRButton>
-            </div>
-          </div> 
-        </Background>
-        <BottomNav />
+        </div> 
+      </Background>
+      <BottomNav />
     </div>
   </HomeCont>
 }

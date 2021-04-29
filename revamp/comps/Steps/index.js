@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Para from '../../comps/Paragraph';
 
 const StepCont = styled.div`
     max-width: 290px;
@@ -29,21 +30,19 @@ const StepImg = styled.div`
     text-align: center;
 `;
 
-
 const Steps = ({
     text="Introduce your cat to its new upcycled cat tent!",
     boldtext="Step 10:",
-    marginB = 20,
     images="/cattent.svg",
 }) => {
 
     return <StepCont>
-        <StepReg marginB={marginB}>
+        <Para pSize = "12px" pAlign = "justify" pMax = "290" pMarBttm = "20">
             <StepBold>{boldtext}</StepBold> 
             {text}
-        </StepReg>
-        <StepImg>
-        {images !== null && <img src={images}/>}
+        </Para>
+        <StepImg marginB = "20">
+            {images !== null && <img src={images}/>}
         </StepImg>
     </StepCont>
 }

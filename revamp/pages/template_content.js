@@ -1,12 +1,13 @@
 import Head from 'next/head'
+import styled from 'styled-components';
+import React, {useState} from 'react';
 
-import Background from '../comps/Background';
+//importing comps
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
-
-import styled from 'styled-components';
-import React, {useState} from 'react';
+import Background from '../comps/Background';
+import BackImage from '../comps/BackImage';
 
 const HomeCont = styled.div`
   .header{
@@ -34,13 +35,14 @@ export default function Home() {
     </Head>
 
     <div className="container flex_col">
-        <TopNav />
-        <Background>   
+      <BackImage />
+      <TopNav />
+      <Background>   
 
-          {/*contents comes here*/}  
-            
-        </Background>
-        <BottomNav />
+        {/*contents comes here*/}  
+          
+      </Background>
+      <BottomNav />
     </div>
   </HomeCont>  
 }

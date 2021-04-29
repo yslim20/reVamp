@@ -1,13 +1,15 @@
 import Head from 'next/head'
+import React, {useState} from 'react';
+import {useRouter} from 'next/router';
+import {locOptions} from '../../data/texts';
 
+//importing comps
 import Background from '../../comps/Background';
+import BackImage from '../../comps/BackImage';
 import TopNav from '../../comps/TopNav';
 import BottomNav from '../../comps/BottomNav';
 import SingleLocation from '../../comps/SingleLocation';
 import styled from 'styled-components';
-import React, {useState} from 'react';
-import {useRouter} from 'next/router';
-import {locOptions} from '../../data/texts';
 
 const HomeCont = styled.div`
   .header{
@@ -76,20 +78,21 @@ export default function Places(){
   </Head>
 
   <div className="container flex_col">
-      <TopNav />
-      <Background>          
-        <div className = "flex_col">
-          <SingleLocation className="flex_col"
-            title = {title}
-            src = {src}
-            address = {address}
-            day = {day}
-            hours = {hours}
-            phone = {phone}           
-          />
-        </div>
-      </Background>
-      <BottomNav />
+    <BackImage />
+    <TopNav />
+    <Background>          
+      <div className = "flex_col">
+        <SingleLocation className="flex_col"
+          title = {title}
+          src = {src}
+          address = {address}
+          day = {day}
+          hours = {hours}
+          phone = {phone}           
+        />
+      </div>
+    </Background>
+    <BottomNav />
   </div>
 </HomeCont>
 }

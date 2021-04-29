@@ -2,21 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderCont = styled.div`
-justify-content: center;
-text-align: center;
-color:#14455A;
-max-width: 260px;
-margin-top: 20px;
-padding: 5px;
+    justify-content: center;
+    text-align: center;
+    color:#14455A;
+    max-width: 260px;
+    margin-top: 20px;
+    padding: 5px;
 `;
 
 const HeaderInput = styled.h2`
-font-family: 'Lexend Giga', sans-serif;
-color:#14455A;
-font-size: ${props => props.h2Size};
-line-height: ${props => props.h2LineH};
-text-align: center;
-margin: 0;
+    font-family: 'Lexend Giga', sans-serif;
+    color:#14455A;
+    max-width: 260px;
+    font-size: ${props => props.h2Size};
+    line-height: ${props => props.h2LineH};
+    text-align: center;
+    margin: 0;
+    transition: all 0.35s;
+    animation: moveLeft 1.5s;
+    -webkit-animation: moveLeft 1.5s;
 `;
 
 const Header = ({

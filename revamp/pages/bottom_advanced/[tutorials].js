@@ -7,6 +7,7 @@ import FinishedLook from '../../comps/FinishedLook';
 import DIYs from '../../comps/DIYs';
 import TopNav from '../../comps/TopNav';
 import Background from '../../comps/Background';
+import BackImage from '../../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import Materials from '../../comps/Materials';
 import {tutorialOptions} from '../../data/bottomA_text.js';
@@ -97,6 +98,7 @@ export default function Tutorials(){
         </Head>
 
         <div className="container flex_col">
+            <BackImage />
             <TopNav />
             <Background padding="40px 20px">
 

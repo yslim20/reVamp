@@ -1,15 +1,15 @@
 import Head from 'next/head'
-
-import Location from '../comps/Location';
-import Background from '../comps/Background';
-import TopNav from '../comps/TopNav';
-import BottomNav from '../comps/BottomNav';
-import Header from '../comps/Header';
-
 import styled from 'styled-components';
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
 
+//importing comps
+import Location from '../comps/Location';
+import Background from '../comps/Background';
+import BackImage from '../comps/BackImage';
+import TopNav from '../comps/TopNav';
+import BottomNav from '../comps/BottomNav';
+import Header from '../comps/Header';
 
 const HomeCont = styled.div`
   .header{
@@ -40,6 +40,7 @@ export default function Home() {
     </Head>
 
     <div className="container flex_col">
+      <BackImage /> 
       <TopNav />
 
       <Background>    

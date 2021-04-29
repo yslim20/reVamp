@@ -59,9 +59,20 @@ li:before {
   content: "- " ;  
 }
 
+img {
+  display: block;
+}
+
 .flex_col {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -87,7 +98,6 @@ li:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-width: 375px; */
   box-sizing: border-box;
 }
 
@@ -198,13 +208,25 @@ li:before {
 .welcome_sub, .recycle_sub {
   max-width: 270px;
   text-align: center;
-  margin: 60px 0;
-  font-size: 22px;
+  margin: 60px 0;  
+}
+
+.welcome_sub {
+  margin: 60px 0 20px;  
+}
+
+.welcome_sub p {
   line-height: 1.5em;
 }
 
+.welcome_sub img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
 .skip {  
-  max-width: 170px;
+  max-width: 230px;
   margin: 0;
   margin-top: 50px;
   text-align: center;
@@ -219,6 +241,37 @@ li:before {
 .recycle_sub {
   font-size: 2em;
   font-weight: 300;
+}
+
+.skip img {
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.skip:hover .recycle_icon{
+  animation: rotating 2s linear infinite;
+}
+
+.welcome_sub{
+  position: relative;
+  top: 0; left: 0;
+}
+
+.globe_icon {
+  position: absolute;
+  top: 25px; left: 33%;
+  animation: rotating 2s linear infinite;
+}
+
+.bttn_icon{
+  margin: 0 auto;
+  width: 110px;
+  height: 115px;
+  margin-bottom: 20px;
+}
+
+.marginR {
+  margin-right: 25px;
 }
 
 /* 
@@ -271,6 +324,11 @@ p {
   background-position: bottom center;
 }
 
+/* ICON TILTING ANIMATION - icon container: .icon_tilt / icon itself: .bttn_icon */
+.icon_tilt:hover .bttn_icon{
+  animation: tilting 0.5s linear infinite;
+}
+
 /* BUTTON & TEXT HOVER */
 .ReButtons {
   background-color: #CCE6F4;
@@ -289,6 +347,106 @@ color: #247BA0;
   color: #247BA0;
 }
 
+
+
+/* KEY FRAMES */
+
+@keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+            
+@-webkit-keyframes moveLeft {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+            
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes tilting {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  24%{
+    -webkit-transform: rotate(5deg);
+  }
+  75%{
+    -webkit-transform: rotate(-5deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes tilting {
+  from{
+    -webkit-transform: rotate(0deg);
+  }
+  24%{
+    -webkit-transform: rotate(5deg);
+  }
+  75%{
+      -webkit-transform: rotate(-5deg);
+  }
+  100%{
+    -webkit-transform: rotate(0deg);
+  }
+}
+=======
 /* INFOGRAPHIC GLOBE ANIMATIONS */
 
 @keyframes rotation {
@@ -306,3 +464,4 @@ color: #247BA0;
   margin-bottom: 85px;
   animation: rotation 6s linear infinite;
 }
+

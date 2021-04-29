@@ -8,6 +8,7 @@ import DIYs from '../../comps/DIYs';
 import Steps from '../../comps/Steps';
 import TopNav from '../../comps/TopNav';
 import Background from '../../comps/Background';
+import BackImage from '../../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import Materials from '../../comps/Materials';
 import {tutorialOptions} from '../../data/topsA_text';
@@ -99,6 +100,7 @@ export default function Tutorials(){
             </Head>
     
             <div className="container flex_col">
+                <BackImage />
                 <TopNav />
                 <Background padding="40px 20px">
     

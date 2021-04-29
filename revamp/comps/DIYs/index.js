@@ -8,7 +8,6 @@ const DIYMainCont = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content: center;
-
 `;
 
 const DIYCont = styled.div `
@@ -18,7 +17,7 @@ const DIYCont = styled.div `
 `;
 const DIYTitle = styled.h2`
     font-size: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: 400;
     color: #50514F;
     letter-spacing: ${props=>props.spacing}px;

@@ -1,13 +1,16 @@
 import Head from 'next/head'
+import styled from 'styled-components';
+import React, {useState} from 'react';
 
+//importing comps
 import Background from '../comps/Background';
+import BackImage from '../comps/BackImage';
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
+import Para from '../comps/Paragraph';
 import Reduce from '../comps/Reduce';
 
-import styled from 'styled-components';
-import React, {useState} from 'react';
 
 const HomeCont = styled.div`
   .header{
@@ -28,6 +31,11 @@ const HomeCont = styled.div`
     overflow: hidden;
   }
 `;
+
+
+const BgImg = styled.img`
+width: 341px;
+position: relative;
 
 const Info = styled.p`
 font-family: 'Montserrat', sans-serif;
@@ -108,6 +116,22 @@ export default function Home() {
     </Head>
 
     <div className="container flex_col">
+
+      <BackImage />
+      <TopNav />
+      <Background>      
+        <div className = "flex_col">
+          <Header text = "sustainability and fast fashion" h2Size = "1.75em"></Header>          
+        </div> 
+        <Para pMarTop = "1em">
+          Producing fast fashion items is to get as many products as they can into the market quickly. It means that caring about the environment, and the effects they have on it don’t play a part.
+        </Para>  
+        <ImgCont>
+        <BgImg src="/pileofclothes.svg" alt="background image" />
+        </ImgCont>
+      </Background>
+      <BottomNav />
+
         <TopNav />
         <Background bgcol="#FFFFFF">      
           <div className = "flex_col">

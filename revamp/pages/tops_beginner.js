@@ -7,6 +7,7 @@ import Header from '../comps/Header';
 import DIYs from '../comps/DIYs';
 import TopNav from '../comps/TopNav';
 import Background from '../comps/Background';
+import BackImage from '../comps/BackImage';
 import BottomNav from '../comps/BottomNav';
 import styled from 'styled-components';
 
@@ -31,6 +32,7 @@ const {tutorials} = router.query;
         </Head>
     
         <div className="container flex_col">
+            <BackImage />
             <TopNav />
             <Background padding="40px 20px 0px 20px">
                 <div className = "flex_col paddingB-40">
