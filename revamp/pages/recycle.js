@@ -52,9 +52,8 @@ export default function Home() {
       <TopNav />        
       <Background>    
         <div className = "flex_col paddingB-40">
-          <Header text = "welcome!" h2Size = "2.5em"></Header>
           <div className = "recycle_sub">
-            choose how <br/> you would like to recycle your clothing
+            <Header h2Size = "1.75em" text="choose how you would like to recycle your clothing"></Header>
           </div>
 
           <ButtonCont>

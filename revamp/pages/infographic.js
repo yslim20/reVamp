@@ -54,14 +54,14 @@ const SubTitle = styled.p`
   font-size: 22px;
   font-weight: 550;
   margin-bottom: 50px;
-  margin-top: 80px;
+  margin-top: 10px;
 `;
 
 const PerCont = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 45px;
 `;
 
 const Percent = styled.p`
@@ -111,13 +111,13 @@ const BigCont = styled.div`
 `
 
 const BigRec = styled.img`
-  margin-top: 180px;
+  margin-top: 60px;
   margin-bottom: 25px;
 `;
 
 const BigGlobe = styled.img`
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
 `;
 
 //const Pile = {backgroundImage: 'url(/pileofclothes.svg)'}
@@ -134,14 +134,15 @@ export default function Home() {
         <TopNav />
         <Background bgcol="#FFFFFF"  >      
         {/* clothing waste part */}
-          <div className = "flex_col">
+          <div className = "flex_col info_cont">
+            {/* .info_cont: margin-bottom: 90px; */}
             <Header text = "clothing waste" h2Size = "1.65em" ></Header>
             <SubTitle>in North America,</SubTitle>
             <img src="thrownaway.svg" />   
             <PerCont>
-            <Info>and</Info>
-            <Percent>95%</Percent>
-            <Info>could have been</Info>
+              <Info>and</Info>
+              <Percent>95%</Percent>
+              <Info>could have been</Info>
             </PerCont>   
             <RnR>
             <ReRe>
@@ -157,7 +158,7 @@ export default function Home() {
           </div> 
 
         {/* clothing waste part */}
-            <div className = "flex_col">
+            <div className = "flex_col info_cont">
               <Header text = "how to reduce environmental impact" h2Size = "1.65em" h2PadTop ="40px"></Header>
               
               <BigCont>
