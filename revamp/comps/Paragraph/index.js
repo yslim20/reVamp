@@ -12,10 +12,11 @@ const ParaInput = styled.p`
   font-family: 'Montserrat', sans-serif;
   color: ${props => props.pColor};
   font-size: ${props => props.pSize};
+  font-size: ${props => props.pWeight};
   line-height: ${props => props.pLineH};
   text-align: ${props => props.pAlign};
   width = ${props => props.pWidth};
-  margin: 0;
+  margin: ${props => props.pMargin};
   margin-top: ${props => props.pMarTop}px;
   margin-bottom: ${props => props.pMarBttm}px;
   position: relative;
@@ -31,14 +32,18 @@ const Para = ({
   pColor = "#000",
   pAlign = "center",
   pWidth = null,
+  pWeight = null,
   pMarTop = null,
-  pMarBttm =null,
+  pMarBttm = null,
+  pMargin = null,
   pSize = "1em",
   pLineH = "1.5em"
 }) =>{
     return <ParaCont pMax = {pMax}>
       <ParaInput className = "item"
-        pSize = {pSize} pLineH = {pLineH} pColor = {pColor} pWidth = {pWidth} pAlign = {pAlign} pMarTop={pMarTop} pMarBttm={pMarBttm}
+        pSize = {pSize} pLineH = {pLineH} pColor = {pColor} pWidth = {pWidth} 
+        pAlign = {pAlign} pMarTop={pMarTop} pMarBttm={pMarBttm} pMargin = {pMargin}
+        pWeight = {pWeight}
       >
         {children}
       </ParaInput>

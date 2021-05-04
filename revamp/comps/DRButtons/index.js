@@ -11,10 +11,10 @@ const ButtonInput = styled.button`
     min-width: ${props => props.minW};
     max-width: 220px;
     min-height: 48px;
-    padding: 14px 25px;
+    padding: ${props => props.padding};
     outline: none;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 25px;
     border:${props => props.bdr};
     box-shadow:${props => props.shadow};
     font-size: ${props => props.size};
@@ -27,6 +27,7 @@ const DRButton = ({
 
     text="repurpose",
     bgcolor="#CCE6F4",
+    padding = "14px 25px",
     minW = "135px",
     border="1px solid #247BA0",
     shadow="0px 2px 4px rgba(0,0,0,.25)",
@@ -41,6 +42,7 @@ const DRButton = ({
         onClick = {onClick} 
         bg={bgcolor} bdr={border} 
         minW = {minW}
+        padding={padding}
         shadow ={shadow} 
         size = {size} 
         zIndex = {zIndex}
