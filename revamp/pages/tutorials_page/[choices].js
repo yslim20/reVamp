@@ -11,6 +11,7 @@ import BackImage from '../../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import styled from 'styled-components';
 import {choiceOptions} from '../../data/choices_text';
+import SliderButton from '../../comps/sliderButton';
 
 
 const HomeCont = styled.div``;
@@ -88,30 +89,33 @@ export default function Home() {
         </Head>
     
         <div className="container flex_col">
-					<BackImage />
+			<BackImage />
 
-					<TopNav />
-					<Background padding="40px 20px 40px 20px">
-							<div className = "flex_col">
-									<MainCont>
-											<Header text={skillTitle}/>
-											<div className="sub_title_diy">- pants DIYS -</div>
-											<DIYs titleDIY={diyTitle1} 
+			<TopNav />
+			<Background padding="40px 20px 40px 20px">
+				<div className = "flex_col">
+					<MainCont>
+						{/* <Header text={skillTitle}/> */}
+						<h3 class="h3">- bottoms DIYS -</h3>
+						<SliderButton/>
+						<DIYs titleDIY={diyTitle1} 
 						picture={src1} 
 						stars={stars1}
 						onClick={()=>router.push(diyRoute1)}/>
-											<DIYs titleDIY={diyTitle2} 
+
+						<DIYs titleDIY={diyTitle2} 
 						picture={src2} 
 						stars={stars2}
 						onClick={()=>router.push(diyRoute2)}/>
-											<DIYs titleDIY={diyTitle3} 
+
+						<DIYs titleDIY={diyTitle3} 
 						picture={src3} 
 						stars={stars3}
 						onClick={()=>router.push(diyRoute3)}/>
-									</MainCont>
-							</div>
-					</Background>
-					<BottomNav/>
+					</MainCont>
+				</div>
+			</Background>
+			<BottomNav/>
         </div>
     </HomeCont>
 }

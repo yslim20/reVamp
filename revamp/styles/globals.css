@@ -294,6 +294,15 @@ img {
   margin-bottom: 20px;
 }
 
+.h3{
+  font-family: 'Lexend Giga', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #14455A;
+  margin-top:10px;
+  margin-bottom: 25px;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
