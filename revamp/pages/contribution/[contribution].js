@@ -36,11 +36,21 @@ const HomeCont = styled.div`
 
   .cont_imgCont
   {
-    width: 200px;
-    height: 200px;  
+    width: 180px;
+    height: 180px;  
     margin-bottom: 30px;
+    position: relative;
+    padding-top: 10px;
   }
 `;
+
+const HeartImg = styled.img`
+  display: block;
+  width: 70px; height: auto;  
+  object-fit: contain;
+  position: absolute;
+  top: 0; right: 0;
+`
 
 const ContImg = styled.img`
   display: block;
@@ -96,6 +106,7 @@ export default function contribution(){
           </Para>
 
           <div class="cont_imgCont flex">
+            <HeartImg  src ="/heart.gif"/>
             <ContImg src ="/giphy.gif"/>
             {/* <ContImg src ="/earth.gif"/> */}
           </div>

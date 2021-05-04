@@ -27,7 +27,7 @@ const Contribution = ({
 
   return <ConCont>
     <ContImg src ={src} alt = "clothes" />
-    <Para pAlign = "left" pSize = "22px" pWeight = "500" pMargin = "0">
+    <Para pAlign = "left" pSize = "20px" pWeight = "500" pMargin = "0" pColor = "#102C37">
         {text}
     </Para> 
   </ConCont>
