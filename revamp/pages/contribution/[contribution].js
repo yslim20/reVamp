@@ -40,7 +40,7 @@ const HomeCont = styled.div`
     height: 180px;  
     margin-bottom: 30px;
     position: relative;
-    padding-top: 10px;
+    padding-top: 20px;
   }
 `;
 
@@ -50,6 +50,7 @@ const HeartImg = styled.img`
   object-fit: contain;
   position: absolute;
   top: 0; right: 0;
+  transform: rotate(30deg);
 `
 
 const ContImg = styled.img`
@@ -108,7 +109,6 @@ export default function contribution(){
           <div class="cont_imgCont flex">
             <HeartImg  src ="/heart.gif"/>
             <ContImg src ="/giphy.gif"/>
-            {/* <ContImg src ="/earth.gif"/> */}
           </div>
 
           <DRButton 
