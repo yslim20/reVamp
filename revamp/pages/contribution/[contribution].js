@@ -38,7 +38,7 @@ const HomeCont = styled.div`
   {
     width: 200px;
     height: 200px;  
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -96,8 +96,8 @@ export default function contribution(){
           </Para>
 
           <div class="cont_imgCont flex">
-            {/* <ContImg src ="/earth_01.gif"/> */}
-            <ContImg src ="/earth.gif"/>
+            <ContImg src ="/giphy.gif"/>
+            {/* <ContImg src ="/earth.gif"/> */}
           </div>
 
           <DRButton 
