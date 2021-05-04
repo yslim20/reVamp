@@ -69,14 +69,18 @@ const SliderButton = ({
         setSliderState(!sliderState);
         setTextColor1(!begText);
         setTextColor2(!advText);
-        setTimeout(function() {router.push(beginner)},1000)
+        setTimeout(function() {
+            router.push(beginner)
+        },1000)
     }
 
     const HandleClick2 = () => {
         setSliderState(!sliderState);
         setTextColor1(!begText);
         setTextColor2(!advText);
-        setTimeout(function() {router.push(advanced)},1000)
+        setTimeout(function() {
+            router.push(advanced)
+        },1000)
     }
 
     return <MainCont>

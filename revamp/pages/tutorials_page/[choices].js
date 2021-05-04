@@ -28,6 +28,9 @@ export default function Home() {
 	const {choices} = router.query;
 
 	var pageTitle = "";
+	var pageHeader = "";
+	var begRouter = "";
+	var advRouter = "";
 	var skillTitle = ""; 
 	var diyTitle1 = "";
 	var src1 = "";
@@ -44,6 +47,9 @@ export default function Home() {
       
     if(choices === "bottoms_beginner"){
 		pageTitle = choiceOptions.bottoms_beginner.pageTitle,
+		pageHeader = choiceOptions.bottoms_beginner.pageHeader,
+		begRouter = choiceOptions.bottoms_beginner.begRouter,
+		advRouter = choiceOptions.bottoms_beginner.advRouter,
 		skillTitle = choiceOptions.bottoms_beginner.skillTitle,
 
 		diyTitle1 = choiceOptions.bottoms_beginner.diyTitle1,
@@ -65,6 +71,9 @@ export default function Home() {
   
     if(choices === "bottoms_advanced"){
 		pageTitle = choiceOptions.bottoms_advanced.pageTitle,
+		pageHeader = choiceOptions.bottoms_advanced.pageHeader,
+		begRouter = choiceOptions.bottoms_advanced.begRouter,
+		advRouter = choiceOptions.bottoms_advanced.advRouter,
 		skillTitle = choiceOptions.bottoms_advanced.skillTitle,
 
 		diyTitle1 = choiceOptions.bottoms_advanced.diyTitle1,
@@ -82,6 +91,52 @@ export default function Home() {
 		stars3 = choiceOptions.bottoms_advanced.stars3,
 		diyRoute3 = choiceOptions.bottoms_advanced.diyRoute3
     }
+	
+    if(choices === "tops_beginner"){
+		pageTitle = choiceOptions.tops_beginner.pageTitle,
+		pageHeader = choiceOptions.tops_beginner.pageHeader,
+		begRouter = choiceOptions.tops_beginner.begRouter,
+		advRouter = choiceOptions.tops_beginner.advRouter,
+		skillTitle = choiceOptions.tops_beginner.skillTitle,
+
+		diyTitle1 = choiceOptions.tops_beginner.diyTitle1,
+		src1 = choiceOptions.tops_beginner.src1,
+		stars1 = choiceOptions.tops_beginner.stars1,
+		diyRoute1 = choiceOptions.tops_beginner.diyRoute1,
+
+		diyTitle2 = choiceOptions.tops_beginner.diyTitle2,
+		src2 = choiceOptions.tops_beginner.src2,
+		stars2 = choiceOptions.tops_beginner.stars2,
+		diyRoute2 = choiceOptions.tops_beginner.diyRoute2,
+
+		diyTitle3 = choiceOptions.tops_beginner.diyTitle3,
+		src3 = choiceOptions.tops_beginner.src3,
+		stars3 = choiceOptions.tops_beginner.stars3,
+		diyRoute3 = choiceOptions.tops_beginner.diyRoute3
+    }
+	
+    if(choices === "tops_advanced"){
+		pageTitle = choiceOptions.tops_advanced.pageTitle,
+		pageHeader = choiceOptions.tops_advanced.pageHeader,
+		begRouter = choiceOptions.tops_advanced.begRouter,
+		advRouter = choiceOptions.tops_advanced.advRouter,
+		skillTitle = choiceOptions.tops_advanced.skillTitle,
+
+		diyTitle1 = choiceOptions.tops_advanced.diyTitle1,
+		src1 = choiceOptions.tops_advanced.src1,
+		stars1 = choiceOptions.tops_advanced.stars1,
+		diyRoute1 = choiceOptions.tops_advanced.diyRoute1,
+
+		diyTitle2 = choiceOptions.tops_advanced.diyTitle2,
+		src2 = choiceOptions.tops_advanced.src2,
+		stars2 = choiceOptions.tops_advanced.stars2,
+		diyRoute2 = choiceOptions.tops_advanced.diyRoute2,
+
+		diyTitle3 = choiceOptions.tops_advanced.diyTitle3,
+		src3 = choiceOptions.tops_advanced.src3,
+		stars3 = choiceOptions.tops_advanced.stars3,
+		diyRoute3 = choiceOptions.tops_advanced.diyRoute3
+    }
 
     return <HomeCont>
         <Head>
@@ -96,8 +151,11 @@ export default function Home() {
 				<div className = "flex_col">
 					<MainCont>
 						{/* <Header text={skillTitle}/> */}
-						<h3 class="h3">- bottoms DIYS -</h3>
-						<SliderButton/>
+						<h3 class="h3">{pageHeader}</h3>
+						<SliderButton
+							beginner = {begRouter}
+							advanced = {advRouter}
+						/>
 						<DIYs titleDIY={diyTitle1} 
 						picture={src1} 
 						stars={stars1}
