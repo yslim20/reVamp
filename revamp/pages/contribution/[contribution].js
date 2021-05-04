@@ -96,7 +96,7 @@ export default function contribution(){
           </Para>
 
           <div class="cont_imgCont flex">
-            {/* <ContImg src ="/giphy.gif"/> */}
+            {/* <ContImg src ="/earth_01.gif"/> */}
             <ContImg src ="/earth.gif"/>
           </div>
 
