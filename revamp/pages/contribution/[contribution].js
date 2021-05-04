@@ -36,9 +36,9 @@ const HomeCont = styled.div`
 
   .cont_imgCont
   {
-    width: 160px;
-    height: 160px;  
-    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;  
+    margin-bottom: 20px;
   }
 `;
 
@@ -91,12 +91,13 @@ export default function contribution(){
             src = {src}
             text = {text}       
           />
-          <Para pMargin = "0 0 40px" pMax = "100%">
+          <Para pMargin = "0 0 30px" pMax = "100%">
             this means you helped contribute to conserving water usage and keeping our planet happy <br/>and healthy.
           </Para>
 
           <div class="cont_imgCont flex">
-            <ContImg src ="/icon_award.svg"/>
+            {/* <ContImg src ="/giphy.gif"/> */}
+            <ContImg src ="/earth.gif"/>
           </div>
 
           <DRButton 
