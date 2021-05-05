@@ -1,5 +1,6 @@
 import Steps from '../comps/Steps';
 import ExtraStep from '../comps/ExtraStepText';
+import DIYIcons from '../comps/DIYIcons';
 
 export const tutorialOptions = {
     FinishedLook1: {
@@ -7,6 +8,10 @@ export const tutorialOptions = {
         spacing: -3,
         stars: "/4-star-level.svg",  
         picture:"/denimflower.svg",
+        mtext:"8 materials",
+        ttext:"90 minutes",
+        ltext:"advanced",
+        bio:"Looking for a new way to make your home beautiful with old denim scraps? Then this is the DIY for you! Turn that denims into a stylish artificial roses by following these steps below.",
         children: <ul>
             <li>Denim scraps</li>
             <li>Petal template</li>
@@ -60,6 +65,10 @@ export const tutorialOptions = {
         titleDIY:"resize your jeans",
         stars: "/4-star-level.svg",  
         picture:"/Resize-Your-Jeans.svg",
+        mtext:"7 materials",
+        ttext:"70 minutes",
+        ltext:"advanced",
+        bio:"Do you have a pair of jeans that fits too big? This DIY can teach you how to easily resize your jeans so you can get them to fit perfectly!",
         children: <ul>
             <li>Jeans that are too big</li>
             <li>Seam ripper</li>
@@ -111,6 +120,10 @@ export const tutorialOptions = {
         titleDIY:"knee-length skirt",
         stars: "/4-star-level.svg",  
         picture:"/skirt.svg",
+        mtext:"6 materials",
+        ttext:"40 minutes",
+        ltext:"advanced",
+        bio:"Time to spruce up your wardrobe by changing your old trousers into a super chic skirt! This skirt can be worn to the office or add some heels with it for your girls night out",
         children: <ul>
             <li>Trousers</li>
             <li>Buttons (big and small)</li>

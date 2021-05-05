@@ -1,4 +1,5 @@
 import Steps from "../comps/Steps";
+import Tips from "../comps/Tips";
 
 export const tutorialOptions = {
     
@@ -6,6 +7,10 @@ export const tutorialOptions = {
         titleDIY:"one shoulder shirt",
         stars: "/3-star-level.svg",  
         picture:"/One-Shoulder-Shirt.svg",
+        mtext:"5 materials",
+        ttext:"60 minutes",
+        ltext:"advanced",
+        bio:"That old sweater of yours looking like it needs an upcycle? Look no further, here we teach you how to make the comfiest beany that you can rock in the fall and winter seasons",
         children: <ul>
             <li>Eastic 8mm</li>
             <li>Basic shirt</li>
@@ -83,6 +88,10 @@ export const tutorialOptions = {
         titleDIY:"sweater beanie",
         stars: "/3-star-level.svg",  
         picture:"/sweater-beanie.svg",
+        mtext:"5 materials",
+        ttext:"75 minutes",
+        ltext:"advanced",
+        bio:"Get into the winter vibes by changing up your old sweater into a cozy pair fo slippers! These super cute pull on boots will make you want to curl up with a cup of hot cocoa.",
         children: <ul>
             <li>Sweater with beanie potential</li>
             <li>Old beanie for template</li>
@@ -120,6 +129,10 @@ export const tutorialOptions = {
         titleDIY:"sweater slipper",
         stars: "/5-star-level.svg",  
         picture:"/Sweater-Slippers.svg",
+        mtext:"5 materials",
+        ttext:"30 minutes",
+        ltext:"advanced",
+        bio:"Tired of your basic long-sleaved shirt? Here is a fun DIY to turn your old long-sleaved shirt into a chic off-the-shoulder top that you can both dress-up and dress-down.",
         children: <ul>
             <li>Shoe soles</li>
             <li>Old sweater</li>

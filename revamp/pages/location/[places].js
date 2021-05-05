@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
 import {locOptions} from '../../data/texts';
+import Tips from '../../comps/Tips';
 
 //importing comps
 import Background from '../../comps/Background';
@@ -91,6 +92,7 @@ export default function Places(){
           phone = {phone}           
         />
       </div>
+      <Tips />
     </Background>
     <BottomNav />
   </div>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const MaterialCont = styled.div`
     display: flex;
+    margin-top: 20px;
     flex-direction: column;
     width: 100%;
     padding: 0 10px;
@@ -10,6 +11,7 @@ const MaterialCont = styled.div`
     transition: all 0.35s;
     animation: opacity 1.5s;
     -webkit-animation: opacity 1.5s;
+    max-width: 310px;
 `;
 const MaterialTit = styled.h6`
     color: #50514F;
@@ -20,6 +22,8 @@ const MaterialTit = styled.h6`
 const MaterialList = styled.div`
     font-size: 14px; 
 `;
+
+
 
 const Materials = ({
     children = null

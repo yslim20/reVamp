@@ -6,6 +6,10 @@ export const tutorialOptions = {
         titleDIY:"cat tent",
         stars: "/2-star-level.svg",  
         picture:"/cat_tent.svg",
+        mtext:"6 materials",
+        ttext:"30 minutes",
+        ltext:"beginner",
+        bio:"Looking for a new way to make your cat happy with your old t-shirt? Then this is the DIY for you! Turn that t-shirt of yours into a cute new home to your beloved cat in no time by following these steps below.",
         children: <ul>
             <li>A t-shirt</li>
             <li>15″ x 15″ piece of cardboard</li>
@@ -69,6 +73,10 @@ export const tutorialOptions = {
         titleDIY:"cropped sweater",
         stars: "/1-star-level.svg",  
         picture:"/cropped-sweater.svg",
+        mtext:"6 materials",
+        ttext:"30 minutes",
+        ltext:"beginner",
+        bio:"Looking for a new way to spruce up your old hoodie you never wear? Then this is the DIY for you! Turn that pull-over of yours into a hip cropped sweatshirt in no time by following these steps below.",
         children: <ul>
             <li>Fabric Glue</li>
             <li>Fabric Scissors</li>
@@ -106,6 +114,10 @@ export const tutorialOptions = {
         titleDIY:"sweater pillow case",
         stars: "/2-star-level.svg",  
         picture:"/sweater_pillow.svg",
+        mtext:"9 materials",
+        ttext:"35 minutes",
+        ltext:"beginner",
+        bio:"Time for some new pillowcases! All you need is an old sweater. You can easily make this DIY in less than 45 minutes time!",
         children: <ul>
             <li>Sweater</li>
             <li>Throw Pillow</li>
