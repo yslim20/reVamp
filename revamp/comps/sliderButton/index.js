@@ -53,6 +53,9 @@ const Text = styled.p`
 `;
 
 const SliderButton = ({
+    beginnerURL="http://localhost:3000/tutorials_page/tops_beginner",
+    advancedURL="http://localhost:3000/tutorials_page/tops_advanced",
+
     beginner="/tutorials_page/bottoms_beginner",
     advanced="/tutorials_page/bottoms_advanced",
 }) => {
@@ -65,12 +68,20 @@ const SliderButton = ({
 
     // const [pageChange, setPageChange] = useState(false);
 
-    const HandleClick1 = () => {
+    const HandleClick = () => {
         setSliderState(!sliderState);
         setTextColor1(!begText);
         setTextColor2(!advText);
+        // alert(window.location.href) this = the current page name
         setTimeout(function() {
-            router.push(beginner)
+            if(window.location.href == advancedURL)
+            {
+                router.push(beginner)
+            }
+            else if(window.location.href == beginnerURL)
+            {
+                router.push(advanced)
+            }
         },1000)
     }
 
@@ -85,12 +96,12 @@ const SliderButton = ({
 
     return <MainCont>
     <SliderCont>
-        <InvizButtonCont onClick={HandleClick1}>
+        <InvizButtonCont onClick={HandleClick}>
             <Text
                 color = {begText ? "#636A79" : "white"}
             >beginner</Text>
         </InvizButtonCont>
-        <InvizButtonCont onClick={HandleClick2}>
+        <InvizButtonCont onClick={HandleClick}>
             <Text
                 color = {advText ? "white" : "#636A79"}
             >advanced</Text>

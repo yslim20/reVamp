@@ -2,8 +2,12 @@ export const choiceOptions = {
     bottoms_beginner: {
         pageTitle: "Bottoms Beginner DIY Tutorials",
         pageHeader: "- bottoms DIYS -",
+
         begRouter: "/tutorials_page/bottoms_beginner",
         advRouter: "/tutorials_page/bottoms_advanced",
+        begURL: "http://localhost:3000/tutorials_page/bottoms_beginner",
+        advURL: "http://localhost:3000/tutorials_page/bottoms_advanced",
+
         skillTitle: "beginner",
 
         diyTitle1: "ripped jeans",
@@ -25,8 +29,12 @@ export const choiceOptions = {
     bottoms_advanced: {
         pageTitle: "Bottoms Advanced DIY Tutorials",
         pageHeader: "- bottoms DIYS -",
+
         begRouter: "/tutorials_page/bottoms_beginner",
         advRouter: "/tutorials_page/bottoms_advanced",
+        begURL: "http://localhost:3000/tutorials_page/bottoms_beginner",
+        advURL: "http://localhost:3000/tutorials_page/bottoms_advanced",
+
         skillTitle: "advanced",
 
         diyTitle1: "denim flowers",
@@ -48,8 +56,12 @@ export const choiceOptions = {
     tops_beginner: {
         pageTitle: "Tops Beginner DIY Tutorials",
         pageHeader: "- tops DIYS -",
+
         begRouter: "/tutorials_page/tops_beginner",
         advRouter: "/tutorials_page/tops_advanced",
+        begURL: "http://localhost:3000/tutorials_page/tops_beginner",
+        advURL: "http://localhost:3000/tutorials_page/tops_advanced",
+
         skillTitle: "beginner",
 
         diyTitle1: "cat tent",
@@ -71,8 +83,12 @@ export const choiceOptions = {
     tops_advanced: {
         pageTitle: "Tops Advanced DIY Tutorials",
         pageHeader: "- tops DIYS -",
+
         begRouter: "/tutorials_page/tops_beginner",
         advRouter: "/tutorials_page/tops_advanced",
+        begURL: "http://localhost:3000/tutorials_page/tops_beginner",
+        advURL: "http://localhost:3000/tutorials_page/tops_advanced",
+
         skillTitle: "advanced",
 
         diyTitle1: "one shoulder shirt",

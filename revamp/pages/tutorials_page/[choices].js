@@ -29,8 +29,12 @@ export default function Home() {
 
 	var pageTitle = "";
 	var pageHeader = "";
+
 	var begRouter = "";
 	var advRouter = "";
+	var begURL = "";
+	var advURL = "";
+
 	var skillTitle = ""; 
 	var diyTitle1 = "";
 	var src1 = "";
@@ -48,8 +52,12 @@ export default function Home() {
     if(choices === "bottoms_beginner"){
 		pageTitle = choiceOptions.bottoms_beginner.pageTitle,
 		pageHeader = choiceOptions.bottoms_beginner.pageHeader,
+
 		begRouter = choiceOptions.bottoms_beginner.begRouter,
 		advRouter = choiceOptions.bottoms_beginner.advRouter,
+		begURL = choiceOptions.bottoms_beginner.begURL,
+		advURL = choiceOptions.bottoms_beginner.advURL,
+
 		skillTitle = choiceOptions.bottoms_beginner.skillTitle,
 
 		diyTitle1 = choiceOptions.bottoms_beginner.diyTitle1,
@@ -72,8 +80,12 @@ export default function Home() {
     if(choices === "bottoms_advanced"){
 		pageTitle = choiceOptions.bottoms_advanced.pageTitle,
 		pageHeader = choiceOptions.bottoms_advanced.pageHeader,
+
 		begRouter = choiceOptions.bottoms_advanced.begRouter,
 		advRouter = choiceOptions.bottoms_advanced.advRouter,
+		begURL = choiceOptions.bottoms_advanced.begURL,
+		advURL = choiceOptions.bottoms_advanced.advURL,
+
 		skillTitle = choiceOptions.bottoms_advanced.skillTitle,
 
 		diyTitle1 = choiceOptions.bottoms_advanced.diyTitle1,
@@ -95,8 +107,12 @@ export default function Home() {
     if(choices === "tops_beginner"){
 		pageTitle = choiceOptions.tops_beginner.pageTitle,
 		pageHeader = choiceOptions.tops_beginner.pageHeader,
+
 		begRouter = choiceOptions.tops_beginner.begRouter,
 		advRouter = choiceOptions.tops_beginner.advRouter,
+		begURL = choiceOptions.tops_beginner.begURL,
+		advURL = choiceOptions.tops_beginner.advURL,
+
 		skillTitle = choiceOptions.tops_beginner.skillTitle,
 
 		diyTitle1 = choiceOptions.tops_beginner.diyTitle1,
@@ -118,8 +134,12 @@ export default function Home() {
     if(choices === "tops_advanced"){
 		pageTitle = choiceOptions.tops_advanced.pageTitle,
 		pageHeader = choiceOptions.tops_advanced.pageHeader,
+
 		begRouter = choiceOptions.tops_advanced.begRouter,
 		advRouter = choiceOptions.tops_advanced.advRouter,
+		begURL = choiceOptions.tops_advanced.begURL,
+		advURL = choiceOptions.tops_advanced.advURL,
+
 		skillTitle = choiceOptions.tops_advanced.skillTitle,
 
 		diyTitle1 = choiceOptions.tops_advanced.diyTitle1,
@@ -155,6 +175,8 @@ export default function Home() {
 						<SliderButton
 							beginner = {begRouter}
 							advanced = {advRouter}
+							beginnerURL = {begURL}
+							advancedURL = {advURL}
 						/>
 						<DIYs titleDIY={diyTitle1} 
 						picture={src1} 

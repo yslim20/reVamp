@@ -72,6 +72,7 @@ const ColumnCont = styled.div`
 
 const MenuPanel = ({
     routeToInfo="/infographic",
+    routeToDonate="/donate",
     routeToAbout="/about",
 }) => {
 
@@ -80,10 +81,11 @@ const MenuPanel = ({
     return <MainCont> 
         <PanelCont>
             <MenuCont>
-                <MenuLink/>
+                {/* <MenuLink/> */}
                 <AdvMenuLink />
                 <ColumnCont>
                     <Link onClick={()=>router.push(routeToInfo)}>info on <br/>sustainability</Link>
+                    <Link onClick={()=>router.push(routeToDonate)}>donation centers</Link>
                     <Link onClick={()=>router.push(routeToAbout)}>about us</Link>
                 </ColumnCont>
             </MenuCont>
