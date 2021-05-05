@@ -51,6 +51,8 @@ const LogoCont = styled.div`
 `
 
 const Logo = styled.img`
+
+    display: inline;
     width: 44px;
     height: 35px;
     cursor: pointer;
@@ -81,7 +83,7 @@ const SideMenuCont = styled.div`
 
 
 const TopNav = ({
-    routeToHome="/recycle"
+    routeToHome="/welcome"
 }) => {
     // onClick = {() => router.push("/location/places3")}
 

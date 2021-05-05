@@ -36,7 +36,7 @@ const HomeCont = styled.div`
 const BgImg = styled.img`
 width: 341px;
 position: relative;
-`
+`;
 
 const Info = styled.p`
 font-family: 'Montserrat', sans-serif;
@@ -44,7 +44,7 @@ text-align: center;
 color: #333333;
 max-width: 250px;
 margin: 0;
-`
+`;
 
 const SubTitle = styled.p`
 font-family: 'Montserrat', sans-serif;
@@ -54,14 +54,14 @@ max-width: 250px;
 font-size: 22px;
 font-weight: 550;
 margin-bottom: 50px;
-`
+`;
 
 const PerCont = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
 margin-top: 45px;
-`
+`;
 
 const Percent = styled.p`
 font-family: 'Montserrat', sans-serif;
@@ -71,7 +71,7 @@ max-width: 250px;
 font-size: 48px;
 font-weight: 700;
 margin: 0;
-`
+`;
 
 const RnR = styled.div`
     display: flex;
@@ -79,33 +79,33 @@ const RnR = styled.div`
     justify-content: center;
     margin-top: 35px;
     margin-bottom: 35px;
-`
+`;
 
 const ReRe = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-`
+`;
 
 const BoldT = styled.p`
 font-family: 'Montserrat', sans-serif;
 text-align: center;
 font-weight: 700;
-`
+`;
 
 const Img = styled.img`
 min-height: 110px;
 min-width: 100px;
-`
+`;
 
 const Or = styled.p`
 margin: 85px 35px 0 35px;
-`
+`;
 
 const BigRec = styled.img`
 margin-top: 25px;
 margin-bottom: 25px;
-`
+`;
 
 //const Pile = {backgroundImage: 'url(/pileofclothes.svg)'}
 
@@ -115,9 +115,7 @@ export default function Home() {
     <Head>
       <title className = "title">Infographic</title>
     </Head>
-
     <div className="container flex_col">
-
       <BackImage />
       <TopNav />
         <Background bgcol="#FFFFFF">      
@@ -152,7 +150,6 @@ export default function Home() {
             <Reduce text="4. reduce the amount of times you do your laundry" 
             src="/laundry.svg" alt="laundry"></Reduce>
           </div> 
-
         </Background>
         <BottomNav />
     </div>

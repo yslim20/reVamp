@@ -122,7 +122,7 @@ line-height: 5px;
 `
 
 const BottomNav = ({
-    routeToHome="/recycle"
+    routeToHome="/welcome"
 }) => {
     
     const router = useRouter();
