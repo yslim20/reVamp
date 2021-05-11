@@ -13,8 +13,9 @@ const TopDiv = styled.div`
 display: flex;
 // flex-direction:row;
 // justify-content: space-between;
-margin-bottom:-10px;
+margin-bottom:-5px;
 width:303px;
+align-items: center;
 
 `;
 
@@ -29,13 +30,12 @@ const Text = styled.h2`
 
 `;
 
-const ViewMore = styled.p`
+const ViewMore = styled.a`
     font-size: 13px;
     font-weight: 400;
     color: #000000;
     width:115px;
-    text-decoration: underline;
-   
+    text-decoration: underline; 
   
 `;
 
@@ -50,7 +50,7 @@ const InfoDiv = styled.div`
     flex-direction: column;
     height: 60px;
     position: absolute;
-    top:635px;
+    top:645px;
     left:25px;
 `
 
@@ -95,7 +95,7 @@ display: flex;
 flex-direction: column;
 height: 60px;
 position: absolute;
-top:635px;
+top:645px;
 left:185px;
 
 
@@ -121,7 +121,7 @@ const Previews2 = ({
     return <MainCont>
         <TopDiv>
             <Text>{Title}</Text>
-            <ViewMore className="textHov"> view more</ViewMore>
+            <ViewMore className="textHov" onClick = {()=>router.push("/tutorials_page/tops_beginner")}> view more</ViewMore>
         </TopDiv>
         <DoubleDiv>
 

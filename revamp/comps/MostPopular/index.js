@@ -22,9 +22,12 @@ const InfoDiv = styled.div`
     display: flex;
     flex-direction: column;
     height: 60px;
-    position: absolute;
-    top:455px;
-    left:30px;
+    // position: absolute;
+    position: relative;
+    top: -70px;
+    left: 10px;
+    // top:455px;
+    // left:30px;
     
 `
 
@@ -54,6 +57,10 @@ const DIYStars = styled.img`
     margin-top:10px;
 
 `
+// const MainDiv = styled.div`
+//     position: relative;
+
+// `;
     
 
 
@@ -68,14 +75,16 @@ const PopularDIY = ({
 
 return <MainCont>
     <Title> most popular </Title>
-    <ImgDiv onClick = {onClick} src={pic}></ImgDiv>
-    <InfoDiv>
-            <DIYTitle>{popularTitle}</DIYTitle>
-            <DIYSmallDiv>
-                <DIYTextLevel>DIFFICULTY:</DIYTextLevel>
-                <DIYStars src={stars}></DIYStars>
-            </DIYSmallDiv>
-    </InfoDiv>
+    {/* <MainDiv> */}
+        <ImgDiv onClick = {onClick} src={pic}></ImgDiv>
+        <InfoDiv>
+                <DIYTitle>{popularTitle}</DIYTitle>
+                <DIYSmallDiv>
+                    <DIYTextLevel>DIFFICULTY:</DIYTextLevel>
+                    <DIYStars src={stars}></DIYStars>
+                </DIYSmallDiv>
+        </InfoDiv>
+    {/* </MainDiv> */}
 </MainCont>
 
 

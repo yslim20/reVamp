@@ -13,8 +13,9 @@ const TopDiv = styled.div`
 display: flex;
 // flex-direction:row;
 // justify-content: space-between;
-margin-bottom:-10px;
+margin-bottom:-5px;
 width:303px;
+align-items: center;
 
 `;
 
@@ -49,8 +50,9 @@ const InfoDiv = styled.div`
     display: flex;
     flex-direction: column;
     height: 60px;
+    position: relative;
     position: absolute;
-    top:810px;
+    top:820px;
     left:25px;
 `
 
@@ -86,6 +88,7 @@ display: flex;
 flex-direction:row;
 justify-content: space-between;
 width: 303px;
+// position: relative;
 
 
 `;
@@ -95,7 +98,7 @@ display: flex;
 flex-direction: column;
 height: 60px;
 position: absolute;
-top:810px;
+top:820px;
 left:185px;
 
 
@@ -120,7 +123,7 @@ const Previews = ({
     return <MainCont>
         <TopDiv>
             <Text>{Title}</Text>
-            <ViewMore className="textHov"> view more</ViewMore>
+            <ViewMore className="textHov"onClick = {() => router.push("/tutorials_page/bottoms_beginner")}> view more</ViewMore>
         </TopDiv>
         <DoubleDiv>
 
