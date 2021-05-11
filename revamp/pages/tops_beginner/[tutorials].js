@@ -12,6 +12,8 @@ import BottomNav from '../../comps/BottomNav';
 import Materials from '../../comps/Materials';
 import DRButton from '../../comps/DRButtons';
 import {tutorialOptions} from '../../data/topsB_text';
+import DIYIcons from '../../comps/DIYIcons';
+
 
 const MainCont = styled.div`
     display:flex;
@@ -24,6 +26,10 @@ export default function Tutorials(){
 
     var title="";
     var picture="";
+    var mtext="";
+    var ttext="";
+    var ltext="";
+    var bio="";
     var children="";
 
     var text="";
@@ -46,6 +52,11 @@ export default function Tutorials(){
         spacing= tutorialOptions.FinishedLook1.spacing;
         picture = tutorialOptions.FinishedLook1.picture;   
 
+        mtext = tutorialOptions.FinishedLook1.mtext;
+        ttext = tutorialOptions.FinishedLook1.ttext;  
+        ltext = tutorialOptions.FinishedLook1.ltext; 
+        bio =  tutorialOptions.FinishedLook1.bio; 
+
         children = tutorialOptions.FinishedLook1.children;
         steps = tutorialOptions.FinishedLook1.steps;
 
@@ -61,7 +72,12 @@ export default function Tutorials(){
     if(tutorials === "tutorials2"){
         title = tutorialOptions.FinishedLook2.title;
         spacing= tutorialOptions.FinishedLook2.spacing;
-        picture = tutorialOptions.FinishedLook2.picture;   
+        picture = tutorialOptions.FinishedLook2.picture; 
+
+        mtext = tutorialOptions.FinishedLook2.mtext;
+        ttext = tutorialOptions.FinishedLook2.ttext;  
+        ltext = tutorialOptions.FinishedLook2.ltext;  
+        bio =  tutorialOptions.FinishedLook2.bio;   
 
         children = tutorialOptions.FinishedLook2.children;
         steps = tutorialOptions.FinishedLook2.steps;
@@ -78,7 +94,12 @@ export default function Tutorials(){
     if(tutorials === "tutorials3"){
         title = tutorialOptions.FinishedLook3.title;
         spacing= tutorialOptions.FinishedLook3.spacing;
-        picture = tutorialOptions.FinishedLook3.picture;   
+        picture = tutorialOptions.FinishedLook3.picture;  
+
+        mtext = tutorialOptions.FinishedLook3.mtext;
+        ttext = tutorialOptions.FinishedLook3.ttext;  
+        ltext = tutorialOptions.FinishedLook3.ltext; 
+        bio =  tutorialOptions.FinishedLook3.bio;  
     
         children = tutorialOptions.FinishedLook3.children;
         steps = tutorialOptions.FinishedLook3.steps;
@@ -107,24 +128,31 @@ export default function Tutorials(){
 
                 <div className = "flex_col">
                     <MainCont>
-                        <DIYs
-                            titleDIY={titleDIY}
-                            picture={picture}
-                            stars={stars}
-                            spacing={spacing}
-                        />
 
-                        <Materials>
-                            {children}
-                        </Materials>
+                    <DIYs
+                        titleDIY={titleDIY}
+                        picture={picture}
+                        stars={stars}
+                        spacing={spacing}
+                    />
 
-                        {steps}
+                    <DIYIcons
+                    mtext={mtext}
+                    ttext={ttext}
+                    ltext={ltext}
+                    bio={bio}
+                    ></DIYIcons>
 
-                        <FinishedLook
-                            title={title} 
-                            picture={picture}  
-                        />
-                        
+                    <Materials>
+                        {children}
+                    </Materials>
+
+                    {steps}
+
+                    <FinishedLook
+                        title={title} 
+                        picture={picture}  
+                    />
                         <DRButton 
                             onClick = {() => router.push("/contribution/top")}
                             padding = "14px 45px"

@@ -38,7 +38,6 @@ const BgImg = styled.img`
   position: relative;
 `;
 
-
 const Info = styled.p`
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -151,13 +150,10 @@ export default function Home() {
     <Head>
       <title className = "title">Infographic</title>
     </Head>
-
     <div className="container flex_col">
       <BackImage />
 
       <TopNav />
-
-        <TopNav />
 
         <Background bgcol="#FFFFFF">      
           <div className = "flex_col">
@@ -194,18 +190,8 @@ export default function Home() {
             <Img src="rec.svg"/>
             </ReRe>
             </RnR>
-            <Header text = "how to reduce environmental impact" h2Size = "1.65em"></Header>
-            <BigRec src="/bigrec.svg" />
-            <GlobeImg src="/bigglobe.svg" className="globe_info"/>
-            <Reduce></Reduce>
-            <Reduce text="2. buy clothes with better quality so they last longer" 
-            src="/badge.svg" alt="badge"></Reduce>
-            <Reduce text="3. think twice before throwing out your clothes" 
-            src="/thinker.svg" alt="thinking"></Reduce>
-            <Reduce text="4. reduce the amount of times you do your laundry" 
-            src="/laundry.svg" alt="laundry"></Reduce>
-          </div> 
-
+      
+      </div>
         {/* clothing waste part */}
             <div className = "flex_col info_cont">
               <Header text = "how to reduce environmental impact" h2Size = "1.65em" h2PadTop ="40px"></Header>
@@ -228,4 +214,5 @@ export default function Home() {
         <BottomNav />
     </div>
   </HomeCont>  
+  
 }

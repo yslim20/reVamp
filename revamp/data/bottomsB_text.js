@@ -6,6 +6,10 @@ export const tutorialOptions = {
         spacing: -3,
         stars: "/2-star-level.svg",  
         picture:"/distressed_jeans.svg",
+        mtext:"5 materials",
+        ttext:"60 minutes",
+        ltext:"beginner",
+        bio:"Looking for a new way to spruce up your old jeans you barely wear? Then this is the DIY for you! Turn that old jeans into a trendy teared jeans within a short amount of time by following these steps below.",
         children: <ul>
             <li> A pair of jeans</li>
             <li>Chalk</li>
@@ -44,6 +48,10 @@ export const tutorialOptions = {
         titleDIY:"patch-worked jeans",
         stars: "/2-star-level.svg",  
         picture:"/patched1.svg",
+        mtext:"5 materials",
+        ttext:"30 minutes",
+        ltext:"beginner",
+        bio:"Looking for a new way to change your old pair of jeans? Then this is the DIY for you! Turn that jeans into a fashionable patched jean in short time by following these steps below.",
         children: <ul>
             <li>1 Pair of ripped jeans</li>
             <li>Extra denim scraps</li>
@@ -83,6 +91,10 @@ export const tutorialOptions = {
         titleDIY:"fabric basket",
         stars: "/2-star-level.svg",  
         picture:"/Fabric-Basket.svg",
+        mtext:"3 materials",
+        ttext:"20 minutes",
+        ltext:"beginner",
+        bio:"Needing a basket to hold some of your things? This diy tutorial is perfect for you! All you need is a pair of jeans and follow the steps below!",
         children: <ul>
             <li>Jeans</li>
             <li>Compass Drawing Tool</li>
