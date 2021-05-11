@@ -5,12 +5,12 @@ import {useRouter} from 'next/router';
 //importing comps
 import FinishedLook from '../../comps/FinishedLook';
 import DIYs from '../../comps/DIYs';
-import Steps from '../../comps/Steps';
 import TopNav from '../../comps/TopNav';
 import Background from '../../comps/Background';
 import BackImage from '../../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import Materials from '../../comps/Materials';
+import DRButton from '../../comps/DRButtons';
 import {tutorialOptions} from '../../data/topsA_text';
 
 const MainCont = styled.div`
@@ -124,6 +124,12 @@ export default function Tutorials(){
                             picture={picture}  
                         />
                         </MainCont>
+
+                        <DRButton 
+                            onClick = {() => router.push("/contribution/top")}
+                            padding = "14px 45px"
+                            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "completed" size = "1em" marginB = "20px">
+                        </DRButton>
                     </div>
                 </Background>
                 <BottomNav/>
