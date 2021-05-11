@@ -38,6 +38,7 @@ width: 341px;
 position: relative;
 `;
 
+
 const Info = styled.p`
 font-family: 'Montserrat', sans-serif;
 text-align: center;
@@ -141,7 +142,11 @@ export default function Home() {
     <div className="container flex_col">
 
       <BackImage />
+
+      <TopNav />
+
         <TopNav />
+
         <Background bgcol="#FFFFFF">      
           <div className = "flex_col">
             <Info>THE IMPACT OF</Info>
