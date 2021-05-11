@@ -57,7 +57,7 @@ export default function Home() {
           </div>
 
           <DRButton 
-            onClick = {() => router.push("recycle")}
+            onClick = {() => router.push("popular_page")}
             shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "Get Started" size = "1em" marginB = "20px">
           </DRButton>
 
