@@ -188,6 +188,12 @@ img {
   animation: rotation 6s linear infinite;
 }
 
+.bGlobe_info{
+  position: absolute;
+  margin-bottom: 85px;
+  animation: rotation 6s linear infinite;
+}
+
 .logo {
   width: 234px;
   height: 214px;
