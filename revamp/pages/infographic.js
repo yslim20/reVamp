@@ -198,7 +198,7 @@ export default function Home() {
               
               <BigCont>
                 <BigRec src="/bigrec.svg" />
-                <BigGlobe img src="/bigglobe.svg" className="bGlobe_info" />
+                <BigGlobe img src="/bigglobe.svg" className="globe_info" />
               </BigCont>
               
               <Reduce></Reduce>

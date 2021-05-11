@@ -182,18 +182,6 @@ img {
   position: relative;
 }
 
-.globe_info {
-  position: absolute;
-  bottom: 105px;
-  animation: rotation 6s linear infinite;
-}
-
-.bGlobe_info{
-  position: absolute;
-  margin-bottom: 85px;
-  animation: rotation 6s linear infinite;
-}
-
 .logo {
   width: 234px;
   height: 214px;
@@ -251,11 +239,6 @@ img {
   font-weight: 300;
   color: #14455A;
 }
-/* 
-.recycle_sub {
-  font-size: 2em;
-  font-weight: 300;
-} */
 
 .skip img {
   margin: 0 auto;
@@ -271,11 +254,25 @@ img {
   top: 0; left: 0;
 }
 
+/* GLOBE ICONS FOR ANIMATION STARTS */
 .globe_icon {
   position: absolute;
   top: 25px; left: 33%;
   animation: rotating 6s linear infinite;
 }
+
+.globe_info {
+  position: absolute;
+  margin-bottom: 85px;
+  animation: rotation 6s linear infinite;
+}
+
+.wGlobe_info {
+  position: absolute;
+  bottom: 105px;
+  animation: rotation 6s linear infinite;
+}
+/* GLOBE ICONS FOR ANIMATION ENDS */
 
 .bttn_icon{
   margin: 0 auto;
