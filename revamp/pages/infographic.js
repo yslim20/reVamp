@@ -38,6 +38,7 @@ const BgImg = styled.img`
   position: relative;
 `;
 
+
 const Info = styled.p`
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -120,6 +121,28 @@ const BigGlobe = styled.img`
   bottom: 10px;
 `;
 
+const EmptyDiv = styled.div`
+height: 150px;
+`;
+
+const TextBox = styled.div`
+// text-align: center;
+width: 250px;
+height: 220px;
+background-color: #E1F1FA;
+border-radius: 20px;
+margin-top: 50px;
+padding: 30px;
+position:relative
+`;
+
+const GlobeImg = styled.img`
+margin-top:950px;
+`;
+const ClothesImg = styled.img`
+margin-top:-20px
+`;
+
 //const Pile = {backgroundImage: 'url(/pileofclothes.svg)'}
 
 export default function Home() {
@@ -131,12 +154,28 @@ export default function Home() {
 
     <div className="container flex_col">
       <BackImage />
+
+      <TopNav />
+
         <TopNav />
-        <Background bgcol="#FFFFFF"  >      
-        {/* clothing waste part */}
-          <div className = "flex_col info_cont">
-            {/* .info_cont: margin-bottom: 90px; */}
-            <Header text = "clothing waste" h2Size = "1.65em" ></Header>
+
+        <Background bgcol="#FFFFFF">      
+          <div className = "flex_col">
+            <Info>THE IMPACT OF</Info>
+            <img src="fast-fashion-title.svg"/>
+            <Info>ON OUR</Info>
+            <Info>ENVIRONMENT</Info>
+            <EmptyDiv></EmptyDiv>
+            <img src="what-is-it.svg"/>
+            <TextBox>
+            <Info>Producing fast fashion items is
+                  to get as many products as they can into the market quickly. 
+                  It means that caring about the environment, and the effects they have on it don’t play a part.</Info> 
+            <br></br>
+            <Info>Here is a list of ways the fast fashion industry is causing issues on our environment.</Info> 
+            </TextBox>
+            <ClothesImg src="pile-of-clothes.svg"/>
+            <Header text = "clothing waste" h2Size = "1.65em"></Header>
             <SubTitle>in North America,</SubTitle>
             <img src="thrownaway.svg" />   
             <PerCont>
@@ -155,6 +194,16 @@ export default function Home() {
             <Img src="rec.svg"/>
             </ReRe>
             </RnR>
+            <Header text = "how to reduce environmental impact" h2Size = "1.65em"></Header>
+            <BigRec src="/bigrec.svg" />
+            <GlobeImg src="/bigglobe.svg" className="globe_info"/>
+            <Reduce></Reduce>
+            <Reduce text="2. buy clothes with better quality so they last longer" 
+            src="/badge.svg" alt="badge"></Reduce>
+            <Reduce text="3. think twice before throwing out your clothes" 
+            src="/thinker.svg" alt="thinking"></Reduce>
+            <Reduce text="4. reduce the amount of times you do your laundry" 
+            src="/laundry.svg" alt="laundry"></Reduce>
           </div> 
 
         {/* clothing waste part */}

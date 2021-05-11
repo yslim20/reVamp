@@ -24,8 +24,10 @@ export default function Home() {
       <img className = "backG bttmL" src = "/Index_03_BttmL.svg" alt = "background image" />
       <img className = "backG bttmR" src = "/Index_04_BttmR.svg" alt = "background image" />     
 
-      <div className="logo_cont flex_col">          
-          <img className = "logo" src = "/homeLogo.svg" alt = "logo" />
+      <div className="logo_cont flex_col">
+        <img className="logo" src="clothing-rec-sign.svg"/>          
+        <img className="globe_info" src="small-globe.svg"/>          
+        <img src="homeLogoTitle.svg"/>          
       </div>
 
       <DRButton
