@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import {useRouter} from 'next/router';
 
+//importing comps
+import Para from '../../comps/Paragraph';
+import Header from '../../comps/Header';
 
 const LocPageCont = styled.div`
   min-width: 305px;  
@@ -30,7 +33,7 @@ const LocPageMap = styled.img`
   max-width: 305px;
   flex: 1;
   height: 220px;
-  margin-bottom: 25px;  
+  margin: 25px 0;
 `
 
 const LocPageTextCont = styled.div`
@@ -57,17 +60,6 @@ const LocPageTextTit = styled.p`
   width: 100%;
 `;
 
-
-const LocPageText = styled.p`
-  font-family: "Montserrat";
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 1.5em;
-  margin: 0;
-  text-align: left;
-  width: 100%;
-`;
-
 const SingleLocation = ({
   title = "charitable impact",
   src = "/image_map01.svg",
@@ -78,7 +70,7 @@ const SingleLocation = ({
 }) => {
 
   return <LocPageCont> 
-    <LocPageTitle>{title}</LocPageTitle>
+    <Header h2Size = "1.5em" text={title}></Header>
 
     <LocPageMap src={src} alt = "location map"/>
 
@@ -86,28 +78,28 @@ const SingleLocation = ({
       <LocPageTextTit>
         Address:
       </LocPageTextTit>
-      <LocPageText>
+      <Para pAlign = "left">
         {address}
-      </LocPageText> 
+      </Para> 
     </LocPageTextCont>
 
     <LocPageTextCont>
       <LocPageTextTit>
         Hours of Operation:
       </LocPageTextTit>
-      <LocPageText>
+      <Para pAlign = "left">
         {day}<br></br>
         {hours}
-      </LocPageText> 
+      </Para> 
     </LocPageTextCont>
 
     <LocPageTextCont>
       <LocPageTextTit>
         Phone Number:
       </LocPageTextTit>
-      <LocPageText>
+      <Para pAlign = "left">
         {phone}
-      </LocPageText> 
+      </Para> 
     </LocPageTextCont>
 
   </LocPageCont>  

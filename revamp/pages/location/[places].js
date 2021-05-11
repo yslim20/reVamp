@@ -2,7 +2,11 @@ import Head from 'next/head'
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
 import {locOptions} from '../../data/texts';
+
 import Tips from '../../comps/Tips';
+
+import styled from 'styled-components';
+
 
 //importing comps
 import Background from '../../comps/Background';
@@ -10,7 +14,6 @@ import BackImage from '../../comps/BackImage';
 import TopNav from '../../comps/TopNav';
 import BottomNav from '../../comps/BottomNav';
 import SingleLocation from '../../comps/SingleLocation';
-import styled from 'styled-components';
 
 const HomeCont = styled.div`
   .header{

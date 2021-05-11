@@ -11,6 +11,7 @@ import BackImage from '../../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import styled from 'styled-components';
 import {choiceOptions} from '../../data/choices_text';
+import SliderButton from '../../comps/sliderButton';
 
 
 const HomeCont = styled.div``;
@@ -27,6 +28,13 @@ export default function Home() {
 	const {choices} = router.query;
 
 	var pageTitle = "";
+	var pageHeader = "";
+
+	var begRouter = "";
+	var advRouter = "";
+	var begURL = "";
+	var advURL = "";
+
 	var skillTitle = ""; 
 	var diyTitle1 = "";
 	var src1 = "";
@@ -43,6 +51,13 @@ export default function Home() {
       
     if(choices === "bottoms_beginner"){
 		pageTitle = choiceOptions.bottoms_beginner.pageTitle,
+		pageHeader = choiceOptions.bottoms_beginner.pageHeader,
+
+		begRouter = choiceOptions.bottoms_beginner.begRouter,
+		advRouter = choiceOptions.bottoms_beginner.advRouter,
+		begURL = choiceOptions.bottoms_beginner.begURL,
+		advURL = choiceOptions.bottoms_beginner.advURL,
+
 		skillTitle = choiceOptions.bottoms_beginner.skillTitle,
 
 		diyTitle1 = choiceOptions.bottoms_beginner.diyTitle1,
@@ -64,6 +79,13 @@ export default function Home() {
   
     if(choices === "bottoms_advanced"){
 		pageTitle = choiceOptions.bottoms_advanced.pageTitle,
+		pageHeader = choiceOptions.bottoms_advanced.pageHeader,
+
+		begRouter = choiceOptions.bottoms_advanced.begRouter,
+		advRouter = choiceOptions.bottoms_advanced.advRouter,
+		begURL = choiceOptions.bottoms_advanced.begURL,
+		advURL = choiceOptions.bottoms_advanced.advURL,
+
 		skillTitle = choiceOptions.bottoms_advanced.skillTitle,
 
 		diyTitle1 = choiceOptions.bottoms_advanced.diyTitle1,
@@ -81,6 +103,60 @@ export default function Home() {
 		stars3 = choiceOptions.bottoms_advanced.stars3,
 		diyRoute3 = choiceOptions.bottoms_advanced.diyRoute3
     }
+	
+    if(choices === "tops_beginner"){
+		pageTitle = choiceOptions.tops_beginner.pageTitle,
+		pageHeader = choiceOptions.tops_beginner.pageHeader,
+
+		begRouter = choiceOptions.tops_beginner.begRouter,
+		advRouter = choiceOptions.tops_beginner.advRouter,
+		begURL = choiceOptions.tops_beginner.begURL,
+		advURL = choiceOptions.tops_beginner.advURL,
+
+		skillTitle = choiceOptions.tops_beginner.skillTitle,
+
+		diyTitle1 = choiceOptions.tops_beginner.diyTitle1,
+		src1 = choiceOptions.tops_beginner.src1,
+		stars1 = choiceOptions.tops_beginner.stars1,
+		diyRoute1 = choiceOptions.tops_beginner.diyRoute1,
+
+		diyTitle2 = choiceOptions.tops_beginner.diyTitle2,
+		src2 = choiceOptions.tops_beginner.src2,
+		stars2 = choiceOptions.tops_beginner.stars2,
+		diyRoute2 = choiceOptions.tops_beginner.diyRoute2,
+
+		diyTitle3 = choiceOptions.tops_beginner.diyTitle3,
+		src3 = choiceOptions.tops_beginner.src3,
+		stars3 = choiceOptions.tops_beginner.stars3,
+		diyRoute3 = choiceOptions.tops_beginner.diyRoute3
+    }
+	
+    if(choices === "tops_advanced"){
+		pageTitle = choiceOptions.tops_advanced.pageTitle,
+		pageHeader = choiceOptions.tops_advanced.pageHeader,
+
+		begRouter = choiceOptions.tops_advanced.begRouter,
+		advRouter = choiceOptions.tops_advanced.advRouter,
+		begURL = choiceOptions.tops_advanced.begURL,
+		advURL = choiceOptions.tops_advanced.advURL,
+
+		skillTitle = choiceOptions.tops_advanced.skillTitle,
+
+		diyTitle1 = choiceOptions.tops_advanced.diyTitle1,
+		src1 = choiceOptions.tops_advanced.src1,
+		stars1 = choiceOptions.tops_advanced.stars1,
+		diyRoute1 = choiceOptions.tops_advanced.diyRoute1,
+
+		diyTitle2 = choiceOptions.tops_advanced.diyTitle2,
+		src2 = choiceOptions.tops_advanced.src2,
+		stars2 = choiceOptions.tops_advanced.stars2,
+		diyRoute2 = choiceOptions.tops_advanced.diyRoute2,
+
+		diyTitle3 = choiceOptions.tops_advanced.diyTitle3,
+		src3 = choiceOptions.tops_advanced.src3,
+		stars3 = choiceOptions.tops_advanced.stars3,
+		diyRoute3 = choiceOptions.tops_advanced.diyRoute3
+    }
 
     return <HomeCont>
         <Head>
@@ -88,30 +164,38 @@ export default function Home() {
         </Head>
     
         <div className="container flex_col">
-					<BackImage />
+			<BackImage />
 
-					<TopNav />
-					<Background padding="40px 20px 40px 20px">
-							<div className = "flex_col">
-									<MainCont>
-											<Header text={skillTitle}/>
-											<div className="sub_title_diy">- pants DIYS -</div>
-											<DIYs titleDIY={diyTitle1} 
+			<TopNav />
+			<Background padding="40px 20px 40px 20px">
+				<div className = "flex_col">
+					<MainCont>
+						{/* <Header text={skillTitle}/> */}
+						<h3 class="h3">{pageHeader}</h3>
+						<SliderButton
+							beginner = {begRouter}
+							advanced = {advRouter}
+							beginnerURL = {begURL}
+							advancedURL = {advURL}
+						/>
+						<DIYs titleDIY={diyTitle1} 
 						picture={src1} 
 						stars={stars1}
 						onClick={()=>router.push(diyRoute1)}/>
-											<DIYs titleDIY={diyTitle2} 
+
+						<DIYs titleDIY={diyTitle2} 
 						picture={src2} 
 						stars={stars2}
 						onClick={()=>router.push(diyRoute2)}/>
-											<DIYs titleDIY={diyTitle3} 
+
+						<DIYs titleDIY={diyTitle3} 
 						picture={src3} 
 						stars={stars3}
 						onClick={()=>router.push(diyRoute3)}/>
-									</MainCont>
-							</div>
-					</Background>
-					<BottomNav/>
+					</MainCont>
+				</div>
+			</Background>
+			<BottomNav/>
         </div>
     </HomeCont>
 }

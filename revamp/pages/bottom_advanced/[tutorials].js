@@ -10,6 +10,7 @@ import Background from '../../comps/Background';
 import BackImage from '../../comps/BackImage';
 import BottomNav from '../../comps/BottomNav';
 import Materials from '../../comps/Materials';
+import DRButton from '../../comps/DRButtons';
 import {tutorialOptions} from '../../data/bottomA_text.js';
 import DIYIcons from '../../comps/DIYIcons';
 
@@ -124,6 +125,7 @@ export default function Tutorials(){
 
                 <div className = "flex_col">
                     <MainCont>
+
                     <DIYs
                         titleDIY={titleDIY}
                         picture={picture}
@@ -148,6 +150,12 @@ export default function Tutorials(){
                         title={title} 
                         picture={picture}  
                     />
+                        <DRButton 
+                            onClick = {() => router.push("/contribution/bottom")}
+                            padding = "14px 45px"
+                            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "completed" size = "1em" marginB = "20px">
+                        </DRButton>
+
                     </MainCont>
                 </div>
             </Background>

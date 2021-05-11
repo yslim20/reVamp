@@ -6,7 +6,7 @@ import {useRouter} from 'next/router';
 const FinishedLookCont = styled.div `
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 `;
 
 const FinishedLookTitle = styled.h2`

@@ -5,19 +5,17 @@ const HeaderCont = styled.div`
     justify-content: center;
     text-align: center;
     color:#14455A;
-    max-width: 260px;
-    margin-top: 20px;
-    padding: 5px;
+    width: 270px;
 `;
 
 const HeaderInput = styled.h2`
     font-family: 'Lexend Giga', sans-serif;
     color:#14455A;
-    max-width: 260px;
+    width: 270px;
     font-size: ${props => props.h2Size};
     line-height: ${props => props.h2LineH};
     text-align: center;
-    margin: 0;
+    margin: ${props => props.h2Margin};
     transition: all 0.35s;
     animation: moveLeft 1.5s;
     -webkit-animation: moveLeft 1.5s;
@@ -26,11 +24,12 @@ const HeaderInput = styled.h2`
 const Header = ({
     text="hello world",
     h2Size = "2em",
-    h2LineH = "1.5em"
+    h2LineH = "1.35em",
+    h2Margin = 0
 }) =>{
     return <HeaderCont>
         <HeaderInput
-            h2Size = {h2Size} h2LineH = {h2LineH}
+            h2Size = {h2Size} h2LineH = {h2LineH} h2Margin = {h2Margin}
         >
         {text}
         </HeaderInput>
