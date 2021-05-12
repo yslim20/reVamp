@@ -43,6 +43,7 @@ const Click = styled.a`
   text-align: center;
   margin-top: 10px;
   cursor: pointer;
+  font-family: montserrat;
   `;
 
   const Text = styled.p`
@@ -83,10 +84,10 @@ export default function Home() {
               marginB="10px"
               Title="tops diys" 
               pic="/sweater-beanie-preview.svg" 
-              DiyTitle = "sweater beanie" 
+              DiyTitle = "Sweater Beanie" 
               stars="/3-star-level.svg" 
               pic2="/pillow-preview.svg" 
-              DiyTitle2 = "pillow case" 
+              DiyTitle2 = "Pillow Case" 
               stars2="/2-star-level.svg"
               onClick1 = {() => router.push("/tutorials_page/tops_beginner")}
               onClick2 = {() => router.push("/tops_advanced/tutorials2")}

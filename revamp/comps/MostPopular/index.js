@@ -55,7 +55,7 @@ const DIYStars = styled.img`
 //props
 const PopularDIY = ({
     stars="/1-star-level.svg",
-    popularTitle="cropped sweater",
+    popularTitle="Cropped Sweater",
     pic="/pop_sweater.svg",
     onClick = () => {}    
 }) => {
@@ -65,7 +65,7 @@ const {tutorials} = router.query;
 
 return <MainCont>
     <MainDiv>
-        <ImgDiv onClick = {onClick} src={pic}></ImgDiv>
+        <ImgDiv onClick = {onClick} src={pic} className="popular"></ImgDiv>
         <InfoDiv>
                 <DIYTitle>{popularTitle}</DIYTitle>
                 <DIYSmallDiv>
