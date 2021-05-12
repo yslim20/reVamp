@@ -58,6 +58,34 @@ const ContImg = styled.img`
   width: 100%; height: 100%;  
   object-fit: contain;
 `
+const BadgeCont = styled.div`
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #CCE6F4;
+  border-radius: 50%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: solid 2px #14455A;
+`
+
+const BadgeImg = styled. img`
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+`
+
+const Question = styled.img`
+text-align: center;
+margin: 0 auto;
+width: 70px;
+height: 70px;
+`
+
+
+const BadgeTitle = styled.h4``
 
 export default function contribution(){
 
@@ -80,6 +108,20 @@ export default function contribution(){
     src = "/icon_top_cont.svg"
   }
 
+  //var badges = null
+  const HandleClick = (text) =>{
+    badges = text
+  }
+
+  const badges = []
+
+  const HandleEnd = () =>{
+    localStorage.setItem("contribution", badges)
+    router.push("/welcome")
+  }
+
+  
+
   return <HomeCont>
   <Head>
   <title className = "title">{ContTitle}</title>
@@ -95,6 +137,17 @@ export default function contribution(){
             text = "thank you for contributing to sustainabillity!" 
             h2Margin = "0 0 30px"
             h2Size = "1.65em" />
+
+          <BadgeTitle>you got a badge!</BadgeTitle>
+          <BadgeCont>
+          <BadgeImg src="/badge.svg" />
+          <Question src="/question-mark.svg" />
+          </BadgeCont>
+          <DRButton text="Claim Your Badge!" 
+          onClick ={()=>HandleClick("You gained a badge")}
+          />
+          <br></br>
+          <br></br>
           <Para pMargin = "0 0 40px" pMax = "100%">
             by completing this DIY and repurposing your clothes, you took a step with helping sustainability.
           </Para>
@@ -112,7 +165,7 @@ export default function contribution(){
           </div>
 
           <DRButton 
-            onClick = {() => router.push("/welcome")}
+            onClick = {HandleEnd}
             padding = "14px 35px"
             shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "back to home" size = "1em" marginB = "20px">
           </DRButton>

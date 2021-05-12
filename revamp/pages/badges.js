@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import styled from 'styled-components';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import {useRouter} from 'next/router';
+
+
 
 //importing comps
 import Background from '../comps/Background';
@@ -12,30 +15,43 @@ import Para from '../comps/Paragraph';
 import Reduce from '../comps/Reduce';
 
 
-
 const HomeCont = styled.div`
   .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;   
-    font: 32px 'Lexend Giga';
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;   
+      font: 32px 'Lexend Giga';
     color: #14455A;
-  }
+}
 
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-  }
-`;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+    }
+    `;
 
-export default function Badges() {
+    const BadgeText = styled.p`
+    
+    `
+    
+    export default function Badges() {
 
-    return <HomeCont>
-    <Head>
-      <title className = "title">Welcome</title>
+        const router = useRouter();
+        const [badge, setBadges] = useState(null);
+        
+        useEffect(()=>{
+            if(process.browser){
+                var b = localStorage.getItem("contribution");
+                setBadges(b)
+            }
+        }, []);
+        
+        return <HomeCont>
+        <Head>
+      <title className = "title">Your Badges</title>
     </Head>
 
     <div className="container flex_col">
@@ -44,7 +60,15 @@ export default function Badges() {
       <Background>  
           <Header text="your badges"></Header> 
 
-        {/*contents comes here*/}  
+       {badge.map((value, index) =>{
+
+       return <BadgeText>
+           
+       </BadgeText>
+
+       }
+       
+       )};
           
       </Background>
       <BottomNav />
