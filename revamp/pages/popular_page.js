@@ -57,34 +57,34 @@ const Click = styled.a`
   height: 56px;  
   margin-bottom: 10px;  
  `
-  const default_data = [
-    <PopularDIY
-      stars="/1-star-level.svg"
-      popularTitle="cropped sweater"
-      pic="/pop_sweater.svg"
-      onClick = {() => router.push("/tops_beginner/tutorials2")}
-    />,
-    <PopularDIY
-      stars="/2-star-level.svg"
-      popularTitle="cat tent"
-      pic="/pop_cattent.svg"
-      onClick = {() => router.push("/tops_beginner/tutorials1")}
-    />,
-    <PopularDIY
-      stars="/4-star-level.svg"
-      popularTitle="knee-length skirt"
-      pic="/pop_skirt.svg"
-      onClick = {() => router.push("/bottom_advanced/tutorials3")}
-    />,
-  ]
+  // const default_data = [
+  //   <PopularDIY
+  //     stars="/1-star-level.svg"
+  //     popularTitle="cropped sweater"
+  //     pic="/pop_sweater.svg"
+  //     onClick = {() => router.push("/tops_beginner/tutorials2")}
+  //   />,
+  //   <PopularDIY
+  //     stars="/2-star-level.svg"
+  //     popularTitle="cat tent"
+  //     pic="/pop_cattent.svg"
+  //     onClick = {() => router.push("/tops_beginner/tutorials1")}
+  //   />,
+  //   <PopularDIY
+  //     stars="/4-star-level.svg"
+  //     popularTitle="knee-length skirt"
+  //     pic="/pop_skirt.svg"
+  //     onClick = {() => router.push("/bottom_advanced/tutorials3")}
+  //   />,
+  // ]
 
-  const Carousel = ({
-    imgdata = default_data
-  }) =>{
-    return <Carousel>
-      Carousel
-    </Carousel>
-  }
+  // const Carousel = ({
+  //   imgdata = default_data
+  // }) =>{
+  //   return <Carousel>
+  //     Carousel
+  //   </Carousel>
+  // }
 
 
 export default function Home() {  
@@ -108,9 +108,7 @@ export default function Home() {
           <Info className = "subText">Here you can find our DIY collections where you can turn your old <br/> clothes into something new! <br/> Go through and try it out.</Info>
 
           <div className = "flex_col mostP__cont">  
-            <Carousel>
-              Carousel
-            </Carousel>  
+            <PopularDIY onClick = {() => router.push("/tops_beginner/tutorials2")} /> 
             <Previews  
               // marginB="10px"
               Title="tops diys" 

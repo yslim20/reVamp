@@ -64,7 +64,7 @@ const DIYStars = styled.img`
 const PopularDIY = ({
     stars="/1-star-level.svg",
     popularTitle="cropped sweater",
-    pic="/MostPopular.svg",
+    pic="/pop_sweater.svg",
     onClick = () => {}    
 }) => {
 
