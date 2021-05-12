@@ -1,25 +1,16 @@
 import styled from 'styled-components';
 import React, {useState} from 'react';
+import {useRouter} from 'next/router';
 
 const MainCont = styled.div`
     display: flex;
     flex-direction: column;    
-    margin-bottom: 30px;
 `
 const MainDiv = styled.div`
     width: 305px;
     height: 175px;
     position: relative;
 ` 
-const PopTitle = styled.h6`
-    font-family: 'Lexend Giga', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000000;
-    text-indent:5px;
-    margin: 0;
-    margin-bottom:10px;    
-`
 const ImgDiv = styled.img`
     border-radius:10px;
     width: 100%;
@@ -37,6 +28,7 @@ const InfoDiv = styled.div`
 
 const DIYTitle = styled.p`
     font-size: 13px;
+    text-align: left;
     font-weight: 500;
     color: white;    
     margin: 0;
@@ -68,8 +60,10 @@ const PopularDIY = ({
     onClick = () => {}    
 }) => {
 
+const router = useRouter();
+const {tutorials} = router.query;
+
 return <MainCont>
-    <PopTitle>most popular</PopTitle>
     <MainDiv>
         <ImgDiv onClick = {onClick} src={pic}></ImgDiv>
         <InfoDiv>

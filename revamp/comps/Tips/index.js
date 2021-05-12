@@ -12,7 +12,8 @@ const TipImg = styled.img `
 padding-right: 15px;
 `
 
-const TipFact = styled.p`
+const TipFact = styled.div`
+font-family: 'Montserrat', Serif;
 font-size: 12px;
 `
 
