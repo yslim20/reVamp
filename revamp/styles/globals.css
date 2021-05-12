@@ -340,11 +340,11 @@ p {
   background-size: 68px 112px;
 }
 
-.pop_donate:hover .pop_icon{
+.hoverBox:hover .pop_icon{
   background-position: bottom center;
 }
 
-.pop_donate:active {
+.hoverBox:active .pop_icon{
   background-position: bottom center;
 }
 

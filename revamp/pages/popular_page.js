@@ -35,6 +35,16 @@ const Info = styled.p`
   text-align:center;
 `;
 
+const IconCont = styled.div`
+  cursor: pointer;
+`
+
+const Icon = styled.div`
+  width: 68px;
+  height: 56px;  
+  margin-bottom: 5px;  
+`
+
 const Click = styled.a`
   width: 233px;
   text-decoration: underline;
@@ -42,7 +52,7 @@ const Click = styled.a`
   font-size: 12px;
   text-align: center;
   margin-top: 10px;
-  cursor: pointer;
+  
   font-family: montserrat;
   `;
 
@@ -53,11 +63,6 @@ const Click = styled.a`
   margin: 0;
   `;
   
-  const Icon = styled.div`
-  width: 68px;
-  height: 56px;  
-  margin-bottom: 10px;  
- `
 
 export default function Home() {  
 
@@ -104,13 +109,13 @@ export default function Home() {
         <Tips
           marginT = "0px" marginB = "40px"
         />
-        <div className = "flex_col paddingB-40 pop_donate hoverBox">
+        <IconCont className = "flex_col paddingB-40 hoverBox" onClick = {() => router.push("donate")} >
             <Icon className = "pop_icon"/>
-            <Click onClick = {() => router.push("donate")} className="textHov">Look for Donation Centers near you!</Click>            
+            <Click className="textHov">Look for Donation Centers near you!</Click>            
             <Text>
               Donating your clothes is also<br/>a good way to upcycle.
             </Text>
-        </div>
+        </IconCont>
       </Background>
       <BottomNav />
     </div>
