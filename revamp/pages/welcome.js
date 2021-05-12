@@ -52,7 +52,7 @@ export default function Home() {
             <img className = "welcome_icon" src = "/icon_recycle_hand.svg" alt = "recycle icon" />
             <img className = "welcome_icon globe_icon" src = "/icon_globe.svg" alt = "globe icon" />
             <Para>
-              on this app, you will be able to make sustainability your top priority by being able to learn how to repurpose your clothes, donate your old garments, or by simply learning about the impact of fast fashion on our planet.
+              On this app, you will be able to make sustainability your top priority by being able to learn how to repurpose your clothes, donate your old garments, or by simply learning about the impact of fast fashion on our planet.
             </Para>
           </div>
 
@@ -64,7 +64,7 @@ export default function Home() {
           <div className = "skip">
             <img className = "recycle_icon" src ="/icon_recycle.svg" alt = "recycle icon" />
             <Link href ="/infographic">
-              <a className = "skipTxt">click here to learn more about sustainability</a>
+              <a className = "textHov">Click here to learn more about sustainability</a>
             </Link>            
           </div>
         </div>

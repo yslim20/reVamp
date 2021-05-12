@@ -235,12 +235,6 @@ img {
   text-align: center;
 }
 
-.skipTxt {
-  font-size: 16px;  
-  font-weight: 300;
-  color: #14455A;
-}
-
 .skip img {
   margin: 0 auto;
   margin-bottom: 15px;
@@ -331,11 +325,11 @@ p {
   background-size: 68px 112px;
 }
 
-.icon:hover {
+.hoverBox:hover .icon{
   background-position: bottom center;
 }
 
-.icon:active {
+.hoverBox:active .icon{
   background-position: bottom center;
 }
 
@@ -365,19 +359,26 @@ p {
 }
 
 .ReButtons:hover {
-background-color: #FFE066;
-border-color: #D2AB0E;
-}
-
-.skipTxt:hover {
-color: #247BA0;
+  background-color: #FFE066;
+  border-color: #D2AB0E;
 }
 
 .textHov{
   margin-bottom: 10px;
+  font-size: 12px;  
+  font-weight: 300;
+  color: #14455A;
 }
 
 .textHov:hover {
+  color: #247BA0;
+}
+
+.hoverBox:hover .textHov{
+  color: #247BA0;
+}
+
+.hoverBox:active .textHov{
   color: #247BA0;
 }
 

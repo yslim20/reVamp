@@ -104,9 +104,9 @@ export default function Home() {
         <Tips
           marginT = "0px" marginB = "40px"
         />
-        <div className = "flex_col paddingB-40 pop_donate">
+        <div className = "flex_col paddingB-40 pop_donate hoverBox">
             <Icon className = "pop_icon"/>
-            <Click className = "" onClick = {() => router.push("donate")} className="textHov">Look for Donation Centers near you!</Click>            
+            <Click onClick = {() => router.push("donate")} className="textHov">Look for Donation Centers near you!</Click>            
             <Text>
               Donating your clothes is also<br/>a good way to upcycle.
             </Text>

@@ -52,10 +52,10 @@ export default function Home() {
             <Location 
               onClick = {() => router.push("/location/places1")}
             />
-            <Location doTitle="Location 2:" text = "Wildlife Thrift Store Downtown Vancouver" 
+            <Location doTitle="location 2:" text = "Wildlife Thrift Store Downtown Vancouver" 
               onClick = {() => router.push("/location/places2")}
             />
-            <Location doTitle="Location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" marginB = "0"
+            <Location doTitle="location 3:" text = "The Salvation Army -Belkin House Downtown Vancouver" marginB = "0"
               onClick = {() => router.push("/location/places3")}
             />
           </div> 

@@ -70,11 +70,13 @@ const Icon = styled.div`
   text-decoration: underline;
   color: #14455A;
   font-size: 12px;
+  font-weight: 300;
   text-align: center;
+  margin: 0;
   `
 
 const Location = ({
-  doTitle = "Location 1:",
+  doTitle = "location 1:",
   text = "Charitable Impact Vancouver, West End",
   marginB = 35,
   className = "icon",  
@@ -89,10 +91,10 @@ const Location = ({
     </TextCont>
 
     <IconCont>
-      <IconA onClick = {onClick}>
+      <IconA className = "hoverBox" onClick = {onClick}>
         <Icon className = {className}>
         </Icon>
-        <Click>Click for more information</Click>
+        <Click className = "textHov">Click for more information</Click>
       </IconA>
     </IconCont>
 
