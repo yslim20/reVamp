@@ -2,150 +2,144 @@ import styled from 'styled-components';
 import React, {useState} from 'react';
 import {useRouter} from 'next/router';
 
-
+// DIY PREVIEW
 const MainCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items:center;
+    width: 305px;
+    margin-bottom: ${props => props.marginB};
 `;
 
+// title div
 const TopDiv = styled.div`
-display: flex;
-// flex-direction:row;
-// justify-content: space-between;
-margin-bottom:-5px;
-width:303px;
-align-items: center;
-
+    width: 96%;
+    display: flex;
+    flex-directaion: row;
+    margin: 0;
+    margin-bottom:-5px;   
+    align-items: center;
+    justify-content: space-between;
 `;
 
 const Text = styled.h2`
     font-size: 13px;
     font-weight: 600;
-    color: #000000;
-    margin-bottom:10px;
-    margin-left:5px;
-    margin-right:105px;
-    width:175px;
-
+    color: #000000;    
 `;
 
 const ViewMore = styled.p`
     font-size: 13px;
     font-weight: 400;
     color: #000000;
-    width:115px;
     text-decoration: underline;
-   
-  
+    cursor: pointer;
 `;
 
-const ImgDiv = styled.img`
-    border-radius:10px;
-    width: 144px;
-    height: 141.87px;
+// images
+const DoubleDiv = styled.div`
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 305px;    
+`;
+
+const ImgCont = styled.div`
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
+    cursor: pointer;
 `
+const Img = styled.img`
+    width: 100%;
+    height: auto;    
+`
+
 const InfoDiv = styled.div`
     display: flex;
     flex-direction: column;
-    height: 60px;
-    position: relative;
+    justify-content: center;
+    height: 45px;
     position: absolute;
-    top:820px;
-    left:25px;
+    bottom: 0;
+    left: 5px;
 `
 
 const DIYTitle = styled.p`
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
     color: white;
-    margin-bottom:-10px;
-  
+    margin: 0;
 `
 
 const DIYSmallDiv = styled.div`
     display:flex;
-    flex-direction: row;
-  
+    flex-direction: row;  
 `
 
 const DIYTextLevel = styled.p`
     color:white;
     font-size:12px;
-
+    flex-basis: 1;
+    margin: 0;
+    margin-right: 10px;
 `;
 
 const DIYStars = styled.img`
-    height:15px;
-    width:50px;
-    margin-left: 10px;
-    margin-top:10px;
-`;
-
-const DoubleDiv = styled.div`
-display: flex;
-flex-direction:row;
-justify-content: space-between;
-width: 303px;
-// position: relative;
-
-
-`;
-
-const InfoDiv2 = styled.div`
-display: flex;
-flex-direction: column;
-height: 60px;
-position: absolute;
-top:820px;
-left:185px;
-
-
+    height: 16px;
+    width: 50px;
 `;
 
 
 //props
 const Previews = ({
+    marginB = null,
     stars="/4-star-level.svg",
     Title="bottoms diys",
     pic="/resized-jeans-preview.svg",
-    DiyTitle = "Resized Jeans",
+    DiyTitle = "resized jeans",
     pic2="/flower-preview.svg",
-    DiyTitle2 = "Demin Flower",
+    DiyTitle2 = "demin flower",
     stars2="/3-star-level.svg",
+    onClick1 = () => {},
+    onClick2 = () => {},
+    onClick3 = () => {}
 
 }) => {
 
     const router = useRouter();
     const {tutorials} = router.query;
 
-    return <MainCont>
+    return <MainCont marginB = {marginB}>
         <TopDiv>
             <Text>{Title}</Text>
-            <ViewMore className="textHov"onClick = {() => router.push("/tutorials_page/bottoms_beginner")}> view more</ViewMore>
+            <ViewMore className="textHov"onClick = {onClick1}> view more</ViewMore>
         </TopDiv>
+
         <DoubleDiv>
+            <ImgCont>
+                <Img src={pic} onClick = {onClick2}/>
+                <InfoDiv>
+                        <DIYTitle>{DiyTitle}</DIYTitle>
+                        <DIYSmallDiv>
+                            <DIYTextLevel>DIFFICULTY:</DIYTextLevel>
+                            <DIYStars src={stars}></DIYStars>
+                        </DIYSmallDiv>
+                </InfoDiv>
+            </ImgCont>
 
-            <ImgDiv src={pic} onClick = {() => router.push("/bottom_advanced/tutorials2")}></ImgDiv>
-            <InfoDiv>
-                    <DIYTitle>{DiyTitle}</DIYTitle>
-                    <DIYSmallDiv>
-                        <DIYTextLevel>DIFFICULTY:</DIYTextLevel>
-                        <DIYStars src={stars}></DIYStars>
-                    </DIYSmallDiv>
-            </InfoDiv>
-            
-            <ImgDiv src={pic2 } onClick = {() => router.push("/bottom_advanced/tutorials1")}></ImgDiv>
-            <InfoDiv2>
-                    <DIYTitle>{DiyTitle2}</DIYTitle>
-                    <DIYSmallDiv>
-                        <DIYTextLevel>DIFFICULTY:</DIYTextLevel>
-                        <DIYStars src={stars2}></DIYStars>
-                    </DIYSmallDiv>
-            </InfoDiv2>
+            <ImgCont>
+                <Img src={pic2 } onClick = {onClick3} />
+                <InfoDiv>
+                        <DIYTitle>{DiyTitle2}</DIYTitle>
+                        <DIYSmallDiv>
+                            <DIYTextLevel>DIFFICULTY:</DIYTextLevel>
+                            <DIYStars src={stars2}></DIYStars>
+                        </DIYSmallDiv>
+                </InfoDiv> 
+            </ImgCont>
         </DoubleDiv>
-
     </MainCont>
 }
 

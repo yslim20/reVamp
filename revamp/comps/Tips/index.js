@@ -4,7 +4,8 @@ import styled from "styled-components";
 const TipCont = styled.div `
 display: flex;
 max-width: 292px;
-margin-top: 15px;
+margin-top: ${props => props.marginT};
+margin-bottom: ${props => props.marginB};
 `
 
 const TipImg = styled.img `
@@ -25,10 +26,12 @@ const Tips = ({
    src="/lightbulb.svg",
    bold="Did you know?",
    text="Donating your used clothing can help countless people in need, and it helps the environment!",
+   marginT="15px",
+   marginB = null
 }
 ) =>{
 
-    return <TipCont>
+    return <TipCont marginT={marginT} marginB={marginB}>
           <TipImg src={src} />
           <TipFact>
             <Bold>{bold}</Bold>

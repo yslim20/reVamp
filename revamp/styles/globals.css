@@ -5,6 +5,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  font-family: 'Lexend Giga', sans-serif;
 }
 
 body {
@@ -338,6 +339,21 @@ p {
   background-position: bottom center;
 }
 
+.pop_icon{
+  background-image: url("/icon_location.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 68px 112px;
+}
+
+.pop_donate:hover .pop_icon{
+  background-position: bottom center;
+}
+
+.pop_donate:active {
+  background-position: bottom center;
+}
+
 /* ICON TILTING ANIMATION - icon container: .icon_tilt / icon itself: .bttn_icon */
 .icon_tilt:hover .bttn_icon{
   animation: tilting 0.5s linear infinite;
@@ -355,6 +371,10 @@ border-color: #D2AB0E;
 
 .skipTxt:hover {
 color: #247BA0;
+}
+
+.textHov{
+  margin-bottom: 10px;
 }
 
 .textHov:hover {

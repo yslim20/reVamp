@@ -3,79 +3,74 @@ import React, {useState} from 'react';
 
 const MainCont = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
+    margin-bottom: 30px;
 `
-const Title = styled.h2`
-    font-size: 20px;
-    font-weight: 400;
+const MainDiv = styled.div`
+    width: 305px;
+    height: 175px;
+    position: relative;
+` 
+const PopTitle = styled.h6`
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     color: #000000;
-    margin-bottom:5px;
-    margin-left:5px;
+    text-indent:5px;
+    margin: 0;
+    margin-bottom:10px;    
 `
 const ImgDiv = styled.img`
     border-radius:10px;
-    width: 303px;
-    height: 173.68px;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 `
 const InfoDiv = styled.div`
     display: flex;
     flex-direction: column;
-    height: 60px;
-    // position: absolute;
-    position: relative;
-    top: -70px;
-    left: 10px;
-    // top:455px;
-    // left:30px;
-    
+    width: 95%;
+    position: absolute;
+    bottom: 10px;
+    left: 5%;    
 `
 
 const DIYTitle = styled.p`
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
-    color: white;
-    margin-bottom:-5px;
-  
+    color: white;    
+    margin: 0;
+    margin-bottom: 3px;  
 `
 
 const DIYSmallDiv = styled.div`
     display:flex;
-    flex-direction: row;
-  
+    flex-direction: row;  
+    align-items: center;
 `
 
 const DIYTextLevel = styled.p`
     color:white;
     font-size:12px;
-
+    margin: 0;
 `;
 
 const DIYStars = styled.img`
     height:15px;
     margin-left: 10px;
-    margin-top:10px;
-
 `
-// const MainDiv = styled.div`
-//     position: relative;
-
-// `;
-    
-
 
 //props
 const PopularDIY = ({
     stars="/1-star-level.svg",
-    popularTitle="Cropped Sweater",
+    popularTitle="cropped sweater",
     pic="/MostPopular.svg",
-    onClick = () => {}
-    
+    onClick = () => {}    
 }) => {
 
 return <MainCont>
-    <Title> most popular </Title>
-    {/* <MainDiv> */}
+    <PopTitle>most popular</PopTitle>
+    <MainDiv>
         <ImgDiv onClick = {onClick} src={pic}></ImgDiv>
         <InfoDiv>
                 <DIYTitle>{popularTitle}</DIYTitle>
@@ -84,10 +79,8 @@ return <MainCont>
                     <DIYStars src={stars}></DIYStars>
                 </DIYSmallDiv>
         </InfoDiv>
-    {/* </MainDiv> */}
+    </MainDiv>
 </MainCont>
-
-
 }
 
 export default PopularDIY;

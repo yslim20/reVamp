@@ -27,7 +27,7 @@ const TextCont = styled.div`
 const LocationTitle = styled.h6`
   font-family: 'Lexend Giga';
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5em;
   margin: 0;
   margin-bottom: 5px;
@@ -56,6 +56,7 @@ const IconA = styled.a`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: "Montserrat";
 `
 
 const Icon = styled.div`
