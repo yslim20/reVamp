@@ -122,7 +122,7 @@ line-height: 5px;
 `
 
 const BottomNav = ({
-    routeToHome="/welcome"
+    routeToHome="/popular_page"
 }) => {
     
     const router = useRouter();
