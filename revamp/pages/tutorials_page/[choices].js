@@ -32,8 +32,6 @@ export default function Home() {
 
 	var begRouter = "";
 	var advRouter = "";
-	var begURL = "";
-	var advURL = "";
 
 	var skillTitle = ""; 
 	var diyTitle1 = "";
@@ -55,8 +53,6 @@ export default function Home() {
 
 		begRouter = choiceOptions.bottoms_beginner.begRouter,
 		advRouter = choiceOptions.bottoms_beginner.advRouter,
-		begURL = choiceOptions.bottoms_beginner.begURL,
-		advURL = choiceOptions.bottoms_beginner.advURL,
 
 		skillTitle = choiceOptions.bottoms_beginner.skillTitle,
 
@@ -83,8 +79,6 @@ export default function Home() {
 
 		begRouter = choiceOptions.bottoms_advanced.begRouter,
 		advRouter = choiceOptions.bottoms_advanced.advRouter,
-		begURL = choiceOptions.bottoms_advanced.begURL,
-		advURL = choiceOptions.bottoms_advanced.advURL,
 
 		skillTitle = choiceOptions.bottoms_advanced.skillTitle,
 
@@ -110,8 +104,6 @@ export default function Home() {
 
 		begRouter = choiceOptions.tops_beginner.begRouter,
 		advRouter = choiceOptions.tops_beginner.advRouter,
-		begURL = choiceOptions.tops_beginner.begURL,
-		advURL = choiceOptions.tops_beginner.advURL,
 
 		skillTitle = choiceOptions.tops_beginner.skillTitle,
 
@@ -137,8 +129,6 @@ export default function Home() {
 
 		begRouter = choiceOptions.tops_advanced.begRouter,
 		advRouter = choiceOptions.tops_advanced.advRouter,
-		begURL = choiceOptions.tops_advanced.begURL,
-		advURL = choiceOptions.tops_advanced.advURL,
 
 		skillTitle = choiceOptions.tops_advanced.skillTitle,
 
@@ -175,8 +165,6 @@ export default function Home() {
 						<SliderButton
 							beginner = {begRouter}
 							advanced = {advRouter}
-							beginnerURL = {begURL}
-							advancedURL = {advURL}
 						/>
 						<DIYs titleDIY={diyTitle1} 
 						picture={src1} 
