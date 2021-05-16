@@ -26,7 +26,7 @@ export default function Home() {
 
       <div className="logo_cont flex_col">
         <img className="logo" src="clothing-rec-sign.svg"/>          
-        <img className="globe_info" src="small-globe.svg"/>          
+        <img className="wGlobe_info" src="small-globe.svg"/>          
         <img src="homeLogoTitle.svg"/>          
       </div>
 
