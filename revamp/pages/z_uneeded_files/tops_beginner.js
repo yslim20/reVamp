@@ -3,13 +3,13 @@ import React from 'react';
 import {useRouter} from 'next/router';
 
 //importing comps
-import Header from '../comps/Header';
-import DIYs from '../comps/DIYs';
-import TopNav from '../comps/TopNav';
-import Background from '../comps/Background';
-import BackImage from '../comps/BackImage';
-import BottomNav from '../comps/BottomNav';
-import styled from 'styled-components';
+// import Header from '../comps/Header';
+// import DIYs from '../comps/DIYs';
+// import TopNav from '../comps/TopNav';
+// import Background from '../comps/Background';
+// import BackImage from '../comps/BackImage';
+// import BottomNav from '../comps/BottomNav';
+// import styled from 'styled-components';
 
 
 const HomeCont = styled.div``;
@@ -27,7 +27,7 @@ const router = useRouter();
 const {tutorials} = router.query;
 
     return <HomeCont>
-        <Head>
+        {/* <Head>
           <title className = "title">Welcome</title>
         </Head>
     
@@ -49,6 +49,6 @@ const {tutorials} = router.query;
                 </div>
             </Background>
             <BottomNav/>
-        </div>
+        </div> */}
     </HomeCont>
 }

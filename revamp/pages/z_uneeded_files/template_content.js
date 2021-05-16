@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import React, {useState} from 'react';
 
 //importing comps
-import TopNav from '../comps/TopNav';
-import BottomNav from '../comps/BottomNav';
-import Header from '../comps/Header';
-import Background from '../comps/Background';
-import BackImage from '../comps/BackImage';
+// import TopNav from '../comps/TopNav';
+// import BottomNav from '../comps/BottomNav';
+// import Header from '../comps/Header';
+// import Background from '../comps/Background';
+// import BackImage from '../comps/BackImage';
 
 const HomeCont = styled.div`
   .header{
@@ -30,19 +30,19 @@ const HomeCont = styled.div`
 export default function Home() {
 
   return <HomeCont>
-    <Head>
+    {/* <Head>
       <title className = "title">Welcome</title>
     </Head>
 
     <div className="container flex_col">
       <BackImage />
       <TopNav />
-      <Background>   
+      <Background>    */}
 
         {/*contents comes here*/}  
           
-      </Background>
+      {/* </Background>
       <BottomNav />
-    </div>
+    </div> */}
   </HomeCont>  
 }

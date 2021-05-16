@@ -5,13 +5,13 @@ import {useRouter} from 'next/router';
 
 
 //importing comps
-import TopNav from '../comps/TopNav';
-import BottomNav from '../comps/BottomNav';
-import ReButton from '../comps/ReButtons';
-import Background from '../comps/Background';
-import BackImage from '../comps/BackImage';
-import Header from '../comps/Header';
-import BAButton from '../comps/BAButtons';
+// import TopNav from '../comps/TopNav';
+// import BottomNav from '../comps/BottomNav';
+// import ReButton from '../comps/ReButtons';
+// import Background from '../comps/Background';
+// import BackImage from '../comps/BackImage';
+// import Header from '../comps/Header';
+// import BAButton from '../comps/BAButtons';
 
 const ButtonCont = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ export default function Repurpose() {
   const router = useRouter();
 
   return <div>
-    <Head>
+    {/* <Head>
       <title className = "title">Repurpose</title>
     </Head>
     <div className="container flex_col">
@@ -54,7 +54,7 @@ export default function Repurpose() {
         </div>
       </Background>        
       <BottomNav/>
-    </div>
+    </div> */}
   </div>
   }
 

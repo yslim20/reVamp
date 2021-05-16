@@ -4,13 +4,13 @@ import React, {useState} from 'react';
 import {useRouter} from 'next/router';
 
 //importing comps
-import Background from '../comps/Background';
-import BackImage from '../comps/BackImage';
-import TopNav from '../comps/TopNav';
-import BottomNav from '../comps/BottomNav';
-import Header from '../comps/Header';
-import DRButton from '../comps/DRButtons';
-import BAButton from '../comps/BAButtons';
+// import Background from '../comps/Background';
+// import BackImage from '../comps/BackImage';
+// import TopNav from '../comps/TopNav';
+// import BottomNav from '../comps/BottomNav';
+// import Header from '../comps/Header';
+// import DRButton from '../comps/DRButtons';
+// import BAButton from '../comps/BAButtons';
 
 const HomeCont = styled.div`
   .header{
@@ -42,7 +42,7 @@ export default function Home() {
   const {places} = router.query;
 
   return <HomeCont>
-    <Head>
+    {/* <Head>
       <title className = "title">Recycle</title>
     </Head>
     
@@ -77,6 +77,6 @@ export default function Home() {
         </div> 
       </Background>
       <BottomNav />
-    </div>
+    </div> */}
   </HomeCont>
 }
