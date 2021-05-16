@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styled from 'styled-components';
-import React, {useEffect, useState} from 'react';
+import {useState, useEffect} from 'react';
 import {useRouter} from 'next/router';
 
 
@@ -34,21 +34,34 @@ const HomeCont = styled.div`
     `;
 
     const BadgeText = styled.p`
-    
+    text-align: center;
+    `
+
+    const BadgeDiv = styled.div`
+    min-height: 300px;
+    background-color: pink;
+    min-width: 275px;
+    `
+
+    const BadgeImg = styled.img`
+    width: 65px;
+    height: 65px; 
+    display: flex;
+    padding: 4px;
     `
     
     export default function Badges() {
+      
+          const [gift, setGift] = useState({
+            badge: false
+          })
+        
+          useEffect(()=>{
+            var unlocks = localStorage.getItem("unlocks");
+            unlocks = JSON.parse(unlocks);
+            setGift(unlocks);
+          }, [])
 
-        const router = useRouter();
-        const [badge, setBadges] = useState(null);
-        
-        useEffect(()=>{
-            if(process.browser){
-                var b = localStorage.getItem("contribution");
-                setBadges(b)
-            }
-        }, []);
-        
         return <HomeCont>
         <Head>
       <title className = "title">Your Badges</title>
@@ -58,18 +71,12 @@ const HomeCont = styled.div`
       <BackImage />
       <TopNav />
       <Background>  
-          <Header text="your badges"></Header> 
+          <Header text="your badges"></Header>
+          <BadgeText>Here are your hard earned badges you have collected from completing our DIY tutorials!</BadgeText>
+          <BadgeDiv> 
+          {gift.badge === true && <BadgeImg src="/badge.svg" /> }
+        </BadgeDiv>
 
-       {badge.map((value, index) =>{
-
-       return <BadgeText>
-           
-       </BadgeText>
-
-       }
-       
-       )};
-          
       </Background>
       <BottomNav />
     </div>

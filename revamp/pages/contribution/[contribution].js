@@ -108,20 +108,26 @@ export default function contribution(){
     src = "/icon_top_cont.svg"
   }
 
-  //var badges = null
-  const HandleClick = (text) =>{
-    badges = text
+  const gift = {
+    badge:false
   }
 
-  const badges = []
-
-  const HandleEnd = () =>{
-    localStorage.setItem("contribution", badges)
-    router.push("/welcome")
+  if(process.browser){
+    var unlocks = localStorage.getItem("unlocks")
+    if(!unlocks){
+      localStorage.setItem("unlocks", JSON.stringify(gift));
+    }
   }
+
+  const GetBadge = () =>{
+  var unlocks = localStorage.getItem("unlocks")
+  unlocks = JSON.parse(unlocks);
+  unlocks.badge = true;
+  localStorage.setItem("unlocks", JSON.stringify(unlocks));
 
   
-
+  }
+  
   return <HomeCont>
   <Head>
   <title className = "title">{ContTitle}</title>
@@ -140,11 +146,11 @@ export default function contribution(){
 
           <BadgeTitle>you got a badge!</BadgeTitle>
           <BadgeCont>
-          <BadgeImg src="/badge.svg" />
-          <Question src="/question-mark.svg" />
+          <BadgeImg className="badges" src="/badge.svg" />
+          <Question className="question" src="/question-mark.svg" />
           </BadgeCont>
           <DRButton text="Claim Your Badge!" 
-          onClick ={()=>HandleClick("You gained a badge")}
+          onClick ={GetBadge} 
           />
           <br></br>
           <br></br>
@@ -165,7 +171,7 @@ export default function contribution(){
           </div>
 
           <DRButton 
-            onClick = {HandleEnd}
+          onClick = {() => router.push("/popular_page")}
             padding = "14px 35px"
             shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "back to home" size = "1em" marginB = "20px">
           </DRButton>

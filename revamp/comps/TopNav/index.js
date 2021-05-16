@@ -82,8 +82,18 @@ const SideMenuCont = styled.div`
 `;
 
 
+const BadgePage = styled.img`
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+`
+
+
 const TopNav = ({
-    routeToHome="/welcome"
+    routeToHome="/welcome",
+    routeToBadge="/badges"
 }) => {
     // onClick = {() => router.push("/location/places3")}
 
@@ -112,6 +122,7 @@ const TopNav = ({
                     <Logo src="/fashionrecycle.svg" onClick={()=>router.push(routeToHome)}></Logo>
                 </LogoCont>
                 <Revamp onClick={()=>router.push(routeToHome)}>reVamp</Revamp>
+                <BadgePage src="/bluebadge.svg" onClick={()=>router.push(routeToBadge)}/>
         </TopCont>
     </TopNavCont>
     <SideMenuCont

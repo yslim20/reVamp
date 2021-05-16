@@ -53,9 +53,6 @@ const Click = styled.div`
 
   `;
 
- 
-
-
 
 export default function Home() {  
 
