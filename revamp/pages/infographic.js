@@ -121,7 +121,7 @@ const BigGlobe = styled.img`
 `;
 
 const EmptyDiv = styled.div`
-height: 150px;
+height: 80px;
 `;
 
 const TextBox = styled.div`
@@ -140,6 +140,10 @@ margin-top:950px;
 `;
 const ClothesImg = styled.img`
 margin-top:-20px
+`;
+
+const BotDIv = styled.div`
+margin-bottom: -90px;
 `;
 
 //const Pile = {backgroundImage: 'url(/pileofclothes.svg)'}
@@ -168,7 +172,7 @@ export default function Home() {
                   to get as many products as they can into the market quickly. 
                   It means that caring about the environment, and the effects they have on it don’t play a part.</Info> 
             <br></br>
-            <Info>Here is a list of ways the fast fashion industry is causing issues on our environment.</Info> 
+            <Info>Here is one reason why fast fashion industry is causing issues on our environment.</Info> 
             </TextBox>
             <ClothesImg src="pile-of-clothes.svg"/>
             <Header text = "clothing waste" h2Size = "1.65em"></Header>
@@ -206,8 +210,10 @@ export default function Home() {
               src="/badge.svg" alt="badge"></Reduce>
               <Reduce text="3. think twice before throwing out your clothes" 
               src="/thinker.svg" alt="thinking"></Reduce>
+              <BotDIv>
               <Reduce text="4. reduce the amount of times you do your laundry" 
               src="/laundry.svg" alt="laundry"></Reduce>
+              </BotDIv>
             </div>
 
         </Background>
