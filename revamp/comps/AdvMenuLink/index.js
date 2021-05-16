@@ -33,10 +33,7 @@ const HiddenCont = styled.div`
     left: 15px;
     transition: top 0.5s, opacity 0.7s;
     opacity: ${props=>props.opacity}; 
-
-    // background-color: #b4e0cb;
 `;
-
 const SecLink = styled.a`
     text-decoration: none;
     color: #14455A;
@@ -45,9 +42,6 @@ const SecLink = styled.a`
     font-size: 16px;
     font-family: 'Lexend Giga';
     cursor: pointer;
-
-    // background-color: #bdd7db;
-
 `;
 
 const AdvMenuLink = ({

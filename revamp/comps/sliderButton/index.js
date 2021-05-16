@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
 import {useRouter} from 'next/router';
-import {choiceOptions} from '../../data/choices_text';
 
 const MainCont = styled.div`
     width: 305px;
@@ -53,9 +52,6 @@ const Text = styled.p`
 `;
 
 const SliderButton = ({
-    beginnerURL="http://localhost:3000/tutorials_page/tops_beginner",
-    advancedURL="http://localhost:3000/tutorials_page/tops_advanced",
-
     beginner="/tutorials_page/bottoms_beginner",
     advanced="/tutorials_page/bottoms_advanced",
 }) => {
@@ -66,52 +62,36 @@ const SliderButton = ({
     const [begText, setTextColor1] = useState(false);
     const [advText, setTextColor2] = useState(false);
 
-    // const [pageChange, setPageChange] = useState(false);
 
     const HandleClick = () => {
         setSliderState(!sliderState);
         setTextColor1(!begText);
         setTextColor2(!advText);
-        // alert(window.location.href) this = the current page name
         setTimeout(function() {
-            if(window.location.href == advancedURL)
+            if(window.location.href.includes(advanced))
             {
                 router.push(beginner)
             }
-            else if(window.location.href == beginnerURL)
+            else if(window.location.href.includes(beginner))
             {
                 router.push(advanced)
             }
         },1000)
     }
 
-    const HandleClick2 = () => {
-        setSliderState(!sliderState);
-        setTextColor1(!begText);
-        setTextColor2(!advText);
-        setTimeout(function() {
-            router.push(advanced)
-        },1000)
-    }
-
     return <MainCont>
     <SliderCont>
         <InvizButtonCont onClick={HandleClick}>
-            <Text
-                color = {begText ? "#636A79" : "white"}
-            >beginner</Text>
+            <Text color = {begText ? "#636A79" : "white"}>
+                beginner</Text>
         </InvizButtonCont>
         <InvizButtonCont onClick={HandleClick}>
-            <Text
-                color = {advText ? "white" : "#636A79"}
-            >advanced</Text>
+            <Text color = {advText ? "white" : "#636A79"}>
+                advanced</Text>
         </InvizButtonCont>
     </SliderCont>
         <ButtonCont 
-            // onClick={HandleClick}
-            left = {sliderState ? "157px" : "2px"}
-
-        />
+            left = {sliderState ? "157px" : "2px"}/>
     </MainCont>
 }
 export default SliderButton;
