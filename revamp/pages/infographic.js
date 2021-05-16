@@ -104,6 +104,7 @@ const Or = styled.p`
 `;
 
 const BigCont = styled.div`
+  width: 80%; height: auto;
   display: flex;
   justify-content: center;
   position: relative;
@@ -111,17 +112,19 @@ const BigCont = styled.div`
 `
 
 const BigRec = styled.img`
+  width:100%;
   margin-top: 60px;
   margin-bottom: 25px;
 `;
 
 const BigGlobe = styled.img`
+  width: 150px; 
   position: absolute;
-  bottom: 10px;
+  bottom: -5px;
 `;
 
 const EmptyDiv = styled.div`
-height: 80px;
+  height: 80px;
 `;
 
 const TextBox = styled.div`
@@ -177,7 +180,7 @@ export default function Home() {
             <ClothesImg src="pile-of-clothes.svg"/>
             <Header text = "clothing waste" h2Size = "1.65em"></Header>
             <SubTitle>in North America,</SubTitle>
-            <img src="thrownaway.svg" />   
+            <img className = "thrownaway" src="thrownaway.svg" />   
             <PerCont>
               <Info>and</Info>
               <Percent>95%</Percent>

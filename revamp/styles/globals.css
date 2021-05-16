@@ -436,6 +436,10 @@ background: #CCE6F4;
   text-align: center;
 }
 
+.thrownaway{
+  max-width:300px;
+}
+
 /* KEY FRAMES */
 
 @keyframes rotating {
