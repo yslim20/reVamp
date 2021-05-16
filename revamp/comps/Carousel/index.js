@@ -107,7 +107,7 @@ const Carousel = ({
       </Cont>
       <CtrlDiv>
         <CtrlButtons bkImg = "/icon_pre.svg" left={left} onClick={()=>HandleImgChange(ind - 1)}></CtrlButtons>
-        <CtrlButtons bkImg = "/icon_fwd.svg" right={right} onClick={()=>HandleImgChange(ind + 1)}>&rsaquo;</CtrlButtons>
+        <CtrlButtons bkImg = "/icon_fwd.svg" right={right} onClick={()=>HandleImgChange(ind + 1)}></CtrlButtons>
       </CtrlDiv>
   </MainCont>
 }
