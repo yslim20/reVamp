@@ -108,7 +108,7 @@ export default function contribution(){
     src = "/icon_top_cont.svg"
   }
 
-  const gift = {
+  /*const gift = {
     badge:false
   }
 
@@ -117,15 +117,13 @@ export default function contribution(){
     if(!unlocks){
       localStorage.setItem("unlocks", JSON.stringify(gift));
     }
-  }
+  }*/
 
   const GetBadge = () =>{
   var unlocks = localStorage.getItem("unlocks")
   unlocks = JSON.parse(unlocks);
   unlocks.badge = true;
   localStorage.setItem("unlocks", JSON.stringify(unlocks));
-
-  
   }
   
   return <HomeCont>

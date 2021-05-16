@@ -60,6 +60,7 @@ const HomeCont = styled.div`
             var unlocks = localStorage.getItem("unlocks");
             unlocks = JSON.parse(unlocks);
             setGift(unlocks);
+            //unlocks.map((o,i)=><BadgeImg key={i}/>)
           }, [])
 
         return <HomeCont>
