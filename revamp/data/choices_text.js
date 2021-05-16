@@ -89,7 +89,7 @@ export const choiceOptions = {
         diyRoute1: "/tops_advanced/tutorials1",
 
         diyTitle2: "sweater beanie",
-        src2: "/sweater-beanie.svg",
+        src2: "/Sweater-Beanie.svg",
         stars2: "/4-star-level.svg",
         diyRoute2: "/tops_advanced/tutorials2",
         
