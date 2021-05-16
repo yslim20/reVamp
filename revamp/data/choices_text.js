@@ -5,8 +5,6 @@ export const choiceOptions = {
 
         begRouter: "/tutorials_page/bottoms_beginner",
         advRouter: "/tutorials_page/bottoms_advanced",
-        begURL: "http://localhost:3000/tutorials_page/bottoms_beginner",
-        advURL: "http://localhost:3000/tutorials_page/bottoms_advanced",
 
         skillTitle: "beginner",
 
@@ -32,8 +30,6 @@ export const choiceOptions = {
 
         begRouter: "/tutorials_page/bottoms_beginner",
         advRouter: "/tutorials_page/bottoms_advanced",
-        begURL: "http://localhost:3000/tutorials_page/bottoms_beginner",
-        advURL: "http://localhost:3000/tutorials_page/bottoms_advanced",
 
         skillTitle: "advanced",
 
@@ -59,8 +55,6 @@ export const choiceOptions = {
 
         begRouter: "/tutorials_page/tops_beginner",
         advRouter: "/tutorials_page/tops_advanced",
-        begURL: "http://localhost:3000/tutorials_page/tops_beginner",
-        advURL: "http://localhost:3000/tutorials_page/tops_advanced",
 
         skillTitle: "beginner",
 
@@ -86,8 +80,6 @@ export const choiceOptions = {
 
         begRouter: "/tutorials_page/tops_beginner",
         advRouter: "/tutorials_page/tops_advanced",
-        begURL: "http://localhost:3000/tutorials_page/tops_beginner",
-        advURL: "http://localhost:3000/tutorials_page/tops_advanced",
 
         skillTitle: "advanced",
 
