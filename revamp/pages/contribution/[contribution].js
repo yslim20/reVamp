@@ -115,10 +115,9 @@ export default function contribution(){
 
     // this works but shows null then 1
     // unlocks++
+    
+    unlocks.badge.push(1)
 
-    unlocks.badge = +5;
-
-    console.log("hey")
     localStorage.setItem("unlocks", JSON.stringify(unlocks));
   
   }

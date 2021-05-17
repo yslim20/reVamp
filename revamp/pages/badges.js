@@ -53,9 +53,7 @@ const HomeCont = styled.div`
     export default function Badges() {
       
           const [gift, setGift] = useState({
-            // badge:[{"earnedBadge":0}]
             badge:[]
-            // badge: 0
             // badge: 0
           })
         
@@ -63,9 +61,7 @@ const HomeCont = styled.div`
             var unlocks = localStorage.getItem("unlocks");
             unlocks = JSON.parse(unlocks);
             setGift(unlocks);
-            console.log('hey')
-            // gift = +1;
-            // unlocks.map((o,i)=><BadgeImg key={i}/>)
+            // console.log('hey')
           })
 
         return <HomeCont>
@@ -81,14 +77,11 @@ const HomeCont = styled.div`
           <BadgeText>Here are your hard earned badges you have collected from completing our DIY tutorials!</BadgeText>
           <BadgeDiv> 
               {/* this only shows one */}
-          {gift.badge && <BadgeImg src="/badge.svg" /> }
-          
-              {/* this is chaos */}
-          {/* {unlocks.map((o,i)=><BadgeImg key={i}/>)} */}
-          {/* {gift.badge(0,i)=><BadgeImg key={i}/>)} */}
-          {/* {unlocks.push()} */}
-          {/* {gift.unlocks} */}
-          {/* {gift.map((i)=><BadgeImg key={i+1}/>)} */}
+          {/* {gift.badge && <BadgeImg src="/badge.svg" /> } */}
+
+              {/* this freezes the web app after a minute */}
+          {gift.badge.map((o,i)=><BadgeImg key={i} src="/badge.svg"/>)}
+
 
         </BadgeDiv>
 

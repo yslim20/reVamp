@@ -112,7 +112,7 @@ const TopNav = ({
     }
     // var display = "none";
     // if(disp){display = "block";}
-    console.log(menustate)
+    // console.log(menustate)
 
     return <MainCont>
     <TopNavCont>
