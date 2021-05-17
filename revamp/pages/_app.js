@@ -1,7 +1,8 @@
 import '../styles/globals.css'
 
 const gift = {
-  badge:false
+  badge:[]
+  // badge: 0
 }
 
 if(process.browser){

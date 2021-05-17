@@ -108,22 +108,19 @@ export default function contribution(){
     src = "/icon_top_cont.svg"
   }
 
-  /*const gift = {
-    badge:false
-  }
-
-  if(process.browser){
-    var unlocks = localStorage.getItem("unlocks")
-    if(!unlocks){
-      localStorage.setItem("unlocks", JSON.stringify(gift));
-    }
-  }*/
 
   const GetBadge = () =>{
-  var unlocks = localStorage.getItem("unlocks")
-  unlocks = JSON.parse(unlocks);
-  unlocks.badge = true;
-  localStorage.setItem("unlocks", JSON.stringify(unlocks));
+    var unlocks = localStorage.getItem("unlocks")
+    unlocks = JSON.parse(unlocks);
+
+    // this works but shows null then 1
+    // unlocks++
+
+    unlocks.badge = +5;
+
+    console.log("hey")
+    localStorage.setItem("unlocks", JSON.stringify(unlocks));
+  
   }
   
   return <HomeCont>
@@ -163,7 +160,7 @@ export default function contribution(){
             this means you helped contribute to conserving water usage and keeping our planet happy <br/>and healthy.
           </Para>
 
-          <div class="cont_imgCont flex">
+          <div className="cont_imgCont flex">
             <HeartImg  src ="/heart.gif"/>
             <ContImg src ="/giphy.gif"/>
           </div>
