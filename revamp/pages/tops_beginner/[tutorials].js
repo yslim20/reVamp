@@ -155,7 +155,7 @@ export default function Tutorials(){
                         <DRButton 
                             onClick = {() => router.push("/contribution/top")}
                             padding = "14px 45px"
-                            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "completed" size = "1em" marginB = "20px">
+                            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "Completed" size = "1em" marginB = "20px">
                         </DRButton>
                     </MainCont>
                 </div>

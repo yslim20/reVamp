@@ -92,7 +92,7 @@ const BadgePage = styled.img`
 
 
 const TopNav = ({
-    routeToHome="/welcome",
+    routeToHome="/popular_page",
     routeToBadge="/badges"
 }) => {
     // onClick = {() => router.push("/location/places3")}

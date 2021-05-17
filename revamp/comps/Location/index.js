@@ -27,7 +27,7 @@ const TextCont = styled.div`
 const LocationTitle = styled.h6`
   font-family: 'Lexend Giga';
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5em;
   margin: 0;
   margin-bottom: 5px;
@@ -56,6 +56,7 @@ const IconA = styled.a`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  font-family: "Montserrat";
 `
 
 const Icon = styled.div`
@@ -69,11 +70,13 @@ const Icon = styled.div`
   text-decoration: underline;
   color: #14455A;
   font-size: 12px;
+  font-weight: 300;
   text-align: center;
+  margin: 0;
   `
 
 const Location = ({
-  doTitle = "Location 1:",
+  doTitle = "location 1:",
   text = "Charitable Impact Vancouver, West End",
   marginB = 35,
   className = "icon",  
@@ -88,10 +91,10 @@ const Location = ({
     </TextCont>
 
     <IconCont>
-      <IconA onClick = {onClick}>
+      <IconA className = "hoverBox" onClick = {onClick}>
         <Icon className = {className}>
         </Icon>
-        <Click>Click for more information</Click>
+        <Click className = "textHov">Click for more information</Click>
       </IconA>
     </IconCont>
 

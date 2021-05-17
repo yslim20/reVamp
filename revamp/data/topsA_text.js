@@ -87,7 +87,7 @@ export const tutorialOptions = {
     FinishedLook2: {
         titleDIY:"sweater beanie",
         stars: "/3-star-level.svg",  
-        picture:"/sweater-beanie.svg",
+        picture:"/Sweater-Beanie.svg",
         mtext:"5 materials",
         ttext:"75 minutes",
         ltext:"advanced",

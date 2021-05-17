@@ -3,20 +3,20 @@ import styled from "styled-components";
 import {useRouter} from 'next/router';
 
 const NumberCont = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   margin-bottom: 15px;
 `;
 const NumText = styled.p`
-    font-family: 'Lexend Giga', sans-serif;
-    text-align: center;
-  font-size: 24px;
+  font-family: 'Lexend Giga', sans-serif;
+  text-align: center;
+  font-size: 16px;
 
 `;
 const Icon = styled.img`
-    margin: 0 auto;
+  margin: 0 auto;
   justify-content: center;
   text-align: center;
   max-width: 93px;

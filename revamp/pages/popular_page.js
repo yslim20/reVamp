@@ -1,17 +1,17 @@
 import Head from 'next/head'
 import styled from 'styled-components';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useRouter} from 'next/router';
 
 //importing comps
 import Previews from "../comps/DIYPreviews"
-import Previews2 from "../comps/DIYPreviews2"
-import PopularDIY from '../comps/MostPopular';
 import Background from '../comps/Background';
 import BackImage from '../comps/BackImage';
 import TopNav from '../comps/TopNav';
 import BottomNav from '../comps/BottomNav';
 import Header from '../comps/Header';
+import Tips from '../comps/Tips';
+import Carousel from '../comps/Carousel'
 
 const HomeCont = styled.div`
   .header{
@@ -29,40 +29,49 @@ const HomeCont = styled.div`
     justify-content: center;
     align-items: center;
   } 
-
 `;
 
 const Info = styled.p`
   text-align:center;
-
 `;
 
-const Click = styled.div`
+const IconCont = styled.div`
+  cursor: pointer;
+`
+
+const Icon = styled.div`
+  width: 68px;
+  height: 56px;  
+  margin-bottom: 5px;  
+`
+
+const Click = styled.a`
   width: 233px;
   text-decoration: underline;
   color: #14455A;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-  margin-top:15px;
+  margin-top: 10px;
+  
+  font-family: montserrat;
   `;
 
   const Text = styled.p`
-
+  width: 100%;
   font-size:12px;
   text-align:center;
-
+  margin: 0;
   `;
-
+  
 
 export default function Home() {  
 
     const router = useRouter();
     const {tutorials} = router.query;
-
   
   return <HomeCont>
     <Head>
-      <title className = "title">Welcome</title>
+      <title className = "title">diy collection</title>
     </Head>
 
     <div className="container flex_col">
@@ -71,23 +80,42 @@ export default function Home() {
 
       <Background>    
         <div className = "flex_col paddingB-40">
-          <Header text = "diy collection"></Header>
+          <Header h2Margin = "0 0 20px" text = "diy collection"></Header>
           <Info className = "subText">Here you can find our DIY collections where you can turn your old <br/> clothes into something new! <br/> Go through and try it out.</Info>
 
           <div className = "flex_col">  
-            <PopularDIY onClick = {() => router.push("/tops_beginner/tutorials2")}/>   
-            <Previews2 stars="/4-star-level.svg" Title="tops diys" pic="/sweater-beanie-preview.svg" DiyTitle = "Sweater Beanie" pic2="/pillow-preview.svg" DiyTitle2 = "PillowCase" stars2="/2-star-level.svg"/>      
-            <Previews/> 
+            <Carousel/>
+            <Previews  
+              marginB="10px"
+              Title="tops diys" 
+              pic="/sweater-beanie-preview.svg" 
+              DiyTitle = "Sweater Beanie" 
+              stars="/3-star-level.svg" 
+              pic2="/pillow-preview.svg" 
+              DiyTitle2 = "Pillow Case" 
+              stars2="/2-star-level.svg"
+              onClick1 = {() => router.push("/tutorials_page/tops_beginner")}
+              onClick2 = {() => router.push("/tops_advanced/tutorials2")}
+              onClick3 = {() => router.push("/tops_beginner/tutorials3")}            
+            />      
+            <Previews
+              onClick1 = {() => router.push("/tutorials_page/bottoms_beginner")}
+              onClick2 = {() => router.push("/bottom_advanced/tutorials2")}
+              onClick3 = {() => router.push("/bottom_advanced/tutorials1")}
+            /> 
           </div> 
         </div> 
 
-        {/* did you know component here */}
-
-        <div className = "flex_col paddingB-40">
-            <img src = "/map-icon.svg" onClick = {() => router.push("donate")}></img>
-            <Click onClick = {() => router.push("donate")} className="textHov">Look for Donation Centers near you!</Click>
-            <Text> Donating your clothes is also a god way to upcycle.</Text>
-        </div>
+        <Tips
+          marginT = "0px" marginB = "40px"
+        />
+        <IconCont className = "flex_col paddingB-40 hoverBox" onClick = {() => router.push("donate")} >
+            <Icon className = "pop_icon"/>
+            <Click className="textHov">Look for Donation Centers near you!</Click>            
+            <Text>
+              Donating your clothes is also<br/>a good way to upcycle.
+            </Text>
+        </IconCont>
       </Background>
       <BottomNav />
     </div>

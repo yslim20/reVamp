@@ -169,9 +169,9 @@ export default function contribution(){
           </div>
 
           <DRButton 
-          onClick = {() => router.push("/popular_page")}
+            onClick = {() => router.push("/popular_page")}
             padding = "14px 35px"
-            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "back to home" size = "1em" marginB = "20px">
+            shadow = "0px 2px 4px rgba(0,0,0,.25)" text = "Back to Home" size = "1em" marginB = "20px">
           </DRButton>
         </div>
 
