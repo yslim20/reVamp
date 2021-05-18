@@ -72,7 +72,7 @@ export const tutorialOptions = {
     FinishedLook2: {
         titleDIY:"cropped sweater",
         stars: "/1-star-level.svg",  
-        picture:"/cropped-sweater.svg",
+        picture:"/Cropped-Sweater.svg",
         mtext:"6 materials",
         ttext:"30 minutes",
         ltext:"beginner",
