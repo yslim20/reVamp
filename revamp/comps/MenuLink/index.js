@@ -3,7 +3,6 @@ import React, {useState} from 'react';
 import styled from "styled-components";
 
 const LinksCont = styled.div`
-    // background-color: #bddbc5;
     margin-top: 18px;
     width: 200px;
 `;
@@ -25,7 +24,6 @@ const ArrowImg = styled.img`
     transition: transform 0.3s;
     margin-left: 7px;
 `;
-
 const HiddenCont = styled.div`
     position: relative;
     top: ${props=>props.top}px;
@@ -34,10 +32,7 @@ const HiddenCont = styled.div`
     left: 15px;
     transition: top 0.5s, opacity 0.7s;
     opacity: ${props=>props.opacity}; 
-
-    // background-color: #b4e0cb;
 `;
-
 const SecLink = styled.a`
     text-decoration: none;
     color: #14455A;
@@ -46,9 +41,6 @@ const SecLink = styled.a`
     font-size: 16px;
     font-family: 'Lexend Giga';
     cursor: pointer;
-
-    // background-color: #bdd7db;
-
 `;
 
 const MenuLink = ({

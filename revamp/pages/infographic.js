@@ -162,7 +162,7 @@ export default function Home() {
 
       <TopNav />
 
-        <Background bgcol="#FFFFFF">      
+        <Background bgcol="#FFFFFF" padding="80px 20px">      
           <div className = "flex_col">
             <Info>THE IMPACT OF</Info>
             <img src="fast-fashion-title.svg"/>

@@ -160,8 +160,7 @@ export default function Home() {
 			<Background padding="40px 20px 40px 20px">
 				<div className = "flex_col">
 					<MainCont>
-						{/* <Header text={skillTitle}/> */}
-						<h3 class="h3">{pageHeader}</h3>
+						<h3 className="h3">{pageHeader}</h3>
 						<SliderButton
 							beginner = {begRouter}
 							advanced = {advRouter}

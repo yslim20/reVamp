@@ -13,7 +13,6 @@ const NumText = styled.p`
   font-family: 'Lexend Giga', sans-serif;
   text-align: center;
   font-size: 16px;
-
 `;
 const Icon = styled.img`
   margin: 0 auto;

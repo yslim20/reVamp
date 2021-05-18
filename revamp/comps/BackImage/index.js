@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const BackgroundCont = styled.div`
   width: 100vw;
-  // min-height: 100vh;
   min-height: 460px;
   position: fixed; 
   bottom: 0;

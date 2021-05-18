@@ -9,7 +9,6 @@ const MainCont = styled.div`
     display: flex;
     position: fixed;
     flex-direction: row;
-    
 `;
 const PanelCont = styled.div`
     height: 90%;
@@ -37,7 +36,6 @@ const MenuCont = styled.div`
     position: relative;
     top: 10px;
     left: 30px;
-
     z-index: 4;
 `;
 const Link = styled.a`
@@ -53,9 +51,9 @@ const ColumnCont = styled.div`
     flex-direction: column;
 `;
 
-
 const MenuPanel = ({
     routeToInfo="/infographic",
+    routeToBadges="/badges",
     routeToDonate="/donate",
     routeToAbout="/about",
 }) => {
@@ -68,6 +66,7 @@ const MenuPanel = ({
                 <AdvMenuLink />
                 <ColumnCont>
                     <Link onClick={()=>router.push(routeToInfo)}>info on <br/>sustainability</Link>
+                    <Link onClick={()=>router.push(routeToBadges)}>badges</Link>
                     <Link onClick={()=>router.push(routeToDonate)}>donation centers</Link>
                     <Link onClick={()=>router.push(routeToAbout)}>about us</Link>
                 </ColumnCont>

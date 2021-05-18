@@ -86,9 +86,9 @@ const DIYIcons = ({
     </BioCont>
 
     <div id="container">
-            <div class="scrollarrow"></div>
-            <div class="scrollarrow"></div>
-            <div class="scrollarrow"></div>
+            <div className="scrollarrow"></div>
+            <div className="scrollarrow"></div>
+            <div className="scrollarrow"></div>
         </div>
         <div id="scroll-text">
             <span>Steps Below</span>

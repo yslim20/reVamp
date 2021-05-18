@@ -17,7 +17,7 @@ const TopDiv = styled.div`
     display: flex;
     flex-directaion: row;
     margin: 0;
-    margin-bottom:-5px;   
+    margin-bottom:-3px;   
     align-items: center;
     justify-content: space-between;
 `;
@@ -50,10 +50,12 @@ const ImgCont = styled.div`
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 `
 const Img = styled.img`
     width: 100%;
-    height: auto;    
+    height: auto;   
+    object-fit: cover; 
 `
 
 const InfoDiv = styled.div`
@@ -92,7 +94,6 @@ const DIYStars = styled.img`
 `;
 
 
-//props
 const Previews = ({
     marginB = null,
     stars="/4-star-level.svg",
@@ -105,7 +106,6 @@ const Previews = ({
     onClick1 = () => {},
     onClick2 = () => {},
     onClick3 = () => {}
-
 }) => {
 
     const router = useRouter();
@@ -114,7 +114,7 @@ const Previews = ({
     return <MainCont marginB = {marginB}>
         <TopDiv>
             <Text>{Title}</Text>
-            <ViewMore className="textHov"onClick = {onClick1}> view more</ViewMore>
+            <ViewMore className="textHov"onClick = {onClick1}> view more &gt;</ViewMore>
         </TopDiv>
 
         <DoubleDiv>

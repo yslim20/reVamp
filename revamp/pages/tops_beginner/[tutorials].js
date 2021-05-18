@@ -112,7 +112,6 @@ export default function Tutorials(){
         picture = tutorialOptions.FinishedLook3.picture;
         stars = tutorialOptions.FinishedLook3.stars;
     }
-
  
     return (
     <div> 
