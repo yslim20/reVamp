@@ -9,16 +9,16 @@ import PopularDIY from '../../comps/MostPopular';
 const MainCont = styled.div`
     display: inline-flex;
     flex-direction: column;    
-    margin-bottom: 30px;    
+    margin-bottom: 20px;    
 `
 const PopTitle = styled.h6`
   font-family: 'Lexend Giga', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #000000;
   text-indent:5px;
   margin: 0;
-  margin-bottom:10px;    
+  margin-bottom:7px;    
 `
 const Cont = styled.div`
   display: inline-flex;
@@ -27,6 +27,8 @@ const Cont = styled.div`
   max-width: 305px; height: auto;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  border-radius: 10px;
 `;
 const Card = styled.div`
   width: 305px; height: auto;

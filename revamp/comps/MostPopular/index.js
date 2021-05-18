@@ -4,18 +4,22 @@ import {useRouter} from 'next/router';
 
 const MainCont = styled.div`
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    border-radius: 10px;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 `
 const MainDiv = styled.div`
     width: 305px;
+    border-radius: 10px;
     height: 175px;
-    position: relative;
+    position: relative;  
 ` 
 const ImgDiv = styled.img`
-    border-radius:10px;
+    border-radius: 10px;
     width: 100%;
     height: 100%;
-    cursor: pointer;
+    cursor: pointer;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 `
 const InfoDiv = styled.div`
     display: flex;
@@ -24,8 +28,8 @@ const InfoDiv = styled.div`
     position: absolute;
     bottom: 10px;
     left: 5%;    
+    cursor: pointer;  
 `
-
 const DIYTitle = styled.p`
     font-size: 13px;
     text-align: left;
@@ -34,25 +38,21 @@ const DIYTitle = styled.p`
     margin: 0;
     margin-bottom: 3px;  
 `
-
 const DIYSmallDiv = styled.div`
     display:flex;
     flex-direction: row;  
     align-items: center;
 `
-
 const DIYTextLevel = styled.p`
     color:white;
     font-size:12px;
     margin: 0;
-`;
-
+`
 const DIYStars = styled.img`
     height:15px;
     margin-left: 10px;
 `
 
-//props
 const PopularDIY = ({
     stars="/1-star-level.svg",
     popularTitle="Cropped Sweater",
@@ -64,8 +64,8 @@ const router = useRouter();
 const {tutorials} = router.query;
 
 return <MainCont>
-    <MainDiv>
-        <ImgDiv onClick = {onClick} src={pic} className="popular"></ImgDiv>
+    <MainDiv onClick = {onClick} >
+        <ImgDiv src={pic} className="popular" />
         <InfoDiv>
                 <DIYTitle>{popularTitle}</DIYTitle>
                 <DIYSmallDiv>

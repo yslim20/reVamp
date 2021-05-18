@@ -13,7 +13,6 @@ const LocPageCont = styled.div`
   justify-contents: center;
   align-items: center;  
 `;
-
 const LocPageTitle = styled.h3`
   max-width: 305px;
   flex: 1;
@@ -48,7 +47,6 @@ const LocPageTextCont = styled.div`
     color:#000;
   }
 `;
-
 const LocPageTextTit = styled.p`
   font-family: "Montserrat";
   font-size: 1em;

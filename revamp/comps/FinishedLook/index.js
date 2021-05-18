@@ -24,7 +24,6 @@ const FinishedLookPic = styled.img`
     border-width: 1px;
 `;
 
-//props
 const FinishedLook = ({
     title="Finished Look!",
     picture="/sweater-beanie.svg",

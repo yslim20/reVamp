@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-const ButtonCont = styled.span`
-
-`;
+const ButtonCont = styled.span``;
 
 const ButtonInput = styled.button`
     background-color: ${props => props.bg};

@@ -25,7 +25,6 @@ const ParaInput = styled.p`
   -webkit-animation: opacity 1.5s;
 `;
 
-
 const Para = ({
   children=null,
   pMax = 270,

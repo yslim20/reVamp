@@ -7,7 +7,6 @@ const MainCont = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-
 `;
 const TopCont = styled.div`
     display: flex;
@@ -43,74 +42,57 @@ const HamMenu = styled.img`
     margin-left: 20px;
     margin: 25px;
     cursor: pointer;
-`
-
+`;
 const LogoCont = styled.div`
     margin-top:15px;
-    margin-left: 25px;
-`
-
+    margin-left: 15px;
+`;
 const Logo = styled.img`
-
     display: inline;
     width: 44px;
     height: 35px;
     cursor: pointer;
-`
-
+`;
 const Revamp = styled.p`
     font-family: 'Lexend Giga', sans-serif;
     font-size: 24px;
     color: #247BA0;
     text-align: center;
     margin-left: 10px;
-    margin-right: 40px;
+    margin-right: 35px;
     cursor: pointer;
-`
+`;
 const SideMenuCont = styled.div`
     position: relative;
     left: ${props=>props.left}px;
     opacity: ${props=>props.opacity};
-    // display: ${props=>props.display};
-    // height: ${props=>props.height}px;
     width: 275px;
     transition: left 0.5s, opacity 0.5s;
     top: 75px;
     z-index: 10;
-
-    // background-color: rgba(163,163,163,0.6);
 `;
-
-
 const BadgePage = styled.img`
     width: 42px;
     height: 42px;
+    margin-right: 17px;
     display: flex;
+    cursor: pointer;
 `
-
 
 const TopNav = ({
     routeToHome="/popular_page",
     routeToBadge="/badges"
 }) => {
-    // onClick = {() => router.push("/location/places3")}
 
     const router = useRouter();
 
     const [menustate, setMenuState] = useState(false);
     const [opaque, setOpacity] = useState(false);
-    // const [disp, setDisplay] = useState(false);
-    // const [expand, setHeight] = useState(false);
 
     const HandleClick = () => {
         setMenuState(!menustate);
         setOpacity(!opaque);
-        // setHeight(!expand);
-        // setDisplay(!disp);
     }
-    // var display = "none";
-    // if(disp){display = "block";}
-    // console.log(menustate)
 
     return <MainCont>
     <TopNavCont>
@@ -126,11 +108,9 @@ const TopNav = ({
     <SideMenuCont
         left = {menustate ? 0 : -300}
         opacity = {opaque ? 1 : 0}
-        // height = {expand ? "auto" : 0}
-        // display = {display}
         >
-            <MenuPanel/>
-        </SideMenuCont>
+        <MenuPanel/>
+    </SideMenuCont>
     
     </MainCont>
 

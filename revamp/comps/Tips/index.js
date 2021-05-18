@@ -7,16 +7,13 @@ max-width: 292px;
 margin-top: ${props => props.marginT};
 margin-bottom: ${props => props.marginB};
 `
-
 const TipImg = styled.img `
 padding-right: 15px;
 `
-
 const TipFact = styled.div`
 font-family: 'Montserrat', Serif;
 font-size: 12px;
 `
-
 const Bold = styled.p`
 font-weight: 800;
 font-size: 12px;

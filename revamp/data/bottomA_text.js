@@ -123,7 +123,7 @@ export const tutorialOptions = {
         mtext:"6 materials",
         ttext:"40 minutes",
         ltext:"advanced",
-        bio:"Time to spruce up your wardrobe by changing your old trousers into a super chic skirt! This skirt can be worn to the office or add some heels with it for your girls night out",
+        bio:"Time to spruce up your wardrobe by changing your old trousers into a super chic skirt! This skirt can be worn to the office or add some heels with it for your girls night out!",
         children: <ul>
             <li>Trousers</li>
             <li>Buttons (big and small)</li>

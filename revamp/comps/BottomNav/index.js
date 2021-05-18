@@ -57,7 +57,6 @@ width: 375px;
 height: 75px;
 background-color: white;
 margin: 0 auto;
-// margin-top: 200px;
 &>* {
     color: #50514F;
 }
@@ -133,21 +132,18 @@ const BottomNav = ({
         <BottomCont>
             <BackCont>
                 <BackImg 
-                    // src="/bot_nav/back_arrow.svg" 
                     className="icon1"
                     onClick={()=>router.back()}/>
                 <BackText>back</BackText>
             </BackCont>
             <HomeCont>
                 <HomeImg 
-                    // src="/bot_nav/home_button.svg" 
                     className="icon2"
                     onClick={()=>router.push(routeToHome)}/>
                 <HomeText>home</HomeText>
             </HomeCont>
             <UpCont>
                 <UpImg 
-                    // src="/bot_nav/top_button.svg" 
                     className="scrollTop icon3" 
                     onClick={scrollTop} />
                 <UpText>top</UpText>

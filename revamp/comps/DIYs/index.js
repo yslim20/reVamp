@@ -2,14 +2,12 @@
 import styled from 'styled-components';
 import React, {useState} from 'react';
 
-
 const DIYMainCont = styled.div`
     display: flex;
     flex-direction: column;
     align-items:center;
     justify-content: center;
 `;
-
 const DIYCont = styled.div `
     display: flex;
     flex-direction: column;
@@ -32,7 +30,6 @@ const DIYBigDiv = styled.div`
     width: 295px;
     cursor: pointer;
 `;
-
 const DIYPic = styled.img`
     border-radius:10px;
     width: 295px;
@@ -50,12 +47,10 @@ const DIYTextLevel = styled.p`
     padding-right:20px;
     margin-top:0px;
 `;
-
 const DIYStars = styled.img`
     height:20px;
 `;
 
-//props
 const DIYs = ({
     titleDIY="sweater beanie",
     picture="/sweater-beanie.svg",

@@ -23,8 +23,6 @@ const MaterialList = styled.div`
     font-size: 14px; 
 `;
 
-
-
 const Materials = ({
     children = null
 }) => {

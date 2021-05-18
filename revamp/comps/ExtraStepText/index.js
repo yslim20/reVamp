@@ -5,7 +5,6 @@ const StepCont = styled.div`
     max-width: 290px;
     padding-top:10px;
 `;
-
 const StepReg = styled.p`
     width: 100%;    
     font-family: 'Montserrat', sans-serif;
