@@ -64,7 +64,7 @@ const Revamp = styled.p`
     color: #247BA0;
     text-align: center;
     margin-left: 10px;
-    margin-right: 80px;
+    margin-right: 40px;
     cursor: pointer;
 `
 const SideMenuCont = styled.div`
@@ -83,11 +83,9 @@ const SideMenuCont = styled.div`
 
 
 const BadgePage = styled.img`
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
     display: flex;
-    justify-content: center;
-    text-align: center;
 `
 
 
@@ -122,7 +120,7 @@ const TopNav = ({
                     <Logo src="/fashionrecycle.svg" onClick={()=>router.push(routeToHome)}></Logo>
                 </LogoCont>
                 <Revamp onClick={()=>router.push(routeToHome)}>reVamp</Revamp>
-                <BadgePage src="/bluebadge.svg" onClick={()=>router.push(routeToBadge)}/>
+                <BadgePage src="/bbadge.svg" onClick={()=>router.push(routeToBadge)}/>
         </TopCont>
     </TopNavCont>
     <SideMenuCont

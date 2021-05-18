@@ -39,15 +39,21 @@ const HomeCont = styled.div`
 
     const BadgeDiv = styled.div`
     min-height: 300px;
-    background-color: pink;
     min-width: 275px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    padding-top: 3px;
+    border: solid 2px #CCE6F4;
+    border-radius: 15px;
     `
 
     const BadgeImg = styled.img`
-    width: 65px;
-    height: 65px; 
+    width: 68px;
+    height: 68px; 
     display: flex;
-    padding: 4px;
+    padding: 3px;
     `
     
     export default function Badges() {
@@ -62,7 +68,7 @@ const HomeCont = styled.div`
             unlocks = JSON.parse(unlocks);
             setGift(unlocks);
             // console.log('hey')
-          })
+          }, [])
 
         return <HomeCont>
         <Head>
