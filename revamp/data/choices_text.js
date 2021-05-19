@@ -85,6 +85,7 @@ export const choiceOptions = {
 
         diyTitle1: "one shoulder shirt",
         src1: "/One-Shoulder-Shirt.svg",
+        // stars1: "/3-star-level.svg",
         stars1: "/3-star-level.svg",
         diyRoute1: "/tops_advanced/tutorials1",
 
