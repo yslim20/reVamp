@@ -90,7 +90,7 @@ export const choiceOptions = {
 
         diyTitle2: "sweater beanie",
         src2: "/Sweater-Beanie.svg",
-        stars2: "/4-star-level.svg",
+        stars2: "/3-star-level.svg",
         diyRoute2: "/tops_advanced/tutorials2",
         
         diyTitle3: "sweater slippers",
