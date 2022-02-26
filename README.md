@@ -3,9 +3,6 @@
 reVamp is an application that shows how old clothes can be repurposed through its tutorials. It offers many different methods for upcycling clothing items. Additionally, the app aims to educate users about the relationship between sustainability and fast fashion.
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-
 ## Role
 
 Front-End Developer, UX/UI Designer
@@ -28,7 +25,11 @@ Front-End Developer, UX/UI Designer
 [@Maria Isabelle Monay](https://www.linkedin.com/in/maria-isabelle-monay-a11610150/)
 
 
+
 ## Getting Started
+
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
