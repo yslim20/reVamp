@@ -5,6 +5,29 @@ reVamp is an application that shows how old clothes can be repurposed through it
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+
+## Role
+
+Front-End Developer, UX/UI Designer
+
+• Contributed to all stages of development, including planning, testing, and coding.<br>
+• Constructed a user-interactive site architecture.<br>
+• Built reusable and scalable code and components.<br>
+• Collaborated closely with team members remotely, solving everyone's coding issues.<br>
+
+
+## Homepage
+[@Homepage](https://revamp-yslim.vercel.app/)
+
+
+## Authors
+
+[@Youn Soo Lim](https://www.linkedin.com/in/younsoo-lim)
+[@Ireme Wu](https://www.linkedin.com/in/irenewuu/)
+[@Montana Williams](https://www.instagram.com/montanaawilliams/?hl=en)
+[@Maria Isabelle Monay](https://www.linkedin.com/in/maria-isabelle-monay-a11610150/)
+
+
 ## Getting Started
 
 First, run the development server:
